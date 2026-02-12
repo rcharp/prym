@@ -6,31 +6,31 @@ import logo from "@/assets/logo.png";
 import icon from "@/assets/icon.png";
 
 const navLinks = [
-  { label: "Home", href: "#" },
+  { label: "Home", href: "/" },
   {
     label: "Services",
     children: [
-      { label: "AC Repair", href: "#services" },
-      { label: "AC Installation", href: "#services" },
-      { label: "AC Maintenance", href: "#services" },
-      { label: "Duct Cleaning", href: "#services" },
+      { label: "AC Repair", href: "/services/ac-repair" },
+      { label: "AC Installation", href: "/services/ac-installation" },
+      { label: "AC Maintenance", href: "/services/ac-maintenance" },
+      { label: "Duct Cleaning", href: "/services/duct-cleaning" },
     ],
   },
   {
     label: "Service Areas",
     children: [
-      { label: "Palmetto, FL", href: "#" },
-      { label: "Memphis, FL", href: "#" },
-      { label: "Bradenton, FL", href: "#" },
-      { label: "Ellenton, FL", href: "#" },
-      { label: "Palma Sola, FL", href: "#" },
+      { label: "Palmetto, FL", href: "/areas/palmetto" },
+      { label: "Memphis, FL", href: "/areas/memphis" },
+      { label: "Bradenton, FL", href: "/areas/bradenton" },
+      { label: "Ellenton, FL", href: "/areas/ellenton" },
+      { label: "Palma Sola, FL", href: "/areas/palma-sola" },
     ],
   },
   {
     label: "Contact",
     children: [
-      { label: "About Us", href: "#about" },
-      { label: "Get In Contact", href: "#contact" },
+      { label: "About Us", href: "/#about" },
+      { label: "Get In Contact", href: "/#contact" },
       { label: "Review Us", href: "/review" },
     ],
   },
