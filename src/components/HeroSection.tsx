@@ -109,7 +109,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             id="quote-form"
-            className="w-full lg:w-[440px] lg:ml-auto"
+            className="w-full lg:w-[520px] lg:ml-auto"
           >
             <QuoteForm style={{ backgroundColor: "rgba(15, 23, 42, 0.6)" }} />
           </motion.div>
