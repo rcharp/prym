@@ -1,30 +1,17 @@
-import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import { Phone, MapPin, Clock } from "lucide-react";
-import { useQuoteModal } from "@/components/QuoteModal";
+import QuoteForm from "@/components/QuoteForm";
 import heroServices from "@/assets/hero-services.jpg";
 import useSEO from "@/hooks/useSEO";
 
 const ContactPage = () => {
-  const { openQuoteModal } = useQuoteModal();
-
   useSEO({
     title: "Contact Emmons Air | Get a Free Quote | (941) 258-4006",
     description: "Contact Emmons Air for HVAC service in Palmetto & Bradenton. Get a free quote, schedule service, or call (941) 258-4006. Open 24/7.",
     canonical: "https://emmonsair.com/contact",
   });
-
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://api.juniesystems.com/js/form_embed.js";
-    script.async = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
 
   return (
     <div className="min-h-screen bg-background">
@@ -124,26 +111,8 @@ const ContactPage = () => {
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="rounded-2xl overflow-hidden shadow-2xl border-2"
-                style={{ backgroundColor: "#0f172a", borderColor: "#3b82f6" }}
               >
-                <iframe
-                  src="https://api.juniesystems.com/widget/form/P2loR2dW6LgPnGhKf4Px"
-                  style={{ width: "100%", height: "883px", border: "none", borderRadius: "10px" }}
-                  id="inline-contact-P2loR2dW6LgPnGhKf4Px"
-                  data-layout="{'id':'INLINE'}"
-                  data-trigger-type="alwaysShow"
-                  data-trigger-value=""
-                  data-activation-type="alwaysActivated"
-                  data-activation-value=""
-                  data-deactivation-type="neverDeactivate"
-                  data-deactivation-value=""
-                  data-form-name="Get A Quote Form"
-                  data-height="883"
-                  data-layout-iframe-id="inline-contact-P2loR2dW6LgPnGhKf4Px"
-                  data-form-id="P2loR2dW6LgPnGhKf4Px"
-                  title="Get A Quote Form"
-                />
+                <QuoteForm />
               </motion.div>
             </div>
           </div>
