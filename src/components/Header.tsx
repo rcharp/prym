@@ -122,7 +122,7 @@ const Header = () => {
           {/* Mobile Toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden p-2 text-primary-foreground"
+            className="lg:hidden p-2 text-primary-foreground ml-auto"
           >
             {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
