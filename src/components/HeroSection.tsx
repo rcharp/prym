@@ -1,7 +1,7 @@
-import { useEffect } from "react";
 import { Star } from "lucide-react";
 import { motion } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
+import QuoteForm from "./QuoteForm";
 import heroBg from "@/assets/hero-bg.png";
 import reviewerImg1 from "@/assets/reviewers/reviewer-1.jpg";
 import reviewerImg2 from "@/assets/reviewers/reviewer-2.jpg";
@@ -10,16 +10,6 @@ import reviewerImg4 from "@/assets/reviewers/reviewer-4.jpg";
 
 const HeroSection = () => {
   const { openQuoteModal } = useQuoteModal();
-
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://api.juniesystems.com/js/form_embed.js";
-    script.async = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
 
   return (
     <section className="relative overflow-hidden max-w-[100vw]">
@@ -119,28 +109,9 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             id="quote-form"
-            className="rounded-2xl overflow-hidden w-full lg:w-[440px] lg:ml-auto"
-            style={{ minHeight: "883px" }}
+            className="w-full lg:w-[440px] lg:ml-auto"
           >
-            <iframe
-              src="https://api.juniesystems.com/widget/form/P2loR2dW6LgPnGhKf4Px"
-              className="quote-iframe-fade"
-              style={{ width: "100%", height: "883px", border: "none", borderRadius: "10px", display: "block" }}
-              id="inline-P2loR2dW6LgPnGhKf4Px"
-              data-layout="{'id':'INLINE'}"
-              data-trigger-type="alwaysShow"
-              data-trigger-value=""
-              data-activation-type="alwaysActivated"
-              data-activation-value=""
-              data-deactivation-type="neverDeactivate"
-              data-deactivation-value=""
-              data-form-name="Get A Quote Form"
-              data-height="883"
-              data-layout-iframe-id="inline-P2loR2dW6LgPnGhKf4Px"
-              data-form-id="P2loR2dW6LgPnGhKf4Px"
-              title="Get A Quote Form"
-              onLoad={(e) => { (e.target as HTMLIFrameElement).classList.add('loaded'); }}
-            />
+            <QuoteForm />
           </motion.div>
         </div>
       </div>

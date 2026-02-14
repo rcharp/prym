@@ -1,6 +1,7 @@
 import { createContext, useContext, useState, useCallback, useEffect, ReactNode } from "react";
 import { X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import QuoteForm from "./QuoteForm";
 
 interface QuoteModalContextType {
   openQuoteModal: () => void;
@@ -34,20 +35,15 @@ export const QuoteModalProvider = ({ children }: { children: ReactNode }) => {
     <QuoteModalContext.Provider value={{ openQuoteModal, closeQuoteModal }}>
       {children}
 
-      {/* 
-        Iframe is ALWAYS mounted to prevent white flash.
-        When closed: positioned off-screen so iframe stays loaded but can't intercept events.
-        When open: positioned on-screen as a modal overlay.
-      */}
       <div
         className="fixed z-[100]"
         style={{
-          top: isOpen ? 0 : 0,
+          top: 0,
           left: isOpen ? 0 : "-200vw",
           right: isOpen ? 0 : "auto",
           bottom: isOpen ? 0 : "auto",
-          width: isOpen ? "100%" : "100%",
-          height: isOpen ? "100%" : "100%",
+          width: "100%",
+          height: "100%",
         }}
       >
         <AnimatePresence>
@@ -69,10 +65,9 @@ export const QuoteModalProvider = ({ children }: { children: ReactNode }) => {
           style={{ pointerEvents: isOpen ? "auto" : "none" }}
         >
           <div
-            className="relative rounded-2xl border-2 border-secondary shadow-2xl w-full max-w-lg max-h-[90vh] overflow-hidden"
+            className="relative w-full max-w-lg max-h-[90vh] overflow-hidden"
             onClick={(e) => e.stopPropagation()}
             style={{
-              backgroundColor: "#0f172a",
               transform: isOpen ? "scale(1)" : "scale(0.95)",
               opacity: isOpen ? 1 : 0,
               transition: "transform 0.25s ease, opacity 0.25s ease",
@@ -86,24 +81,8 @@ export const QuoteModalProvider = ({ children }: { children: ReactNode }) => {
                 <X className="w-5 h-5 text-foreground" />
               </button>
             )}
-            <div className="overflow-y-auto max-h-[90vh]" style={{ backgroundColor: "#0f172a" }}>
-              <iframe
-                src="https://api.juniesystems.com/widget/form/P2loR2dW6LgPnGhKf4Px"
-                style={{ width: "100%", height: "883px", border: "none", borderRadius: "10px" }}
-                id="modal-P2loR2dW6LgPnGhKf4Px"
-                data-layout="{'id':'INLINE'}"
-                data-trigger-type="alwaysShow"
-                data-trigger-value=""
-                data-activation-type="alwaysActivated"
-                data-activation-value=""
-                data-deactivation-type="neverDeactivate"
-                data-deactivation-value=""
-                data-form-name="Get A Quote Form"
-                data-height="883"
-                data-layout-iframe-id="modal-P2loR2dW6LgPnGhKf4Px"
-                data-form-id="P2loR2dW6LgPnGhKf4Px"
-                title="Get A Quote Form"
-              />
+            <div className="overflow-y-auto max-h-[90vh]">
+              <QuoteForm />
             </div>
           </div>
         </div>
