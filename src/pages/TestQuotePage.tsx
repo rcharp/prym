@@ -148,12 +148,14 @@ const TestQuotePage = () => {
                 <Input
                   id="phone"
                   type="tel"
+                  inputMode="numeric"
                   placeholder="(888) 123-4567"
-                  maxLength={20}
+                  maxLength={10}
                   value={formData.phone}
-                  onChange={(e) =>
-                    setFormData({ ...formData, phone: e.target.value })
-                  }
+                  onChange={(e) => {
+                    const digits = e.target.value.replace(/\D/g, "").slice(0, 10);
+                    setFormData({ ...formData, phone: digits });
+                  }}
                   className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
                 />
               </div>
