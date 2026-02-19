@@ -4,7 +4,7 @@ import useSEO from "@/hooks/useSEO";
 const ACMaintenancePage = () => {
   useSEO({
     title: "AC Maintenance Palmetto FL | Tune-Ups | Emmons Air",
-    description: "Preventive AC maintenance in Palmetto & Bradenton. Keep your system efficient with regular tune-ups. Family owned, licensed & insured. Call 1-844-520-1313.",
+    description: "Preventive AC maintenance in Palmetto & Bradenton. Keep your system efficient with regular tune-ups. Family owned, licensed & insured. Call (941) 773-4642.",
     canonical: "https://emmonsair.com/services/ac-maintenance",
   });
 
