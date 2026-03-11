@@ -1,6 +1,4 @@
-import { Phone, MapPin, Clock, Facebook, Award } from "lucide-react";
-import logo from "@/assets/logo.png";
-import icon from "@/assets/icon.png";
+import { Phone, MapPin, Clock, Facebook } from "lucide-react";
 
 const Footer = () => (
   <footer className="bg-foreground text-card py-16">
@@ -8,7 +6,13 @@ const Footer = () => (
       <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
         {/* Brand */}
         <div className="space-y-4">
-          <img src={logo} alt="CoolBreeze HVAC" className="w-full max-w-[300px] h-auto mx-auto md:mx-0" />
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center">
+              <span className="text-secondary-foreground font-bold text-lg">CB</span>
+            </div>
+            <span className="font-heading text-xl font-bold text-card">CoolBreeze HVAC</span>
+          </div>
+          <p className="text-sm opacity-60">Your trusted local HVAC experts.</p>
         </div>
 
         {/* Business */}
@@ -64,10 +68,6 @@ const Footer = () => (
           <div className="flex items-start gap-3">
             <Facebook className="w-4 h-4 mt-0.5 opacity-60" />
             <a href="#" className="text-base opacity-80 hover:opacity-100 transition-opacity">Facebook</a>
-          </div>
-          <div className="flex items-start gap-3">
-            <Award className="w-4 h-4 mt-0.5 opacity-60" />
-            <span className="text-base opacity-80">License # XXXXXXX</span>
           </div>
         </div>
       </div>

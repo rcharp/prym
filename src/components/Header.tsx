@@ -2,8 +2,6 @@ import { useState } from "react";
 import { Phone, Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
-import logo from "@/assets/logo.png";
-import icon from "@/assets/icon.png";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -48,8 +46,10 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between py-4 px-4 lg:px-8 max-w-[100vw]">
         {/* Logo */}
         <a href="/" className="flex items-center gap-3 shrink-0 mr-2 lg:mr-4">
-          <img src={icon} alt="CoolBreeze HVAC icon" className="w-8 h-8 sm:w-10 sm:h-10 lg:hidden" width={40} height={40} />
-          <img src={logo} alt="CoolBreeze HVAC" className="hidden lg:block" style={{ width: "351px", height: "auto" }} />
+          <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-lg bg-secondary flex items-center justify-center">
+            <span className="text-secondary-foreground font-bold text-sm sm:text-base lg:text-lg">CB</span>
+          </div>
+          <span className="hidden lg:block font-heading text-xl font-bold text-primary-foreground">CoolBreeze HVAC</span>
         </a>
 
         {/* Desktop Nav */}
