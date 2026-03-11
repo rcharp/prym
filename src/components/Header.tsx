@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Phone, Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
-
+import logoPlaceholder from "@/assets/logo-placeholder.png";
 const navLinks = [
   { label: "Home", href: "/" },
   {
