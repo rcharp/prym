@@ -91,7 +91,7 @@ const hvacTips: HVACTip[] = [
       "Use the $5,000 rule: Multiply the age of your system by the repair cost. If the result is more than $5,000, it's typically better to replace. For example, a 12-year-old system needing a $500 repair = $6,000, suggesting replacement is the smarter move.",
       "R-22 refrigerant (Freon) has been phased out and is now extremely expensive. If your system uses R-22, a replacement with a modern R-410A system will save you significantly on future repairs and refrigerant costs.",
       "New AC installations also come with manufacturer warranties (typically 5-10 years), improved humidity control, quieter operation, and smart thermostat compatibility. Many homeowners see their investment pay for itself within 3-5 years through energy savings alone.",
-      "At Emmons Air, we provide honest assessments — we'll never push a replacement when a repair will do. We help homeowners across Palmetto, Bradenton, Ellenton, and Manatee County make the right choice for their budget and comfort.",
+      "We provide honest assessments — we'll never push a replacement when a repair will do. We help homeowners make the right choice for their budget and comfort.",
     ],
     relatedServices: [
       { label: "AC Installation", href: "/services/ac-installation" },
