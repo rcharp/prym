@@ -212,7 +212,7 @@ const hvacTips: HVACTip[] = [
       "Listen for a hissing or bubbling sound near your indoor or outdoor unit. Refrigerant escaping through a crack or hole in the copper lines often produces these distinctive noises.",
       "Higher-than-normal energy bills combined with reduced cooling performance strongly suggest a refrigerant issue. Your system runs longer and harder trying to reach the set temperature.",
       "Never attempt to recharge refrigerant yourself. It requires EPA certification, specialized equipment, and the leak must be found and repaired first, or you'll just lose the new refrigerant too.",
-      "Emmons Air's certified technicians use electronic leak detectors and nitrogen pressure tests to locate leaks accurately. We serve Bradenton, Ellenton, Palma Sola, and throughout Manatee County.",
+      "Our certified technicians use electronic leak detectors and nitrogen pressure tests to locate leaks accurately. We serve communities throughout our service area.",
     ],
     relatedServices: [
       { label: "AC Repair", href: "/services/ac-repair" },
