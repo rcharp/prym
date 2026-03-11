@@ -432,7 +432,7 @@ const hvacTips: HVACTip[] = [
       "For room additions, your existing AC may or may not handle the extra load. Options include upgrading your system, extending ductwork, or installing a ductless mini-split.",
       "Don't overlook ventilation. An energy recovery ventilator (ERV) brings in fresh air while capturing energy from conditioned indoor air — ideal for Florida.",
       "Placement of your outdoor condenser matters. Choose a shaded location with good airflow clearance. Proper placement improves efficiency by 5-10%.",
-      "Emmons Air works with builders throughout Palmetto, Memphis, Ellenton, and Manatee County on new construction HVAC installations.",
+      "We work with builders throughout our service area on new construction HVAC installations.",
     ],
     relatedServices: [
       { label: "AC Installation", href: "/services/ac-installation" },
