@@ -308,7 +308,7 @@ const hvacTips: HVACTip[] = [
       "Upgrading from a 10 SEER system to a 16 SEER can reduce cooling costs by nearly 40%. In Florida, where AC accounts for 50-60% of your electric bill, that's substantial.",
       "However, the highest SEER isn't always the best choice. A 25 SEER system costs significantly more than a 16 SEER, and incremental savings may not justify the price difference.",
       "For most Florida homes, 16-20 SEER offers the best balance of cost and savings. Our technicians can calculate your expected payback period.",
-      "Emmons Air installs high-efficiency systems from trusted brands. We help homeowners in Palmetto, Bradenton, Ellenton, and Palma Sola find the right SEER rating for their needs.",
+      "We install high-efficiency systems from trusted brands. We help homeowners find the right SEER rating for their needs.",
     ],
     relatedServices: [
       { label: "AC Installation", href: "/services/ac-installation" },
