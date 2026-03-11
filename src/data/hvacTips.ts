@@ -115,7 +115,7 @@ const hvacTips: HVACTip[] = [
       "Control humidity. Florida's humidity creates ideal conditions for mold and mildew growth. Your AC system naturally dehumidifies, but if you notice condensation on windows or a musty smell, you may need additional dehumidification or a maintenance check.",
       "Consider UV germicidal lights. Installed in your air handler, these lights kill bacteria, viruses, and mold spores as air passes through your system. It's an increasingly popular upgrade for health-conscious homeowners.",
       "Regular AC maintenance also plays a critical role in air quality. Dirty coils, clogged drain lines, and neglected systems can become breeding grounds for mold and bacteria. Schedule annual maintenance to keep your system — and your air — clean.",
-      "Emmons Air provides duct cleaning, air quality assessments, and maintenance services throughout Palmetto, Memphis, Palma Sola, and all of Manatee County. Breathe easier — call us today.",
+      "We provide duct cleaning, air quality assessments, and maintenance services throughout our service area. Breathe easier — call us today.",
     ],
     relatedServices: [
       { label: "Duct Cleaning", href: "/services/duct-cleaning" },
