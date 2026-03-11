@@ -160,7 +160,7 @@ const ServiceAreaPage = ({ city, tagline, intro }: ServiceAreaPageProps) => {
               Need HVAC Service in {city}?
             </h2>
             <p className="text-primary-foreground/70 mb-8 max-w-xl mx-auto">
-              <a href="/contact" className="text-secondary hover:underline">Contact Emmons Air</a> today. We're your trusted local HVAC experts serving {city} and surrounding areas.
+              <a href="/contact" className="text-secondary hover:underline">Contact us</a> today. We're your trusted local HVAC experts serving {city} and surrounding areas.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
