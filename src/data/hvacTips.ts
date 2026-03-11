@@ -68,7 +68,7 @@ const hvacTips: HVACTip[] = [
       "During a professional maintenance visit, our technicians inspect and clean key components: evaporator and condenser coils, refrigerant levels, electrical connections, thermostat calibration, drain lines, and moving parts. We catch small problems before they become expensive emergencies.",
       "The average AC system lasts 10-15 years. With regular maintenance, many systems exceed 15-20 years of reliable performance. Without it, you might be looking at a full replacement in as little as 7-8 years.",
       "Most manufacturer warranties also require proof of annual maintenance. Skipping it could void your coverage when you need it most.",
-      "Emmons Air offers comprehensive maintenance services throughout Palmetto, Bradenton, Palma Sola, and surrounding areas. Schedule your tune-up before the summer rush and enjoy peace of mind all season long.",
+      "We offer comprehensive maintenance services throughout our service area. Schedule your tune-up before the summer rush and enjoy peace of mind all season long.",
     ],
     relatedServices: [
       { label: "AC Maintenance", href: "/services/ac-maintenance" },
