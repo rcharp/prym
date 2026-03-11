@@ -63,10 +63,6 @@ const Footer = () => (
             <Facebook className="w-4 h-4 mt-0.5 opacity-60" />
             <a href="#" className="text-base opacity-80 hover:opacity-100 transition-opacity">Facebook</a>
           </div>
-          <div className="flex items-start gap-3">
-            <Award className="w-4 h-4 mt-0.5 opacity-60" />
-            <span className="text-base opacity-80">License # XXXXXXX</span>
-          </div>
         </div>
       </div>
 
