@@ -45,7 +45,7 @@ const hvacTips: HVACTip[] = [
       "3. Unusual odors: A musty smell could mean mold in your ductwork. A burning smell could indicate an electrical issue. Either way, shut off the system and call for AC repair right away.",
       "4. Frequent cycling: If your AC is turning on and off more often than usual (short cycling), it could be oversized for your space, have a faulty thermostat, or be low on refrigerant. This wastes energy and puts extra wear on your system.",
       "5. Higher energy bills: A sudden spike in your electric bill without a change in usage is a clear sign your system is working harder than it should. A professional diagnosis can identify the root cause and save you money long-term.",
-      "If you notice any of these signs, don't wait. Contact Emmons Air for a fast, honest diagnosis. We serve Palmetto, Memphis, Ellenton, and the entire Manatee County area with same-day emergency service.",
+      "If you notice any of these signs, don't wait. Contact us for a fast, honest diagnosis. We offer same-day emergency service throughout our service area.",
     ],
     relatedServices: [
       { label: "AC Repair", href: "/services/ac-repair" },
