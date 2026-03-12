@@ -5,7 +5,6 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
-import icon from "@/assets/icon.png";
 
 const WEBHOOK_URL = "https://example.com/webhook-placeholder";
 
