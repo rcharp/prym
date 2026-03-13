@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: "What areas do you serve?",
-    a: "We proudly serve Tampa, Sarasota, Orlando, Bradenton, Clearwater, St. Petersburg, Lakeland, Ellenton, Parrish, Palmetto, Lakewood Ranch, Zephyrhills, Dade City, and New Port Richey. We cover Hillsborough, Manatee, Pasco, Pinellas, and Sarasota Counties.",
+    a: "We proudly serve Hillsborough, Pinellas, and Manatee Counties — including Tampa, St. Petersburg, Clearwater, Bradenton, Palmetto, and Ellenton.",
   },
   {
     q: "Are you licensed and insured?",
