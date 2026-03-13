@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "Do you work with property managers and landlords?",
-    a: "Absolutely! We work with homeowners, property owners, property managers, and business owners. We specialize in rental property turnovers, vacant property maintenance, and post-eviction cleanups — making us a go-to partner for property management companies.",
+    a: "Absolutely! We work with homeowners, property owners, property managers, realtors, and business owners. We specialize in make-ready cleans, post-eviction cleanups, HomeWatch monitoring, and debris removal — making us a go-to partner for property management companies.",
   },
   {
     q: "How quickly can you start a project?",
