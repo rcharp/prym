@@ -1,12 +1,12 @@
-import { Shield, Clock, Phone, Star, ThumbsUp } from "lucide-react";
+import { Shield, Clock, Users, Star, ThumbsUp } from "lucide-react";
 import { motion } from "framer-motion";
 
 const badges = [
-  { icon: Shield, label: "Licensed & Insured" },
-  { icon: Clock, label: "12+ Years of Experience" },
-  { icon: Phone, label: "24/7 Availability" },
-  { icon: Star, label: "5-Star Google Rating" },
-  { icon: ThumbsUp, label: "Satisfaction Guaranteed" },
+  { icon: Shield, label: "Fully Insured" },
+  { icon: Users, label: "Family Owned & Operated" },
+  { icon: Star, label: "Comprehensive Property Care" },
+  { icon: ThumbsUp, label: "Value-Focused Pricing" },
+  { icon: Clock, label: "Serving Tampa Bay & Beyond" },
 ];
 
 const TrustBadges = () => (

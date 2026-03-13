@@ -4,50 +4,62 @@ import heroRepair from "@/assets/service-repair-stock.jpg";
 import heroInstall from "@/assets/service-install-stock.jpg";
 import serviceMaintenance from "@/assets/service-maintenance-stock.jpg";
 import serviceDuct from "@/assets/service-duct-stock.jpg";
+import heroServices from "@/assets/hero-services.jpg";
 
 const services = [
   {
     image: heroRepair,
-    title: "AC Repair",
-    href: "/services/ac-repair",
+    title: "Yard & Landscape Maintenance",
+    href: "/services/yard-maintenance",
     features: [
-      "Fast response for quick repairs",
-      "Expert diagnosis of any issue",
-      "Upfront pricing—no surprises",
-      "Same-day emergency service available",
+      "Expert weed pulling & debris removal",
+      "Tree & hedge trimming",
+      "Mulch installation & lawn care",
+      "Complete yard cleanup services",
     ],
   },
   {
     image: heroInstall,
-    title: "AC Installation",
-    href: "/services/ac-installation",
+    title: "Post Eviction Services",
+    href: "/services/post-eviction",
     features: [
-      "Residential AC Installation",
-      "Energy-efficient systems to reduce costs",
-      "Proper sizing for optimal performance",
-      "Replacements and Upgrades",
+      "Full property cleanout & junk removal",
+      "Deep cleaning & sanitation",
+      "Damage assessment & documentation",
+      "Quick turnaround for re-listing",
     ],
   },
   {
     image: serviceMaintenance,
-    title: "AC Maintenance",
-    href: "/services/ac-maintenance",
+    title: "Vacant Property Maintenance",
+    href: "/services/vacant-property",
     features: [
-      "Prevent costly breakdowns",
-      "Lower your utility bills",
-      "Extend system lifespan",
-      "Priority scheduling available",
+      "Regular property inspections",
+      "Yard upkeep & curb appeal",
+      "Junk & debris removal",
+      "Weatherization & securing",
     ],
   },
   {
     image: serviceDuct,
-    title: "Duct Cleaning",
-    href: "/services/duct-cleaning",
+    title: "Shrub & Tree Services",
+    href: "/services/tree-services",
     features: [
-      "Remove dust, allergens, and contaminants",
-      "Improve airflow and efficiency",
-      "Reduce allergy and respiratory issues",
-      "Complete vent and ductwork cleaning",
+      "Professional shrub trimming & shaping",
+      "Tree pruning & limb removal",
+      "Stump grinding & removal",
+      "Overgrowth clearing",
+    ],
+  },
+  {
+    image: heroServices,
+    title: "Rental Cleans & Make Ready",
+    href: "/services/rental-cleans",
+    features: [
+      "Move-out deep cleaning",
+      "Carpet & floor restoration",
+      "Painting & touch-ups",
+      "Property-ready-for-tenant preparation",
     ],
   },
 ];
@@ -63,10 +75,10 @@ const ServicesSection = () => (
       >
         <span className="text-base font-semibold text-primary uppercase tracking-wider">What We Do</span>
         <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3">
-          Homeowners in Palmetto, Bradenton and Sarasota Trust Us
+          Homeowners Across Central Florida Trust PricedRight
         </h2>
         <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-          Complete HVAC solutions for your home comfort needs.
+          Complete property preservation and maintenance solutions for homeowners, property managers, and business owners.
         </p>
       </motion.div>
 
@@ -79,7 +91,7 @@ const ServicesSection = () => (
             viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
             className="rounded-2xl overflow-hidden card-elevated border border-secondary/30 group"
-            style={{ backgroundColor: "#0f172a" }}
+            style={{ backgroundColor: "hsl(148 40% 12%)" }}
           >
             <a href={service.href} className="block aspect-[16/9] overflow-hidden cursor-pointer">
               <img

@@ -4,23 +4,23 @@ import { useState, useCallback, useEffect } from "react";
 
 const testimonials = [
   {
-    text: "The owner came out to our house and diagnosed the issue quickly. He was professional, honest, and had our AC running again the same day. We won't call anyone else for our HVAC needs.",
-    name: "Sarah M.",
+    text: "PricedRight Yards & More did an amazing job cleaning up our property after a tenant moved out. They were professional, thorough, and had the place looking brand new in no time. Highly recommend!",
+    name: "Maria L.",
     rating: 5,
   },
   {
-    text: "Excellent service from start to finish. They discovered our fan motor was failing and had replacement parts the same day. Very thorough and knowledgeable. Highly recommend!",
-    name: "James R.",
+    text: "We've been using PricedRight for our vacant property maintenance and they are always reliable and do excellent work. The yard always looks great and they communicate well. Best property service company we've used.",
+    name: "David K.",
     rating: 5,
   },
   {
-    text: "I've had many different HVAC companies over the years, and this is by far the best. The team exhibits the highest level of customer service I've ever experienced. You'd be making a great decision to give them a call.",
-    name: "Patricia K.",
+    text: "Kay and the team came out and completely transformed our overgrown yard. Shrubs trimmed, debris cleared, mulch laid down — it looks like a whole new property. And the price was very fair!",
+    name: "Jennifer W.",
     rating: 5,
   },
   {
-    text: "A friend recommended them when my AC went out. They were quick to come out, diagnose the problem, and get it fixed. Very professional and accommodating. Would highly recommend to anyone!",
-    name: "Robert P.",
+    text: "As a property manager with multiple rentals, finding reliable service is tough. PricedRight handles all our make-ready cleans and yard work. They treat every property like it's their own. Five stars all the way!",
+    name: "Robert T.",
     rating: 5,
   },
 ];
