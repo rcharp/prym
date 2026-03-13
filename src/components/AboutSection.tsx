@@ -54,12 +54,17 @@ const AboutSection = () => (
           viewport={{ once: true }}
           className="relative"
         >
-          <div className="rounded-2xl overflow-hidden shadow-2xl bg-muted flex items-center justify-center" style={{ height: 450 }}>
-            <div className="text-center text-muted-foreground p-8">
-              <MapPin className="w-16 h-16 mx-auto mb-4 opacity-30" />
-              <p className="text-lg font-semibold">Your Google Map Here</p>
-              <p className="text-sm mt-2">Replace with your business location embed</p>
-            </div>
+          <div className="rounded-2xl overflow-hidden shadow-2xl" style={{ height: 450 }}>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.5!2d-82.5729!3d27.5214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c3400e1fcb8ea5%3A0x0!2s2304+4th+Ave+E%2C+Palmetto%2C+FL+34221!5e0!3m2!1sen!2sus!4v1710000000000"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="PricedRight Yards & More Location"
+            />
           </div>
         </motion.div>
       </div>
