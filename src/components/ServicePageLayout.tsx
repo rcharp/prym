@@ -14,11 +14,11 @@ interface ServicePageProps {
 }
 
 const allServices = [
-  { label: "Yard & Landscape Maintenance", href: "/services/yard-maintenance" },
+  { label: "Lawn & Landscape Maintenance", href: "/services/lawn-landscape" },
+  { label: "Debris & Junk Removal", href: "/services/debris-removal" },
+  { label: "Sales & Rental Make-Ready Cleans", href: "/services/make-ready" },
   { label: "Post Eviction Services", href: "/services/post-eviction" },
-  { label: "Vacant Property Maintenance", href: "/services/vacant-property" },
-  { label: "Shrub & Tree Services", href: "/services/tree-services" },
-  { label: "Rental Cleans & Make Ready", href: "/services/rental-cleans" },
+  { label: "HomeWatch Services", href: "/services/home-watch" },
 ];
 
 const allAreas = [

@@ -1,43 +1,43 @@
 import ServicePage from "@/components/ServicePageLayout";
 import useSEO from "@/hooks/useSEO";
 
-const RentalCleansPage = () => {
+const MakeReadyPage = () => {
   useSEO({
-    title: "Rental Cleans & Make Ready | PricedRight Yards & More",
-    description: "Professional rental property cleaning and make ready services. Move-out deep cleaning, painting, repairs. Call (813) 860-2202.",
-    canonical: "https://example.com/services/rental-cleans",
+    title: "Sales & Rental Make-Ready Cleans | PricedRight Yards & More",
+    description: "Professional make-ready cleaning for sales and rentals. Deep cleaning, painting, carpet restoration, curb appeal. Call (813) 668-3219.",
+    canonical: "https://example.com/services/make-ready",
   });
 
   return (
     <ServicePage
-      title="Rental Cleans & Make Ready"
-      subtitle="Get Units Rent-Ready Fast"
-      intro="Minimize vacancy time with our professional make-ready services. From deep cleaning to painting and minor repairs, we get your rental property ready for the next tenant quickly and affordably."
+      title="Sales & Rental Make-Ready Cleans"
+      subtitle="Get Properties Market-Ready Fast"
+      intro="Whether you're listing a home for sale or turning over a rental, our make-ready services handle everything — deep cleaning, painting, carpet restoration, and curb appeal — so the property shows at its best."
       sections={[
         {
-          heading: "Our Rental Clean & Make Ready Services",
+          heading: "Our Make-Ready Services",
           content: [
-            "Move-out deep cleaning — every surface cleaned to like-new condition",
-            "Carpet cleaning and restoration — remove stains and odors",
-            "Painting and touch-ups — fresh walls for a fresh start",
-            "Floor cleaning and polishing — tile, hardwood, and vinyl",
+            "Deep cleaning — every surface cleaned to like-new condition",
+            "Carpet cleaning and floor restoration — remove stains and odors",
+            "Painting and cosmetic touch-ups — fresh walls for a fresh start",
             "Appliance cleaning — ovens, refrigerators, dishwashers",
             "Exterior cleanup — yard work, pressure washing, curb appeal",
+            "Coordinated turnover — cleaning, repairs, and yard work in one visit",
           ],
         },
         {
-          heading: "For Property Managers & Landlords",
-          content: "We understand that every day of vacancy is lost revenue. Our streamlined make-ready process handles everything in a single coordinated effort — cleaning, repairs, and yard work — so your property is rent-ready in days, not weeks. We work with property managers across Central Florida and can handle multiple properties simultaneously.",
+          heading: "For Realtors, Property Managers & Landlords",
+          content: "Every day a property sits vacant or unsold is lost revenue. Our streamlined make-ready process handles everything in a single coordinated effort so your property is market-ready in days, not weeks. We work with realtors, property managers, and landlords across Central Florida.",
         },
       ]}
       benefits={{
         heading: "Benefits of Professional Make-Ready Services",
         items: [
-          "Minimize vacancy time — faster turnovers mean more rental income",
-          "Attract quality tenants — clean, well-maintained properties rent faster",
-          "One vendor for everything — cleaning, repairs, and yard work",
+          "Minimize vacancy time — faster turnovers mean more income",
+          "Attract quality buyers and tenants — clean properties sell and rent faster",
+          "One vendor for everything — cleaning, cosmetic repairs, and yard work",
           "Consistent quality — same high standards on every property",
-          "Documentation — before and after photos provided",
+          "Before and after documentation — photos provided",
           "Competitive pricing — services priced right for your budget",
         ],
       }}
@@ -45,4 +45,4 @@ const RentalCleansPage = () => {
   );
 };
 
-export default RentalCleansPage;
+export default MakeReadyPage;

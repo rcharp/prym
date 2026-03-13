@@ -13,12 +13,30 @@ interface ServiceAreaPageProps {
 
 const services = [
   {
-    title: "Yard & Landscape Maintenance",
-    href: "/services/yard-maintenance",
+    title: "Lawn & Landscape Maintenance",
+    href: "/services/lawn-landscape",
     items: [
-      "Weed pulling, trimming, mulching, and debris removal",
-      "Lawn care and landscape cleanup",
-      "Regular maintenance schedules available",
+      "Mowing, edging, trimming, and seasonal lawn care",
+      "Hedge and shrub maintenance",
+      "Mulch installation and flower bed upkeep",
+    ],
+  },
+  {
+    title: "Debris & Junk Removal",
+    href: "/services/debris-removal",
+    items: [
+      "Yard, roof, garage, and shed cleanouts",
+      "Interior junk removal and hauling",
+      "Storm debris and bulk waste disposal",
+    ],
+  },
+  {
+    title: "Sales & Rental Make-Ready Cleans",
+    href: "/services/make-ready",
+    items: [
+      "Deep cleaning for sale or lease turnovers",
+      "Painting, carpet cleaning, and cosmetic repairs",
+      "Curb appeal and exterior preparation",
     ],
   },
   {
@@ -31,30 +49,12 @@ const services = [
     ],
   },
   {
-    title: "Vacant Property Maintenance",
-    href: "/services/vacant-property",
+    title: "HomeWatch Services",
+    href: "/services/home-watch",
     items: [
-      "Regular property inspections and upkeep",
-      "Yard maintenance and curb appeal preservation",
-      "Debris removal and weatherization",
-    ],
-  },
-  {
-    title: "Shrub & Tree Services",
-    href: "/services/tree-services",
-    items: [
-      "Professional shrub trimming and shaping",
-      "Tree pruning, limb removal, and stump grinding",
-      "Overgrowth clearing and removal",
-    ],
-  },
-  {
-    title: "Rental Cleans & Make Ready",
-    href: "/services/rental-cleans",
-    items: [
-      "Move-out deep cleaning and carpet restoration",
-      "Painting, touch-ups, and minor repairs",
-      "Property-ready-for-tenant preparation",
+      "Regular property inspections and monitoring",
+      "Vacancy reporting and maintenance coordination",
+      "Peace of mind for absentee owners",
     ],
   },
 ];

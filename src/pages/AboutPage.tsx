@@ -83,11 +83,11 @@ const AboutPage = () => {
                 <p className="text-muted-foreground mb-6">We offer comprehensive property services across Central Florida.</p>
                 <ul className="space-y-3">
                   {[
-                    { label: "Yard & Landscape Maintenance", href: "/services/yard-maintenance" },
+                    { label: "Lawn & Landscape Maintenance", href: "/services/lawn-landscape" },
+                    { label: "Debris & Junk Removal", href: "/services/debris-removal" },
+                    { label: "Sales & Rental Make-Ready Cleans", href: "/services/make-ready" },
                     { label: "Post Eviction Services", href: "/services/post-eviction" },
-                    { label: "Vacant Property Maintenance", href: "/services/vacant-property" },
-                    { label: "Shrub & Tree Services", href: "/services/tree-services" },
-                    { label: "Rental Cleans & Make Ready", href: "/services/rental-cleans" },
+                    { label: "HomeWatch Services", href: "/services/home-watch" },
                   ].map((s) => (
                     <li key={s.href}><a href={s.href} className="flex items-center gap-2 text-muted-foreground hover:text-secondary transition-colors"><ArrowRight className="w-4 h-4 text-secondary shrink-0" />{s.label}</a></li>
                   ))}

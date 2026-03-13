@@ -1,48 +1,48 @@
 import ServicePage from "@/components/ServicePageLayout";
 import useSEO from "@/hooks/useSEO";
 
-const VacantPropertyPage = () => {
+const DebrisRemovalPage = () => {
   useSEO({
-    title: "Vacant Property Maintenance | PricedRight Yards & More",
-    description: "Professional vacant property cleanup and maintenance. Regular inspections, yard upkeep, debris removal. Fully insured. Call (813) 860-2202.",
-    canonical: "https://example.com/services/vacant-property",
+    title: "Debris & Junk Removal | PricedRight Yards & More",
+    description: "Professional junk and debris removal from lawns, roofs, garages, sheds, and interiors. Storm cleanup. Fully insured. Call (813) 668-3219.",
+    canonical: "https://example.com/services/debris-removal",
   });
 
   return (
     <ServicePage
-      title="Vacant Property Maintenance"
-      subtitle="Protect Your Investment"
-      intro="Junk and tree/yard debris removal for vacant properties. We keep your unoccupied property maintained, secure, and in compliance with local codes throughout Central Florida."
+      title="Debris & Junk Removal"
+      subtitle="Clear It Out. Haul It Away."
+      intro="From yard waste and storm debris to full garage, shed, and interior cleanouts — we remove the junk so you don't have to. Fast, affordable, and fully insured service throughout Central Florida."
       sections={[
         {
-          heading: "Our Vacant Property Services",
+          heading: "Our Debris & Junk Removal Services",
           content: [
-            "Regular property inspections — monitor condition and identify issues early",
-            "Yard maintenance and upkeep — prevent overgrowth and code violations",
-            "Junk and debris removal — keep the property clean and presentable",
-            "Curb appeal preservation — maintain property value while vacant",
-            "Storm preparation and cleanup — protect against Florida weather",
-            "Board-up and securing services — prevent unauthorized access",
+            "Lawn and yard debris removal — branches, leaves, and bulk waste",
+            "Roof debris cleanup — after storms or renovation projects",
+            "Garage and shed cleanouts — reclaim your space",
+            "Interior junk removal — furniture, appliances, and household items",
+            "Storm damage cleanup — fast response when you need it most",
+            "Responsible disposal and recycling — eco-friendly hauling",
           ],
         },
         {
-          heading: "The Cost of Neglecting Vacant Properties",
-          content: "Unattended vacant properties in Florida deteriorate rapidly. Overgrown yards attract code enforcement fines, pests move in, and weather damage goes unnoticed. Regular professional maintenance costs a fraction of the repair bills that come from neglect.",
+          heading: "Why Professional Removal Matters",
+          content: "Accumulated debris is more than an eyesore — it attracts pests, creates safety hazards, and can lead to code violations. Whether it's storm damage, a property cleanout, or years of buildup, our team handles the heavy lifting so your property stays clean, safe, and compliant.",
         },
       ]}
       benefits={{
-        heading: "Benefits of Professional Vacant Property Care",
+        heading: "Benefits of Professional Junk & Debris Removal",
         items: [
-          "Avoid code enforcement fines — stay compliant with local regulations",
-          "Preserve property value — maintain curb appeal and prevent deterioration",
-          "Early problem detection — catch issues before they become expensive",
-          "Deter vandalism and squatters — maintained properties attract less trouble",
-          "Peace of mind — know your investment is protected",
-          "Flexible scheduling — weekly, bi-weekly, or monthly service plans",
+          "Save time and effort — no hauling or dump runs on your end",
+          "Safety first — we handle heavy, bulky, and hazardous items",
+          "Code compliance — avoid fines from debris buildup",
+          "Curb appeal — clean properties attract better tenants and buyers",
+          "Fully insured — peace of mind on every job",
+          "Fast turnaround — same-week service available",
         ],
       }}
     />
   );
 };
 
-export default VacantPropertyPage;
+export default DebrisRemovalPage;

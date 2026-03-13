@@ -9,7 +9,7 @@ import {
 const faqs = [
   {
     q: "What services does PricedRight Yards & More offer?",
-    a: "We offer comprehensive property services including yard and landscape cleanup and maintenance, post eviction services, vacant property cleanup and maintenance, shrub and tree maintenance and removal, and rental cleans and make ready services. We're your one-stop shop for all property preservation needs.",
+    a: "We offer comprehensive property services including lawn & landscape maintenance, debris & junk removal (from lawns, roofs, garages, sheds, and interiors), sales & rental make-ready cleans, post eviction services, and HomeWatch property monitoring. We're your one-stop shop for all property needs.",
   },
   {
     q: "What areas do you serve?",
@@ -21,11 +21,11 @@ const faqs = [
   },
   {
     q: "Do you offer free estimates?",
-    a: "Yes! We provide free, no-obligation estimates for all of our services. Just give us a call at (813) 860-2202 or fill out our online quote form and we'll get back to you quickly with a fair, competitive price.",
+    a: "Yes! We provide free, no-obligation estimates for all of our services. Just give us a call at (813) 668-3219 or fill out our online quote form and we'll get back to you quickly with a fair, competitive price.",
   },
   {
     q: "Do you work with property managers and landlords?",
-    a: "Absolutely! We work with homeowners, property owners, property managers, and business owners. We specialize in rental property turnovers, vacant property maintenance, and post-eviction cleanups — making us a go-to partner for property management companies.",
+    a: "Absolutely! We work with homeowners, property owners, property managers, realtors, and business owners. We specialize in make-ready cleans, post-eviction cleanups, HomeWatch monitoring, and debris removal — making us a go-to partner for property management companies.",
   },
   {
     q: "How quickly can you start a project?",

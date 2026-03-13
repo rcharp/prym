@@ -1,48 +1,48 @@
 import ServicePage from "@/components/ServicePageLayout";
 import useSEO from "@/hooks/useSEO";
 
-const TreeServicesPage = () => {
+const HomeWatchPage = () => {
   useSEO({
-    title: "Shrub & Tree Services | PricedRight Yards & More",
-    description: "Professional shrub trimming, tree pruning, stump grinding, and removal. Fully insured. Serving Central FL. Call (813) 860-2202.",
-    canonical: "https://example.com/services/tree-services",
+    title: "HomeWatch Services | PricedRight Yards & More",
+    description: "Professional HomeWatch property inspection and monitoring. Vacancy checks, maintenance coordination, peace of mind. Call (813) 668-3219.",
+    canonical: "https://example.com/services/home-watch",
   });
 
   return (
     <ServicePage
-      title="Shrub & Tree Services"
-      subtitle="Expert Care for Your Landscape"
-      intro="From professional shrub trimming to tree pruning and removal, we keep your landscape healthy, safe, and looking its best. Fully insured service throughout Central Florida."
+      title="HomeWatch Services"
+      subtitle="Eyes on Your Property When You Can't Be"
+      intro="Whether you're a snowbird, traveling, or managing properties from afar — our HomeWatch services keep a professional eye on your property with regular inspections, detailed reports, and maintenance coordination."
       sections={[
         {
-          heading: "Our Tree & Shrub Services",
+          heading: "Our HomeWatch Services",
           content: [
-            "Shrub trimming and shaping — maintain clean, professional hedges",
-            "Tree pruning and limb removal — promote health and safety",
-            "Stump grinding and removal — eliminate tripping hazards and eyesores",
-            "Overgrowth clearing — reclaim neglected areas of your property",
-            "Storm damage cleanup — fallen limb and debris removal",
-            "Hurricane preparation trimming — reduce storm risk",
+            "Scheduled property inspections — interior and exterior walkthroughs",
+            "Detailed condition reports — photos and notes after every visit",
+            "Maintenance monitoring — check for leaks, pests, storm damage, and more",
+            "Vendor coordination — schedule repairs and service calls on your behalf",
+            "Mail and package management — prevent buildup that signals vacancy",
+            "Storm preparation and response — pre- and post-storm property checks",
           ],
         },
         {
-          heading: "Why Professional Tree Care Matters",
-          content: "Improper trimming can damage trees, promote disease, and even make them more dangerous in storms. Our experienced team knows the right techniques for Florida's tree species, ensuring healthy growth and structural integrity. Plus, tree work can be dangerous — leave it to insured professionals.",
+          heading: "Peace of Mind for Absentee Owners",
+          content: "An unmonitored property in Florida is vulnerable to water damage, pest infestations, mold, and break-ins. Our HomeWatch service catches problems early before they become costly repairs. Whether you're away for a week or a season, we've got your property covered.",
         },
       ]}
       benefits={{
-        heading: "Benefits of Professional Tree & Shrub Care",
+        heading: "Benefits of Professional HomeWatch",
         items: [
-          "Safety — reduce risk of falling branches and storm damage",
-          "Property value — well-maintained trees add significant value",
-          "Curb appeal — shaped shrubs and pruned trees look professional",
-          "Plant health — proper trimming promotes strong, healthy growth",
-          "Fully insured — protection for you and your property",
-          "Expert knowledge — we know Florida's native and ornamental species",
+          "Early problem detection — catch leaks, pests, and damage before they escalate",
+          "Preserve property value — regular monitoring prevents neglect",
+          "Insurance compliance — many policies require regular occupancy checks",
+          "Deter break-ins — maintained properties attract less trouble",
+          "Fully insured — peace of mind on every visit",
+          "Flexible scheduling — weekly, bi-weekly, or custom plans",
         ],
       }}
     />
   );
 };
 
-export default TreeServicesPage;
+export default HomeWatchPage;

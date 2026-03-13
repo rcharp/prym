@@ -3,35 +3,35 @@ import useSEO from "@/hooks/useSEO";
 
 const YardMaintenancePage = () => {
   useSEO({
-    title: "Yard & Landscape Maintenance | PricedRight Yards & More",
-    description: "Professional yard cleanup and landscape maintenance. Weed pulling, trimming, mulching, debris removal. Fully insured. Call (813) 860-2202.",
-    canonical: "https://example.com/services/yard-maintenance",
+    title: "Lawn & Landscape Maintenance | PricedRight Yards & More",
+    description: "Professional lawn care and landscape maintenance. Mowing, edging, trimming, mulching, and seasonal cleanup. Fully insured. Call (813) 668-3219.",
+    canonical: "https://example.com/services/lawn-landscape",
   });
 
   return (
     <ServicePage
-      title="Yard & Landscape Maintenance"
+      title="Lawn & Landscape Maintenance"
       subtitle="Keep Your Property Pristine"
-      intro="Expert weed pulling, tree/hedge trimming, mulch installation, and debris removal to keep your yard pristine. We serve homeowners, property managers, and business owners throughout Central Florida."
+      intro="Professional mowing, edging, hedge trimming, mulch installation, and seasonal cleanup to keep your lawn and landscape looking its best. We serve homeowners, property managers, and businesses throughout Central Florida."
       sections={[
         {
-          heading: "Our Yard & Landscape Services",
+          heading: "Our Lawn & Landscape Services",
           content: [
-            "Weed pulling and prevention — keep your beds and walkways clean",
-            "Tree and hedge trimming — maintain shape and promote healthy growth",
-            "Mulch installation — protect plants and enhance curb appeal",
-            "Debris removal — leaves, branches, and yard waste hauled away",
-            "Lawn edging and mowing — crisp, professional results",
-            "Seasonal cleanup — spring prep and fall cleanup services",
+            "Mowing and edging — crisp, clean cuts every time",
+            "Hedge and shrub trimming — maintain shape and curb appeal",
+            "Mulch installation — protect plants and enhance flower beds",
+            "Weed control and bed maintenance — keep landscaping tidy",
+            "Seasonal cleanup — spring prep, fall cleanup, and storm debris",
+            "Customized maintenance plans — weekly, bi-weekly, or monthly",
           ],
         },
         {
           heading: "Why Regular Maintenance Matters",
-          content: "A well-maintained yard isn't just about looks — it protects your property value, prevents code violations, and creates a welcoming environment. In Florida's fast-growing climate, regular maintenance is essential to stay on top of overgrowth and keep your landscaping looking its best.",
+          content: "A well-maintained lawn and landscape protects your property value, prevents code violations, and creates a welcoming environment. In Florida's fast-growing climate, regular professional maintenance is essential to stay ahead of overgrowth and keep your property looking its best year-round.",
         },
       ]}
       benefits={{
-        heading: "Benefits of Professional Yard Care",
+        heading: "Benefits of Professional Lawn & Landscape Care",
         items: [
           "Increased property value — well-maintained landscaping adds 5-15% to property value",
           "Code compliance — avoid fines from overgrown lots",
