@@ -1,12 +1,10 @@
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
-
-const WEBHOOK_URL = "https://example.com/webhook-placeholder";
+import { supabase } from "@/integrations/supabase/client";
 
 interface QuoteFormProps {
   showHeader?: boolean;
@@ -22,40 +20,36 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
     fullName: "",
     phone: "",
     helpWith: "",
-    consentMarketing: false,
-    consentNonMarketing: false,
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!formData.fullName.trim() || !formData.phone.trim() || !formData.helpWith.trim()) {
+    const name = formData.fullName.trim();
+    const phone = formData.phone.trim();
+    const helpWith = formData.helpWith.trim();
+
+    if (!name || !phone || !helpWith) {
       toast.error("Please fill in all required fields.");
       return;
     }
-    if (formData.phone.length < 10) {
+    if (phone.length < 10) {
       toast.error("Please enter a valid 10-digit phone number.");
-      return;
-    }
-    if (!formData.consentMarketing || !formData.consentNonMarketing) {
-      toast.error("Please accept both consent checkboxes.");
       return;
     }
 
     setIsSubmitting(true);
 
     try {
-      await fetch(WEBHOOK_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          full_name: formData.fullName.trim(),
-          phone: formData.phone.trim(),
-          help_with: formData.helpWith.trim(),
-          consent_marketing: formData.consentMarketing,
-          consent_non_marketing: formData.consentNonMarketing,
-        }),
+      const { data, error } = await supabase.functions.invoke("send-quote-email", {
+        body: {
+          full_name: name,
+          phone: phone,
+          help_with: helpWith,
+        },
       });
+
+      if (error) throw error;
 
       setIsSubmitted(true);
     } catch {
@@ -147,48 +141,6 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
           onChange={(e) => setFormData({ ...formData, helpWith: e.target.value })}
           className="bg-white/10 border-white/20 text-white placeholder:text-white/50 resize-none"
         />
-      </div>
-
-      <div className="flex items-start gap-3">
-        <Checkbox
-          id="consentMarketing"
-          checked={formData.consentMarketing}
-          onCheckedChange={(checked) =>
-            setFormData({ ...formData, consentMarketing: checked === true })
-          }
-          className="mt-1 border-white/30 data-[state=checked]:bg-secondary data-[state=checked]:border-secondary"
-        />
-        <Label
-          htmlFor="consentMarketing"
-          className="text-white/70 text-xs leading-relaxed font-normal cursor-pointer"
-        >
-          I consent to receive marketing text messages from PricedRight Yards & More at the
-          phone number provided. Consent is not a condition of purchase. Message
-          frequency may vary. Message &amp; data rates may apply. Text HELP for
-          assistance, reply STOP to opt out.
-        </Label>
-      </div>
-
-      <div className="flex items-start gap-3">
-        <Checkbox
-          id="consentNonMarketing"
-          checked={formData.consentNonMarketing}
-          onCheckedChange={(checked) =>
-            setFormData({ ...formData, consentNonMarketing: checked === true })
-          }
-          className="mt-1 border-white/30 data-[state=checked]:bg-secondary data-[state=checked]:border-secondary"
-        />
-        <Label
-          htmlFor="consentNonMarketing"
-          className="text-white/70 text-xs leading-relaxed font-normal cursor-pointer"
-        >
-          I consent to receive non-marketing text messages from PricedRight Yards & More
-          regarding appointment confirmations and reminders, customer support
-          updates, and service-related follow-ups at the phone number provided.
-          Consent is not a condition of purchase. Message frequency may vary.
-          Message &amp; data rates may apply. Text HELP for assistance, reply STOP
-          to opt out.
-        </Label>
       </div>
 
       <Button
