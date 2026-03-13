@@ -151,6 +151,10 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
       >
         {isSubmitting ? "Sending..." : "Get Free Quote"}
       </Button>
+
+      <p className="text-white/50 text-[10px] leading-relaxed text-center">
+        By submitting this form, you agree to our Terms &amp; Conditions and Privacy Policy. You consent to receive emails, calls, and text messages from PricedRight Yards &amp; More regarding your inquiry. Message &amp; data rates may apply. You may opt out at any time.
+      </p>
     </form>
   );
 };
