@@ -147,9 +147,9 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
               <MapPin className="w-5 h-5 text-secondary" />
               <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Areas We Serve</span>
             </div>
-            <h2 className="font-heading text-2xl lg:text-3xl font-bold text-foreground mb-6">Proudly Serving Central Florida</h2>
+            <h2 className="font-heading text-2xl lg:text-3xl font-bold text-foreground mb-6">Proudly Serving the Tampa Bay Area</h2>
             <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-              We provide expert property services throughout Tampa Bay and Central Florida. <a href="/about" className="text-secondary hover:underline">Learn more about our team</a>.
+              We provide expert property services throughout Hillsborough, Pinellas, and Manatee Counties. <a href="/about" className="text-secondary hover:underline">Learn more about our team</a>.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {allAreas.map((area) => (
