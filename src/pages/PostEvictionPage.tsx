@@ -4,7 +4,7 @@ import useSEO from "@/hooks/useSEO";
 const PostEvictionPage = () => {
   useSEO({
     title: "Post Eviction Services | PricedRight Yards & More",
-    description: "Professional post eviction cleanup. Property cleanout, junk removal, deep cleaning. Get your rental rent-ready fast. Call (813) 860-2202.",
+    description: "Professional post eviction cleanup. Property cleanout, junk removal, deep cleaning. Get your rental rent-ready fast. Call (813) 668-3219.",
     canonical: "https://example.com/services/post-eviction",
   });
 
