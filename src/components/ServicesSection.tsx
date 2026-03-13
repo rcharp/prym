@@ -9,17 +9,39 @@ import palmYard from "@/assets/gallery/palm-yard.png";
 const services = [
   {
     image: lawnMaintenance,
-    title: "Yard & Landscape Maintenance",
-    href: "/services/yard-maintenance",
+    title: "Lawn & Landscape Maintenance",
+    href: "/services/lawn-landscape",
     features: [
-      "Expert weed pulling & debris removal",
-      "Tree & hedge trimming",
-      "Mulch installation & lawn care",
-      "Complete yard cleanup services",
+      "Mowing, edging & lawn care",
+      "Hedge & shrub trimming",
+      "Mulch installation & flower bed care",
+      "Seasonal cleanup & maintenance plans",
     ],
   },
   {
     image: stormDebris,
+    title: "Debris & Junk Removal",
+    href: "/services/debris-removal",
+    features: [
+      "Yard & lawn debris hauling",
+      "Roof, garage & shed cleanouts",
+      "Interior junk removal & disposal",
+      "Storm damage cleanup",
+    ],
+  },
+  {
+    image: palmYard,
+    title: "Sales & Rental Make-Ready Cleans",
+    href: "/services/make-ready",
+    features: [
+      "Deep cleaning for sale or lease",
+      "Carpet & floor restoration",
+      "Painting & cosmetic touch-ups",
+      "Curb appeal preparation",
+    ],
+  },
+  {
+    image: stumpRemoval,
     title: "Post Eviction Services",
     href: "/services/post-eviction",
     features: [
@@ -31,35 +53,13 @@ const services = [
   },
   {
     image: lawnCare,
-    title: "Vacant Property Maintenance",
-    href: "/services/vacant-property",
+    title: "HomeWatch Services",
+    href: "/services/home-watch",
     features: [
       "Regular property inspections",
-      "Yard upkeep & curb appeal",
-      "Junk & debris removal",
-      "Weatherization & securing",
-    ],
-  },
-  {
-    image: stumpRemoval,
-    title: "Shrub & Tree Services",
-    href: "/services/tree-services",
-    features: [
-      "Professional shrub trimming & shaping",
-      "Tree pruning & limb removal",
-      "Stump grinding & removal",
-      "Overgrowth clearing",
-    ],
-  },
-  {
-    image: palmYard,
-    title: "Rental Cleans & Make Ready",
-    href: "/services/rental-cleans",
-    features: [
-      "Move-out deep cleaning",
-      "Carpet & floor restoration",
-      "Painting & touch-ups",
-      "Property-ready-for-tenant preparation",
+      "Vacancy monitoring & reporting",
+      "Maintenance coordination",
+      "Peace of mind for absentee owners",
     ],
   },
 ];

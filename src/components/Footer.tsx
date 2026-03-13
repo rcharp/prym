@@ -27,11 +27,11 @@ const Footer = () => (
         <div>
           <h4 className="font-heading font-semibold text-base uppercase tracking-wider mb-4 opacity-60">Services</h4>
           <nav className="space-y-3">
-            <a href="/services/yard-maintenance" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Yard & Landscape</a>
+            <a href="/services/lawn-landscape" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Lawn & Landscape</a>
+            <a href="/services/debris-removal" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Debris & Junk Removal</a>
+            <a href="/services/make-ready" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Make-Ready Cleans</a>
             <a href="/services/post-eviction" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Post Eviction</a>
-            <a href="/services/vacant-property" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Vacant Property</a>
-            <a href="/services/tree-services" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Shrub & Tree</a>
-            <a href="/services/rental-cleans" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Rental Cleans</a>
+            <a href="/services/home-watch" className="block text-base opacity-80 hover:opacity-100 transition-opacity">HomeWatch Services</a>
           </nav>
         </div>
 
