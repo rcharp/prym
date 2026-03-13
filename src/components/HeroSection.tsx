@@ -101,7 +101,7 @@ const HeroSection = () => {
             id="quote-form"
             className="w-full lg:w-[520px] lg:ml-auto"
           >
-            <QuoteForm style={{ backgroundColor: "hsla(148, 40%, 12%, 0.6)" }} />
+            <QuoteForm style={{ backgroundColor: "hsla(155, 55%, 18%, 0.6)" }} />
           </motion.div>
         </div>
 
