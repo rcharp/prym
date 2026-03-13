@@ -138,8 +138,7 @@ const Header = () => {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="lg:hidden overflow-hidden border-t border-secondary/20"
-            style={{ backgroundColor: "hsl(148 40% 12%)" }}
+            className="lg:hidden overflow-hidden border-t border-secondary/20 bg-primary"
           >
             <div className="px-4 py-6 space-y-4">
               {navLinks.map((link) =>

@@ -91,7 +91,7 @@ const ServicesSection = () => (
             viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
             className="rounded-2xl overflow-hidden card-elevated border border-secondary/30 group"
-            style={{ backgroundColor: "hsl(148 40% 12%)" }}
+            style={{ backgroundColor: "hsl(155 55% 18%)" }}
           >
             <a href={service.href} className="block aspect-[16/9] overflow-hidden cursor-pointer">
               <img

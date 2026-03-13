@@ -68,7 +68,7 @@ const TipDetailPage = () => {
             <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center">More Property Tips</h2>
             <div className="grid md:grid-cols-3 gap-6">
               {otherTips.map((t) => (
-                <a key={t.slug} href={`/tips/${t.slug}`} className="group rounded-xl p-6 border border-secondary/30 hover:border-secondary/60 transition-all" style={{ backgroundColor: "hsl(148 40% 12%)" }}>
+                <a key={t.slug} href={`/tips/${t.slug}`} className="group rounded-xl p-6 border border-secondary/30 hover:border-secondary/60 transition-all bg-primary">
                   <span className="text-xs font-semibold text-secondary uppercase">{t.category}</span>
                   <h3 className="font-heading text-base font-bold text-primary-foreground mt-2 mb-2 group-hover:text-secondary transition-colors leading-snug">{t.title}</h3>
                   <span className="inline-flex items-center gap-1 text-xs font-semibold text-secondary">Read <ArrowRight className="w-3 h-3" /></span>

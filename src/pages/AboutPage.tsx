@@ -53,7 +53,7 @@ const AboutPage = () => {
           </div>
         </section>
 
-        <section className="py-16 lg:py-24" style={{ backgroundColor: "hsl(148 40% 12%)" }}>
+        <section className="py-16 lg:py-24 bg-primary">
           <div className="container mx-auto px-4 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
               <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="space-y-6 order-2 lg:order-1">

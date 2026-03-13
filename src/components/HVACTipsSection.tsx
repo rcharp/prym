@@ -36,7 +36,7 @@ const HVACTipsSection = () => {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
               className="group rounded-2xl p-7 border border-secondary/30 hover:border-secondary/60 transition-all"
-              style={{ backgroundColor: "hsl(148 40% 12%)" }}
+              style={{ backgroundColor: "hsl(155 55% 18%)" }}
             >
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-xs font-semibold text-secondary uppercase">{tip.category}</span>
