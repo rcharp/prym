@@ -70,7 +70,7 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
       <div
         className={`rounded-2xl border-2 ${compact ? 'p-5' : 'p-8'} shadow-2xl flex flex-col items-center justify-center text-center ${compact ? 'min-h-[300px]' : 'min-h-[400px]'} ${className}`}
         style={{
-          backgroundColor: "hsl(148 40% 12%)",
+          backgroundColor: "hsl(155 55% 18%)",
           borderColor: "hsl(142 70% 45%)",
           ...style,
         }}
