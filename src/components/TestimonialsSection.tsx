@@ -4,24 +4,39 @@ import { useState, useCallback, useEffect } from "react";
 
 const testimonials = [
   {
-    text: "PricedRight Yards & More did an amazing job cleaning up our property after a tenant moved out. They were professional, thorough, and had the place looking brand new in no time. Highly recommend!",
-    name: "Maria L.",
+    text: "I am so happy with the work that was done in my yard. I was at work when they finished and they sent me a video to see the final results. My expectations exceeded. I will absolutely use again and I feel like a weight was lifted off my shoulders having this done. The price was more than fair and they were able to schedule me fast!!! I am so appreciative !! Thank you!!",
+    name: "Karen J.",
     rating: 5,
+    service: "Lawn Mowing and Trimming",
+    date: "Feb 2025",
   },
   {
-    text: "We've been using PricedRight for our vacant property maintenance and they are always reliable and do excellent work. The yard always looks great and they communicate well. Best property service company we've used.",
-    name: "David K.",
+    text: "Hurricane Milton left our yard a mess! Twigs and leaves were everywhere! They did an excellent job of cleaning up the yard! They were responsive to my inquiry and scheduled me quickly. They worked diligently, were pleasant to deal with, and left my yard looking good. They took all of the mess away. I was so pleased that I recommended them to my daughter to clean up her debris, too. I am very happy!",
+    name: "Dorothy G.",
     rating: 5,
+    service: "Full Service Lawn Care",
+    date: "Oct 2024",
   },
   {
-    text: "Kay and the team came out and completely transformed our overgrown yard. Shrubs trimmed, debris cleared, mulch laid down — it looks like a whole new property. And the price was very fair!",
-    name: "Jennifer W.",
+    text: "My lawn needed a significant cleanup after moving in a couple weeks ago. PricedRight Yards came and cleared away 20 bags of yard waste, I kid you not! That is an amount I could not have done successfully myself! My backyard looks so much tidier now and I am very grateful for the job they did!",
+    name: "Katrina T.",
     rating: 5,
+    service: "Full Service Lawn Care",
+    date: "Apr 2024",
   },
   {
-    text: "As a property manager with multiple rentals, finding reliable service is tough. PricedRight handles all our make-ready cleans and yard work. They treat every property like it's their own. Five stars all the way!",
-    name: "Robert T.",
+    text: "Responded to my request quickly. Stayed in contact with me and responded to my questions and communications quickly. Cost was fair and quality of work was great. Recommend this service for any yard needs you may have. Mine was raking leaves.",
+    name: "Scott C.",
     rating: 5,
+    service: "Full Service Lawn Care",
+    date: "Apr 2024",
+  },
+  {
+    text: "A family company worked very hard on a hot day and did everything that was asked for. Very pleased with results.",
+    name: "George B.",
+    rating: 5,
+    service: "Gardening",
+    date: "Sep 2025",
   },
 ];
 
@@ -32,7 +47,6 @@ const TestimonialsSection = () => {
   const next = useCallback(() => setCurrent((c) => (c + 1) % total), [total]);
   const prev = useCallback(() => setCurrent((c) => (c - 1 + total) % total), [total]);
 
-  // Auto-advance every 6 seconds
   useEffect(() => {
     const interval = setInterval(next, 6000);
     return () => clearInterval(interval);
@@ -57,7 +71,7 @@ const TestimonialsSection = () => {
                 <Star key={s} className="w-4 h-4 fill-accent text-accent" />
               ))}
             </div>
-            <span className="text-base text-muted-foreground font-medium">5.0 Rating</span>
+            <span className="text-base text-muted-foreground font-medium">5.0 Rating · 17 Reviews on Thumbtack</span>
           </div>
         </motion.div>
 
@@ -87,7 +101,7 @@ const TestimonialsSection = () => {
                 </div>
                 <div>
                   <div className="font-heading font-semibold text-foreground">{testimonials[current].name}</div>
-                  <div className="text-sm text-muted-foreground">Verified Customer</div>
+                  <div className="text-sm text-muted-foreground">{testimonials[current].service} · {testimonials[current].date}</div>
                 </div>
               </div>
             </motion.div>
@@ -123,9 +137,14 @@ const TestimonialsSection = () => {
               ))}
             </div>
 
-            <span className="text-base font-semibold text-secondary">
+            <a
+              href="https://www.thumbtack.com/fl/palmetto/lawn-care/pricedright-yards-more/service/512059777267326978"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-base font-semibold text-secondary hover:underline"
+            >
               See All Reviews →
-            </span>
+            </a>
           </div>
         </div>
       </div>
