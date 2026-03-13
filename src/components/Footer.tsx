@@ -5,9 +5,9 @@ const Footer = () => (
   <footer className="bg-foreground text-card py-16">
     <div className="container mx-auto px-4 lg:px-8">
       <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
-        {/* Brand */}
+{/* Brand */}
         <div className="space-y-4">
-          <img src={logo} alt="PricedRight Yards & More Logo" className="h-14 w-auto" />
+          <img src={logo} alt="PricedRight Yards & More Logo" className="h-14 w-auto mix-blend-lighten" />
           <p className="text-sm opacity-60">Your Property Preservation Partner.</p>
         </div>
 
