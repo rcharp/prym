@@ -66,7 +66,7 @@ const Footer = () => (
           </div>
           <div className="flex items-start gap-3">
             <Clock className="w-4 h-4 mt-0.5 opacity-60" />
-            <span className="text-base opacity-80">Contact us for availability</span>
+            <span className="text-base opacity-80">7 Days a Week · 7AM–6PM</span>
           </div>
         </div>
       </div>

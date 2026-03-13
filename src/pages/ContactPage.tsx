@@ -54,7 +54,7 @@ const ContactPage = () => {
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center shrink-0"><Clock className="w-5 h-5 text-secondary" /></div>
-                    <div><h3 className="font-heading font-semibold text-foreground mb-1">Hours</h3><p className="text-muted-foreground">Contact us for availability</p></div>
+                    <div><h3 className="font-heading font-semibold text-foreground mb-1">Hours</h3><p className="text-muted-foreground">7 Days a Week · 7AM–6PM</p></div>
                   </div>
                 </div>
                 <div className="rounded-2xl overflow-hidden border border-border shadow-md bg-muted flex items-center justify-center" style={{ height: 250 }}>
