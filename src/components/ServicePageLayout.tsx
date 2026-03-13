@@ -107,7 +107,7 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 className="rounded-2xl p-8 lg:p-10 border border-secondary/30"
-                style={{ backgroundColor: "hsl(148 40% 12%)" }}
+                style={{ backgroundColor: "hsl(155 55% 18%)" }}
               >
                 <h2 className="font-heading text-2xl lg:text-3xl font-bold text-primary-foreground mb-6">{benefits.heading}</h2>
                 <ul className="space-y-4">
