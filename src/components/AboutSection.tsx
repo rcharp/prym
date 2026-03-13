@@ -27,8 +27,8 @@ const AboutSection = () => (
                 <MapPin className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <div className="text-sm text-muted-foreground">Service Area</div>
-                <div className="text-base font-semibold text-foreground">Tampa Bay & Central FL</div>
+                <div className="text-sm text-muted-foreground">Address</div>
+                <div className="text-base font-semibold text-foreground">2304 4th Ave E, Palmetto, FL 34221</div>
               </div>
             </div>
             <div className="flex items-center gap-3">
