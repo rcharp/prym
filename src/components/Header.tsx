@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Phone, Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
-import logoPlaceholder from "@/assets/logo-placeholder.png";
+import logo from "@/assets/logo.png";
 const navLinks = [
   { label: "Home", href: "/" },
   {
@@ -42,11 +42,11 @@ const Header = () => {
   const { openQuoteModal } = useQuoteModal();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-secondary/20 max-w-[100vw]" style={{ backgroundColor: "#0f172a" }}>
+    <header className="sticky top-0 z-50 border-b border-secondary/20 max-w-[100vw]" style={{ backgroundColor: "hsl(148 40% 12%)" }}>
       <div className="container mx-auto flex items-center justify-between py-4 px-4 lg:px-8 max-w-[100vw]">
         {/* Logo */}
         <a href="/" className="flex items-center shrink-0 mr-2 lg:mr-4">
-          <img src={logoPlaceholder} alt="Company Logo" className="h-10 sm:h-12 lg:h-14 w-auto" />
+          <img src={logo} alt="PricedRight Yards & More Logo" className="h-10 sm:h-12 lg:h-14 w-auto" />
         </a>
 
         {/* Desktop Nav */}
@@ -71,7 +71,7 @@ const Header = () => {
                       exit={{ opacity: 0, y: 8 }}
                       transition={{ duration: 0.15 }}
                       className="absolute top-full left-0 mt-1 z-50 rounded-xl shadow-lg border border-border py-2 min-w-[200px]"
-                      style={{ backgroundColor: "#0f172a" }}
+                      style={{ backgroundColor: "hsl(148 40% 12%)" }}
                     >
                       {link.children.map((child) => (
                         <a
@@ -136,7 +136,7 @@ const Header = () => {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             className="lg:hidden overflow-hidden border-t border-secondary/20"
-            style={{ backgroundColor: "#0f172a" }}
+            style={{ backgroundColor: "hsl(148 40% 12%)" }}
           >
             <div className="px-4 py-6 space-y-4">
               {navLinks.map((link) =>
