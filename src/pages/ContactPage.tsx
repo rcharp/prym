@@ -50,7 +50,7 @@ const ContactPage = () => {
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center shrink-0"><MapPin className="w-5 h-5 text-secondary" /></div>
-                    <div><h3 className="font-heading font-semibold text-foreground mb-1">Service Area</h3><p className="text-muted-foreground">Tampa Bay & Central Florida</p></div>
+                    <div><h3 className="font-heading font-semibold text-foreground mb-1">Address</h3><p className="text-muted-foreground">2304 4th Avenue East, Palmetto, FL 34221</p></div>
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center shrink-0"><Clock className="w-5 h-5 text-secondary" /></div>
