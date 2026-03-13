@@ -13,13 +13,13 @@ const AboutSection = () => (
         >
           <span className="text-base font-semibold text-primary uppercase tracking-wider">About Us</span>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground">
-            Family Owned. Locally Operated.
+            Family Owned. Fully Insured.
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            We've proudly served our local community for over a decade. As a locally owned and operated family business, we treat every home like it's our own. No corporate runaround. No strangers at your door. Just honest service from people who live and work right here in your community.
+            We are a small but mighty family owned company fully insured for your peace of mind. From yard and shrub/tree services to post eviction services, we cover all the property needs for homeowners, property owners, property managers, and business owners.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            When you choose us, you're getting more than just HVAC service—you're getting a partner who's invested in your comfort and satisfaction. We answer our phones, show up on time, and stand behind every job we complete.
+            Our services are priced right to help you maintain or increase your property value. When you choose PricedRight Yards & More, you're getting a partner who's invested in your property's success and your complete satisfaction.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 pt-4">
             <div className="flex items-center gap-3">
@@ -27,8 +27,8 @@ const AboutSection = () => (
                 <MapPin className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <div className="text-sm text-muted-foreground">Address</div>
-                <div className="text-base font-semibold text-foreground">123 Main Street, Anytown, FL 34000</div>
+                <div className="text-sm text-muted-foreground">Service Area</div>
+                <div className="text-base font-semibold text-foreground">Tampa Bay & Central FL</div>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -37,8 +37,8 @@ const AboutSection = () => (
               </div>
               <div>
                 <div className="text-sm text-muted-foreground">Phone</div>
-                <a href="tel:+15551234567" className="text-base font-semibold text-foreground hover:text-primary transition-colors">
-                  (555) 123-4567
+                <a href="tel:+18138602202" className="text-base font-semibold text-foreground hover:text-primary transition-colors">
+                  (813) 860-2202
                 </a>
               </div>
            </div>

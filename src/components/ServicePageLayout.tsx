@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import heroServices from "@/assets/hero-services.jpg";
 import { useQuoteModal } from "@/components/QuoteModal";
 
-
 interface ServicePageProps {
   title: string;
   subtitle: string;
@@ -13,6 +12,24 @@ interface ServicePageProps {
   sections: { heading: string; content: string | string[] }[];
   benefits?: { heading: string; items: string[] };
 }
+
+const allServices = [
+  { label: "Yard & Landscape Maintenance", href: "/services/yard-maintenance" },
+  { label: "Post Eviction Services", href: "/services/post-eviction" },
+  { label: "Vacant Property Maintenance", href: "/services/vacant-property" },
+  { label: "Shrub & Tree Services", href: "/services/tree-services" },
+  { label: "Rental Cleans & Make Ready", href: "/services/rental-cleans" },
+];
+
+const allAreas = [
+  { label: "Tampa, FL", href: "/areas/tampa" },
+  { label: "Sarasota, FL", href: "/areas/sarasota" },
+  { label: "Orlando, FL", href: "/areas/orlando" },
+  { label: "Bradenton, FL", href: "/areas/bradenton" },
+  { label: "Clearwater, FL", href: "/areas/clearwater" },
+  { label: "Lakeland, FL", href: "/areas/lakeland" },
+  { label: "St. Petersburg, FL", href: "/areas/st-petersburg" },
+];
 
 const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePageProps) => {
   const { openQuoteModal } = useQuoteModal();
@@ -37,12 +54,12 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
               <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto mt-6 leading-relaxed">{intro}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
                 <a
-                   href="tel:+15551234567"
+                  href="tel:+18138602202"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 transition-colors"
                   style={{ borderRadius: "10px" }}
                 >
                   <Phone className="w-5 h-5" />
-                  (555) 123-4567
+                  (813) 860-2202
                 </a>
                 <button
                   onClick={openQuoteModal}
@@ -90,7 +107,7 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 className="rounded-2xl p-8 lg:p-10 border border-secondary/30"
-                style={{ backgroundColor: "#0f172a" }}
+                style={{ backgroundColor: "hsl(148 40% 12%)" }}
               >
                 <h2 className="font-heading text-2xl lg:text-3xl font-bold text-primary-foreground mb-6">{benefits.heading}</h2>
                 <ul className="space-y-4">
@@ -110,13 +127,8 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
         <section className="py-16 lg:py-20">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <h2 className="font-heading text-2xl lg:text-3xl font-bold text-foreground mb-8 text-center">Explore Our Other Services</h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {[
-                { label: "AC Repair", href: "/services/ac-repair" },
-                { label: "AC Installation", href: "/services/ac-installation" },
-                { label: "AC Maintenance", href: "/services/ac-maintenance" },
-                { label: "Duct Cleaning", href: "/services/duct-cleaning" },
-              ].map((s) => (
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {allServices.map((s) => (
                 <a
                   key={s.href}
                   href={s.href}
@@ -136,18 +148,12 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
               <MapPin className="w-5 h-5 text-secondary" />
               <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Areas We Serve</span>
             </div>
-            <h2 className="font-heading text-2xl lg:text-3xl font-bold text-foreground mb-6">Proudly Serving Manatee County</h2>
+            <h2 className="font-heading text-2xl lg:text-3xl font-bold text-foreground mb-6">Proudly Serving Central Florida</h2>
             <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-              We provide expert HVAC services throughout the greater Palmetto and Bradenton area. <a href="/about" className="text-secondary hover:underline">Learn more about our team</a>.
+              We provide expert property services throughout Tampa Bay and Central Florida. <a href="/about" className="text-secondary hover:underline">Learn more about our team</a>.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
-              {[
-                { label: "Palmetto, FL", href: "/areas/palmetto" },
-                { label: "Bradenton, FL", href: "/areas/bradenton" },
-                { label: "Memphis, FL", href: "/areas/memphis" },
-                { label: "Ellenton, FL", href: "/areas/ellenton" },
-                { label: "Palma Sola, FL", href: "/areas/palma-sola" },
-              ].map((area) => (
+              {allAreas.map((area) => (
                 <a
                   key={area.href}
                   href={area.href}
@@ -161,20 +167,20 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
         </section>
 
         {/* CTA */}
-        <section className="py-16 relative overflow-hidden" style={{ backgroundColor: "#0f172a" }}>
+        <section className="py-16 relative overflow-hidden" style={{ backgroundColor: "hsl(148 40% 12%)" }}>
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-heading text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">Ready to Get Started?</h2>
             <p className="text-primary-foreground/70 mb-8 max-w-xl mx-auto">
-              <a href="/contact" className="text-secondary hover:underline">Contact us</a> today for a free consultation and experience the difference.
+              <a href="/contact" className="text-secondary hover:underline">Contact us</a> today for a free estimate and experience the PricedRight difference.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+15551234567"
+                href="tel:+18138602202"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 transition-colors"
                 style={{ borderRadius: "10px" }}
               >
                 <Phone className="w-5 h-5" />
-                (555) 123-4567
+                (813) 860-2202
               </a>
               <button
                 onClick={openQuoteModal}

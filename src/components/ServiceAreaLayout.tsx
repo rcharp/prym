@@ -13,39 +13,48 @@ interface ServiceAreaPageProps {
 
 const services = [
   {
-    title: "AC Repair",
-    href: "/services/ac-repair",
+    title: "Yard & Landscape Maintenance",
+    href: "/services/yard-maintenance",
     items: [
-      "Diagnostic services — troubleshooting faulty AC units",
-      "Common repairs — refrigerant leaks, thermostat issues, broken compressors or fans",
-      "Emergency repairs — same-day or 24/7 services for urgent problems",
+      "Weed pulling, trimming, mulching, and debris removal",
+      "Lawn care and landscape cleanup",
+      "Regular maintenance schedules available",
     ],
   },
   {
-    title: "AC Maintenance",
-    href: "/services/ac-maintenance",
+    title: "Post Eviction Services",
+    href: "/services/post-eviction",
     items: [
-      "Routine inspections — checking system performance, identifying potential issues",
-      "Filter replacement — improving air quality and unit efficiency",
-      "Cleaning coils & fins — preventing dirt buildup and optimizing energy efficiency",
+      "Full property cleanout and junk removal",
+      "Deep cleaning and sanitation",
+      "Quick turnaround for re-listing",
     ],
   },
   {
-    title: "AC Installation",
-    href: "/services/ac-installation",
+    title: "Vacant Property Maintenance",
+    href: "/services/vacant-property",
     items: [
-      "New system consultation — assessing property needs for the best AC unit fit",
-      "Energy-efficient systems — reducing energy consumption and utility costs",
-      "Custom installations — seamless integration with existing HVAC infrastructure",
+      "Regular property inspections and upkeep",
+      "Yard maintenance and curb appeal preservation",
+      "Debris removal and weatherization",
     ],
   },
   {
-    title: "Duct Cleaning",
-    href: "/services/duct-cleaning",
+    title: "Shrub & Tree Services",
+    href: "/services/tree-services",
     items: [
-      "Air quality improvement — removing dust, allergens, and pollutants",
-      "Efficiency boost — improving airflow throughout your home",
-      "Mold prevention — sanitizing ductwork to prevent mold and mildew growth",
+      "Professional shrub trimming and shaping",
+      "Tree pruning, limb removal, and stump grinding",
+      "Overgrowth clearing and removal",
+    ],
+  },
+  {
+    title: "Rental Cleans & Make Ready",
+    href: "/services/rental-cleans",
+    items: [
+      "Move-out deep cleaning and carpet restoration",
+      "Painting, touch-ups, and minor repairs",
+      "Property-ready-for-tenant preparation",
     ],
   },
 ];
@@ -73,18 +82,18 @@ const ServiceAreaPage = ({ city, tagline, intro }: ServiceAreaPageProps) => {
                 <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Service Area</span>
               </div>
               <h1 className="font-heading text-4xl lg:text-6xl font-bold text-primary-foreground">
-                HVAC Services in {city}
+                Property Services in {city}
               </h1>
               <p className="text-xl text-primary-foreground/80 mt-3 font-medium">{tagline}</p>
               <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto mt-6 leading-relaxed">{intro}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
                 <a
-                  href="tel:+15551234567"
+                  href="tel:+18138602202"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 transition-colors"
                   style={{ borderRadius: "10px" }}
                 >
                   <Phone className="w-5 h-5" />
-                  (555) 123-4567
+                  (813) 860-2202
                 </a>
                 <button
                   onClick={openQuoteModal}
@@ -108,7 +117,7 @@ const ServiceAreaPage = ({ city, tagline, intro }: ServiceAreaPageProps) => {
               className="text-center mb-16"
             >
               <h2 className="font-heading text-3xl lg:text-4xl font-bold text-foreground">
-                HVAC Services We Provide in {city}
+                Property Services We Provide in {city}
               </h2>
             </motion.div>
 
@@ -121,7 +130,7 @@ const ServiceAreaPage = ({ city, tagline, intro }: ServiceAreaPageProps) => {
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
                   className="rounded-2xl p-8 border border-secondary/30"
-                  style={{ backgroundColor: "#0f172a" }}
+                  style={{ backgroundColor: "hsl(148 40% 12%)" }}
                 >
                   <h3 className="font-heading text-xl font-bold text-primary-foreground mb-4">{service.title}</h3>
                   <ul className="space-y-3 mb-6">
@@ -148,28 +157,28 @@ const ServiceAreaPage = ({ city, tagline, intro }: ServiceAreaPageProps) => {
         <section className="py-12 lg:py-16 border-t border-border">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
             <p className="text-muted-foreground text-lg">
-              Want to know who's coming to your home? <a href="/about" className="text-secondary font-semibold hover:underline">Meet our team</a> — family-owned and locally operated. You can also <a href="/gallery" className="text-secondary font-semibold hover:underline">browse our work gallery</a> to see recent projects.
+              Want to know who you're working with? <a href="/about" className="text-secondary font-semibold hover:underline">Meet our team</a> — family-owned and fully insured. You can also <a href="/gallery" className="text-secondary font-semibold hover:underline">browse our work gallery</a> to see recent projects.
             </p>
           </div>
         </section>
 
         {/* CTA */}
-        <section className="py-16 relative overflow-hidden" style={{ backgroundColor: "#0f172a" }}>
+        <section className="py-16 relative overflow-hidden" style={{ backgroundColor: "hsl(148 40% 12%)" }}>
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-heading text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
-              Need HVAC Service in {city}?
+              Need Property Services in {city}?
             </h2>
             <p className="text-primary-foreground/70 mb-8 max-w-xl mx-auto">
-              <a href="/contact" className="text-secondary hover:underline">Contact us</a> today. We're your trusted local HVAC experts serving {city} and surrounding areas.
+              <a href="/contact" className="text-secondary hover:underline">Contact us</a> today. We're your trusted local property preservation experts serving {city} and surrounding areas.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+15551234567"
+                href="tel:+18138602202"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 transition-colors"
                 style={{ borderRadius: "10px" }}
               >
                 <Phone className="w-5 h-5" />
-                (555) 123-4567
+                (813) 860-2202
               </a>
               <button
                 onClick={openQuoteModal}

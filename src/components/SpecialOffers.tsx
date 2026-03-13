@@ -6,18 +6,18 @@ import offersBg from "@/assets/offers-bg.png";
 const offers = [
   {
     icon: Percent,
-    title: "Up to 20% Off For New Customers",
-    description: "Get 20% off on repairs and 10% off on new installations and replacements.",
+    title: "Competitive Pricing Guaranteed",
+    description: "Our services are priced right — fair, transparent pricing with no hidden fees or surprises.",
   },
   {
     icon: CreditCard,
-    title: "Financing Options Available",
-    description: "Get what you need now, pay over time. Flexible plans, quick approval.",
+    title: "Free Estimates on All Services",
+    description: "Get a free, no-obligation estimate for any property service. We'll come to you!",
   },
   {
     icon: Search,
-    title: "Free HVAC System Inspection",
-    description: "We give a free inspection for new systems. Schedule yours today!",
+    title: "Free Property Assessment",
+    description: "We'll assess your property's needs and provide a detailed plan. Schedule yours today!",
   },
 ];
 
@@ -40,7 +40,7 @@ const SpecialOffers = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-base font-semibold text-secondary uppercase tracking-wider">Limited Time</span>
+          <span className="text-base font-semibold text-secondary uppercase tracking-wider">Why Choose Us</span>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold text-primary-foreground mt-3">
             Special Offers & Benefits
           </h2>
@@ -57,7 +57,7 @@ const SpecialOffers = () => {
               whileHover={{ scale: 1.05, transition: { duration: 0.15 } }}
               onClick={openQuoteModal}
               className="rounded-2xl p-8 card-elevated border border-secondary/30 text-center backdrop-blur-sm cursor-pointer transition-shadow hover:shadow-xl"
-              style={{ backgroundColor: "rgba(15, 23, 42, 0.8)" }}
+              style={{ backgroundColor: "hsla(148, 40%, 12%, 0.8)" }}
             >
               <div className="w-14 h-14 rounded-2xl bg-secondary/20 flex items-center justify-center mx-auto mb-6">
                 <offer.icon className="w-7 h-7 text-secondary" />

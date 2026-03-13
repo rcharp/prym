@@ -8,33 +8,33 @@ import {
 
 const faqs = [
   {
-    q: "How quickly can you respond to an emergency AC repair?",
-    a: "We offer same-day service for emergency air conditioning repairs throughout our service area. When your AC breaks down during the heat, we understand it's urgent. Call us and we'll get a certified technician to your home as quickly as possible.",
+    q: "What services does PricedRight Yards & More offer?",
+    a: "We offer comprehensive property services including yard and landscape cleanup and maintenance, post eviction services, vacant property cleanup and maintenance, shrub and tree maintenance and removal, and rental cleans and make ready services. We're your one-stop shop for all property preservation needs.",
   },
   {
-    q: "Do you offer financing options for AC installation and repairs?",
-    a: "Yes! We offer flexible financing plans with quick approval to help you get the comfort you need without breaking your budget. Whether you need a major repair or a complete system replacement, our financing options make it affordable.",
+    q: "What areas do you serve?",
+    a: "We proudly serve Tampa, Sarasota, Orlando, Bradenton, Clearwater, St. Petersburg, Lakeland, Ellenton, Parrish, Palmetto, Lakewood Ranch, Zephyrhills, Dade City, and New Port Richey. We cover Hillsborough, Manatee, Pasco, Pinellas, and Sarasota Counties.",
   },
   {
-    q: "Do you provide free estimates for AC installation?",
-    a: "Yes! We provide free, no-obligation estimates for all air conditioning installations and system replacements. We'll assess your home's cooling needs, discuss your options, and provide upfront, transparent pricing with no hidden fees.",
+    q: "Are you licensed and insured?",
+    a: "Yes! PricedRight Yards & More is a fully insured, family-owned company. We carry full liability insurance to protect you and your property, giving you complete peace of mind when we work on your property.",
   },
   {
-    q: "Are your technicians licensed and insured?",
-    a: "All of our technicians are fully licensed, certified, and insured to protect you and your property. Our team undergoes continuous training to stay current with the latest HVAC technology and best practices.",
+    q: "Do you offer free estimates?",
+    a: "Yes! We provide free, no-obligation estimates for all of our services. Just give us a call at (813) 860-2202 or fill out our online quote form and we'll get back to you quickly with a fair, competitive price.",
   },
   {
-    q: "What areas do you service?",
-    a: "We proudly serve Palmetto, Bradenton, and surrounding areas. As a locally owned and operated family business, we're invested in our community.",
+    q: "Do you work with property managers and landlords?",
+    a: "Absolutely! We work with homeowners, property owners, property managers, and business owners. We specialize in rental property turnovers, vacant property maintenance, and post-eviction cleanups — making us a go-to partner for property management companies.",
   },
   {
-    q: "Do you offer warranties on your work?",
-    a: "Yes, we stand behind all our work with warranties on both parts and labor. New AC installations come with comprehensive manufacturer warranties, and we provide additional warranty coverage on our workmanship.",
+    q: "How quickly can you start a project?",
+    a: "We pride ourselves on fast response times. For most services, we can schedule within a few days. For urgent needs like post-eviction cleanups or emergency property maintenance, we do our best to accommodate rush requests. Call us to discuss your timeline.",
   },
 ];
 
 const FAQSection = () => (
-  <section className="py-20 lg:py-28" style={{ backgroundColor: "#0f172a" }}>
+  <section className="py-20 lg:py-28" style={{ backgroundColor: "hsl(148 40% 12%)" }}>
     <div className="container mx-auto px-4 lg:px-8 max-w-3xl">
       <motion.div
         initial={{ opacity: 0, y: 20 }}

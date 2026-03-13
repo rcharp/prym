@@ -3,16 +3,16 @@ import useSEO from "@/hooks/useSEO";
 
 const BradentonPage = () => {
   useSEO({
-    title: "HVAC Services Bradenton FL | AC Repair & Install",
-    description: "Professional HVAC services in Bradenton FL. AC repair, installation, maintenance & duct cleaning. Family owned, licensed & insured. Call (555) 123-4567.",
+    title: "Property Services Bradenton FL | PricedRight Yards & More",
+    description: "Professional property preservation services in Bradenton FL. Yard care, post eviction cleanup, tree services & more. Fully insured. Call (813) 860-2202.",
     canonical: "https://example.com/areas/bradenton",
   });
 
   return (
     <ServiceAreaPage
       city="Bradenton, FL"
-      tagline="Your Trusted HVAC Partner"
-      intro="We offer reliable and professional HVAC services in Bradenton, FL. Whether you need heating, cooling, or ventilation services, our experienced technicians are ready to assist you with installations, repairs, and maintenance."
+      tagline="Your Trusted Property Preservation Partner"
+      intro="We offer reliable and professional property services in Bradenton, FL. Whether you need yard maintenance, post eviction cleanup, or vacant property care, our experienced team delivers quality results."
     />
   );
 };

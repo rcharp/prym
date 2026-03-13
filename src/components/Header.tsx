@@ -3,25 +3,29 @@ import { Phone, Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
 import logo from "@/assets/logo.png";
+
 const navLinks = [
   { label: "Home", href: "/" },
   {
     label: "Services",
     children: [
-      { label: "AC Repair", href: "/services/ac-repair" },
-      { label: "AC Installation", href: "/services/ac-installation" },
-      { label: "AC Maintenance", href: "/services/ac-maintenance" },
-      { label: "Duct Cleaning", href: "/services/duct-cleaning" },
+      { label: "Yard & Landscape Maintenance", href: "/services/yard-maintenance" },
+      { label: "Post Eviction Services", href: "/services/post-eviction" },
+      { label: "Vacant Property Maintenance", href: "/services/vacant-property" },
+      { label: "Shrub & Tree Services", href: "/services/tree-services" },
+      { label: "Rental Cleans & Make Ready", href: "/services/rental-cleans" },
     ],
   },
   {
     label: "Service Areas",
     children: [
-      { label: "Palmetto, FL", href: "/areas/palmetto" },
-      { label: "Memphis, FL", href: "/areas/memphis" },
+      { label: "Tampa, FL", href: "/areas/tampa" },
+      { label: "Sarasota, FL", href: "/areas/sarasota" },
+      { label: "Orlando, FL", href: "/areas/orlando" },
       { label: "Bradenton, FL", href: "/areas/bradenton" },
-      { label: "Ellenton, FL", href: "/areas/ellenton" },
-      { label: "Palma Sola, FL", href: "/areas/palma-sola" },
+      { label: "Clearwater, FL", href: "/areas/clearwater" },
+      { label: "Lakeland, FL", href: "/areas/lakeland" },
+      { label: "St. Petersburg, FL", href: "/areas/st-petersburg" },
     ],
   },
   { label: "Gallery", href: "/gallery" },
@@ -70,7 +74,7 @@ const Header = () => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 8 }}
                       transition={{ duration: 0.15 }}
-                      className="absolute top-full left-0 mt-1 z-50 rounded-xl shadow-lg border border-border py-2 min-w-[200px]"
+                      className="absolute top-full left-0 mt-1 z-50 rounded-xl shadow-lg border border-border py-2 min-w-[260px]"
                       style={{ backgroundColor: "hsl(148 40% 12%)" }}
                     >
                       {link.children.map((child) => (
@@ -102,12 +106,12 @@ const Header = () => {
         <div className="flex items-center flex-1 lg:flex-none min-w-0">
           <div className="flex items-center justify-center gap-3 flex-1 lg:flex-none lg:justify-end">
             <a
-              href="tel:+15551234567"
+              href="tel:+18138602202"
               className="flex items-center gap-1 sm:gap-1.5 lg:gap-2 px-2 sm:px-3 lg:px-6 py-2.5 sm:py-2.5 lg:py-3 text-xs sm:text-sm lg:text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 transition-colors whitespace-nowrap"
               style={{ borderRadius: "10px" }}
             >
               <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 shrink-0" />
-              (555) 123-4567
+              (813) 860-2202
             </a>
             <button
               onClick={openQuoteModal}
@@ -189,11 +193,11 @@ const Header = () => {
               )}
               <div className="pt-4 space-y-3 border-t border-secondary/20">
                 <a
-                  href="tel:+15551234567"
+                  href="tel:+18138602202"
                   className="flex items-center justify-center gap-2 w-full text-center px-6 py-3 text-sm font-semibold border border-secondary text-secondary"
                   style={{ borderRadius: "10px" }}
                 >
-                  <Phone className="w-5 h-5" /> (555) 123-4567
+                  <Phone className="w-5 h-5" /> (813) 860-2202
                 </a>
                 <button
                   onClick={() => { setMobileOpen(false); openQuoteModal(); }}

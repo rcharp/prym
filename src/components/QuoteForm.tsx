@@ -70,8 +70,8 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
       <div
         className={`rounded-2xl border-2 ${compact ? 'p-5' : 'p-8'} shadow-2xl flex flex-col items-center justify-center text-center ${compact ? 'min-h-[300px]' : 'min-h-[400px]'} ${className}`}
         style={{
-        backgroundColor: "hsl(148 40% 12%)",
-        borderColor: "hsl(142 70% 45%)",
+          backgroundColor: "hsl(148 40% 12%)",
+          borderColor: "hsl(142 70% 45%)",
           ...style,
         }}
       >
@@ -139,7 +139,7 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
         </Label>
         <Textarea
           id="helpWith"
-          placeholder="Describe your HVAC needs and we'll get back to you ASAP!"
+          placeholder="Describe your property needs and we'll get back to you ASAP!"
           required
           maxLength={1000}
           rows={compact ? 2 : 4}
@@ -162,7 +162,7 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
           htmlFor="consentMarketing"
           className="text-white/70 text-xs leading-relaxed font-normal cursor-pointer"
         >
-          I consent to receive marketing text messages from [Your Company] at the
+          I consent to receive marketing text messages from PricedRight Yards & More at the
           phone number provided. Consent is not a condition of purchase. Message
           frequency may vary. Message &amp; data rates may apply. Text HELP for
           assistance, reply STOP to opt out.
@@ -182,7 +182,7 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
           htmlFor="consentNonMarketing"
           className="text-white/70 text-xs leading-relaxed font-normal cursor-pointer"
         >
-          I consent to receive non-marketing text messages from [Your Company]
+          I consent to receive non-marketing text messages from PricedRight Yards & More
           regarding appointment confirmations and reminders, customer support
           updates, and service-related follow-ups at the phone number provided.
           Consent is not a condition of purchase. Message frequency may vary.
