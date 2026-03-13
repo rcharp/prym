@@ -59,7 +59,7 @@ const AboutPage = () => {
               <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="space-y-6 order-2 lg:order-1">
                 <span className="text-sm font-semibold text-secondary uppercase tracking-wider">What We Do</span>
                 <h2 className="font-heading text-3xl lg:text-4xl font-bold text-primary-foreground">Comprehensive Property Care</h2>
-                <p className="text-primary-foreground/70 leading-relaxed">From yard and shrub/tree services to post eviction services, we cover all the property needs. Our services are priced right to help you maintain or increase your property value.</p>
+                <p className="text-primary-foreground/70 leading-relaxed">From lawn & landscape maintenance to debris removal, make-ready cleans, post eviction services, and HomeWatch — we cover it all. Our transparency and the MORE Factor mean you get honest pricing and a true partner for your property needs.</p>
                 <ul className="space-y-3">
                   {["Fully insured for your peace of mind", "Family-owned and operated", "Serving Tampa Bay and surrounding counties", "Competitive, transparent pricing", "Comprehensive one-stop property services", "Satisfaction guaranteed on every job"].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-primary-foreground/80"><Check className="w-5 h-5 text-green-500 mt-0.5 shrink-0" /><span>{item}</span></li>

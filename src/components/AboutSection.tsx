@@ -19,7 +19,7 @@ const AboutSection = () => (
             We're a small, family owned and operated lawn & landscape business offering MORE than just lawn and landscape services to residents, land/home owners, and businesses within the communities we serve. Collectively, we have over 20 years in the business and are fully insured for your peace of mind.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            We consider ourselves partners to our customers — what is important to you regarding your property is equally important to us. When you choose PricedRight Yards & More, you're getting a team that's invested in your property's success and your complete satisfaction.
+            What sets us apart is our transparency and what we call the <strong>MORE Factor</strong> — helping our partners with an almost one-stop shop for all their property needs. When you choose PricedRight Yards & More, you're getting a team that's invested in your property's success and your complete satisfaction.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 pt-4">
             <div className="flex items-center gap-3">
