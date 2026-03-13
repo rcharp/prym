@@ -8,8 +8,8 @@ import useSEO from "@/hooks/useSEO";
 
 const ContactPage = () => {
   useSEO({
-    title: "Contact Us | Get a Free Quote | (555) 123-4567",
-    description: "Contact us for HVAC service in your area. Get a free quote, schedule service, or call (555) 123-4567. Open 24/7.",
+    title: "Contact Us | PricedRight Yards & More | (813) 860-2202",
+    description: "Contact PricedRight Yards & More for property services across Central Florida. Get a free quote or call (813) 860-2202.",
     canonical: "https://example.com/contact",
   });
 
@@ -17,107 +17,51 @@ const ContactPage = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        {/* Hero */}
         <section className="relative overflow-hidden bg-black">
-          <img
-            src={heroServices}
-            alt=""
-            className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500"
-            onLoad={(e) => { (e.target as HTMLImageElement).style.opacity = '1'; }}
-          />
+          <img src={heroServices} alt="" className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" onLoad={(e) => { (e.target as HTMLImageElement).style.opacity = '1'; }} />
           <div className="absolute inset-0 bg-black/70" />
           <div className="container mx-auto px-4 lg:px-8 py-20 lg:py-32 relative z-10 text-center">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
               <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Get In Touch</span>
               <h1 className="font-heading text-4xl lg:text-6xl font-bold text-primary-foreground mt-3">Contact Us</h1>
-              <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto mt-6 leading-relaxed">
-                Ready to schedule a service or have a question? We're here to help.
-              </p>
+              <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto mt-6 leading-relaxed">Ready to schedule a service or have a question? We're here to help.</p>
             </motion.div>
           </div>
         </section>
 
-        {/* Content */}
         <section className="py-16 lg:py-24">
           <div className="container mx-auto px-4 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-              {/* Contact Info */}
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                className="space-y-8"
-              >
+              <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="space-y-8">
                 <div>
-                  <h2 className="font-heading text-3xl lg:text-4xl font-bold text-foreground mb-4">
-                    Let's Talk
-                  </h2>
+                  <h2 className="font-heading text-3xl lg:text-4xl font-bold text-foreground mb-4">Let's Talk</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    Whether you need an <a href="/services/ac-repair" className="text-secondary hover:underline">emergency repair</a>, a <a href="/services/ac-installation" className="text-secondary hover:underline">new installation</a>, or just have questions about your HVAC system — we're here for you. We also offer <a href="/services/ac-maintenance" className="text-secondary hover:underline">routine maintenance</a> and <a href="/services/duct-cleaning" className="text-secondary hover:underline">duct cleaning</a>. Reach out and we'll get back to you as quickly as possible.
+                    Whether you need <a href="/services/yard-maintenance" className="text-secondary hover:underline">yard maintenance</a>, <a href="/services/post-eviction" className="text-secondary hover:underline">post eviction cleanup</a>, or <a href="/services/rental-cleans" className="text-secondary hover:underline">rental make-ready services</a> — we're here for you. Reach out and we'll get back to you as quickly as possible.
                   </p>
                 </div>
-
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center shrink-0">
-                      <Phone className="w-5 h-5 text-secondary" />
-                    </div>
-                    <div>
-                      <h3 className="font-heading font-semibold text-foreground mb-1">Phone</h3>
-                      <a href="tel:+15551234567" className="text-muted-foreground hover:text-secondary transition-colors">
-                        (555) 123-4567
-                      </a>
-                    </div>
+                    <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center shrink-0"><Phone className="w-5 h-5 text-secondary" /></div>
+                    <div><h3 className="font-heading font-semibold text-foreground mb-1">Phone</h3><a href="tel:+18138602202" className="text-muted-foreground hover:text-secondary transition-colors">(813) 860-2202</a></div>
                   </div>
-
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center shrink-0">
-                      <Mail className="w-5 h-5 text-secondary" />
-                    </div>
-                    <div>
-                      <h3 className="font-heading font-semibold text-foreground mb-1">Email</h3>
-                      <a href="mailto:info@example.com" className="text-muted-foreground hover:text-secondary transition-colors">
-                        info@example.com
-                      </a>
-                    </div>
+                    <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center shrink-0"><Mail className="w-5 h-5 text-secondary" /></div>
+                    <div><h3 className="font-heading font-semibold text-foreground mb-1">Email</h3><a href="mailto:ktrvr@curbservs.com" className="text-muted-foreground hover:text-secondary transition-colors">ktrvr@curbservs.com</a></div>
                   </div>
-
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center shrink-0">
-                      <MapPin className="w-5 h-5 text-secondary" />
-                    </div>
-                    <div>
-                      <h3 className="font-heading font-semibold text-foreground mb-1">Address</h3>
-                      <p className="text-muted-foreground">123 Main Street, Anytown, FL 34000</p>
-                    </div>
+                    <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center shrink-0"><MapPin className="w-5 h-5 text-secondary" /></div>
+                    <div><h3 className="font-heading font-semibold text-foreground mb-1">Service Area</h3><p className="text-muted-foreground">Tampa Bay & Central Florida</p></div>
                   </div>
-
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center shrink-0">
-                      <Clock className="w-5 h-5 text-secondary" />
-                    </div>
-                    <div>
-                      <h3 className="font-heading font-semibold text-foreground mb-1">Hours</h3>
-                      <p className="text-muted-foreground">Open 24 hours — we're always here when you need us!</p>
-                    </div>
+                    <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center shrink-0"><Clock className="w-5 h-5 text-secondary" /></div>
+                    <div><h3 className="font-heading font-semibold text-foreground mb-1">Hours</h3><p className="text-muted-foreground">Contact us for availability</p></div>
                   </div>
                 </div>
-
-                {/* Map placeholder */}
                 <div className="rounded-2xl overflow-hidden border border-border shadow-md bg-muted flex items-center justify-center" style={{ height: 250 }}>
-                  <div className="text-center text-muted-foreground p-8">
-                    <MapPin className="w-12 h-12 mx-auto mb-3 opacity-30" />
-                    <p className="font-semibold">Your Google Map Here</p>
-                  </div>
+                  <div className="text-center text-muted-foreground p-8"><MapPin className="w-12 h-12 mx-auto mb-3 opacity-30" /><p className="font-semibold">Your Google Map Here</p></div>
                 </div>
               </motion.div>
-
-              {/* Quote Form */}
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-              >
+              <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
                 <QuoteForm />
               </motion.div>
             </div>
