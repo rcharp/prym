@@ -1,9 +1,9 @@
 import { ArrowRight, BookOpen, Clock } from "lucide-react";
 import { motion } from "framer-motion";
-import hvacTips from "@/data/hvacTips";
+import propertyTips from "@/data/propertyTips";
 
 const HVACTipsSection = () => {
-  const featured = hvacTips.slice(0, 3);
+  const featured = propertyTips.slice(0, 3);
 
   return (
     <section className="py-20 lg:py-28 border-t border-border">
@@ -19,10 +19,10 @@ const HVACTipsSection = () => {
             <span className="text-base font-semibold text-primary uppercase tracking-wider">Expert Advice</span>
           </div>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3">
-            HVAC Tips & Guides
+            Property Care Tips & Guides
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Helpful articles from our experienced technicians to keep your home comfortable and your system running efficiently.
+            Helpful articles from our experienced team to keep your property looking great and maintaining its value.
           </p>
         </motion.div>
 
@@ -36,7 +36,7 @@ const HVACTipsSection = () => {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
               className="group rounded-2xl p-7 border border-secondary/30 hover:border-secondary/60 transition-all"
-              style={{ backgroundColor: "#0f172a" }}
+              style={{ backgroundColor: "hsl(148 40% 12%)" }}
             >
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-xs font-semibold text-secondary uppercase">{tip.category}</span>

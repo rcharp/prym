@@ -14,8 +14,8 @@ import useSEO from "@/hooks/useSEO";
 
 const Index = () => {
   useSEO({
-    title: "CoolBreeze HVAC | HVAC Services",
-    description: "CoolBreeze HVAC provides expert AC repair, installation, maintenance and duct cleaning. Family owned. Call (555) 123-4567.",
+    title: "PricedRight Yards & More | Property Preservation Services",
+    description: "PricedRight Yards & More provides expert yard maintenance, property preservation, post eviction services, and more across Central Florida. Family owned & insured. Call (813) 860-2202.",
     canonical: "https://example.com/",
   });
 
