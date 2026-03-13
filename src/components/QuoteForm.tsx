@@ -86,8 +86,8 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
       onSubmit={handleSubmit}
       className={`rounded-2xl border-2 ${compact ? 'p-5 space-y-3' : 'p-8 space-y-6'} shadow-2xl ${className}`}
       style={{
-        backgroundColor: "#0f172a",
-        borderColor: "#3b82f6",
+        backgroundColor: "hsl(148 40% 12%)",
+        borderColor: "hsl(142 70% 45%)",
         ...style,
       }}
     >
