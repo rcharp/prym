@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: "Do you offer free estimates?",
-    a: "Yes! We provide free, no-obligation estimates for all of our services. Just give us a call at (813) 860-2202 or fill out our online quote form and we'll get back to you quickly with a fair, competitive price.",
+    a: "Yes! We provide free, no-obligation estimates for all of our services. Just give us a call at (813) 668-3219 or fill out our online quote form and we'll get back to you quickly with a fair, competitive price.",
   },
   {
     q: "Do you work with property managers and landlords?",
