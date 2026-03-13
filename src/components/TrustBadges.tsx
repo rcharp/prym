@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 const badges = [
   { icon: Shield, label: "Fully Insured" },
   { icon: Users, label: "Family Owned & Operated" },
-  { icon: Star, label: "Comprehensive Property Care" },
-  { icon: ThumbsUp, label: "Value-Focused Pricing" },
-  { icon: Clock, label: "Serving Tampa Bay & Beyond" },
+  { icon: Clock, label: "20+ Years Combined Experience" },
+  { icon: Star, label: "Your Property Partner" },
+  { icon: ThumbsUp, label: "More Than Just Lawn Care" },
 ];
 
 const TrustBadges = () => (

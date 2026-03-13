@@ -43,9 +43,9 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-lg text-primary-foreground/70 max-w-lg leading-relaxed break-words"
             >
-              Family owned and fully insured property maintenance since 2024, serving Hillsborough, Manatee, Pasco, Pinellas, and Sarasota Counties.
+              Small family owned and operated lawn & landscape business offering MORE than just lawn and landscape services to residents, land/home owners, and businesses within the communities we serve.
               <br /><br />
-              <strong>PricedRight Yards & More</strong> provides comprehensive property care for homeowners, property managers, and business owners across Central Florida.
+              With over <strong>20 years of collective experience</strong>, we consider ourselves partners to our customers — what's important to you regarding your property is equally important to us.
             </motion.p>
 
             {/* Social Proof */}
