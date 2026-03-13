@@ -16,10 +16,10 @@ const AboutSection = () => (
             Family Owned. Fully Insured.
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            We are a small but mighty family owned company fully insured for your peace of mind. From yard and shrub/tree services to post eviction services, we cover all the property needs for homeowners, property owners, property managers, and business owners.
+            We're a small, family owned and operated lawn & landscape business offering MORE than just lawn and landscape services to residents, land/home owners, and businesses within the communities we serve. Collectively, we have over 20 years in the business and are fully insured for your peace of mind.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            Our services are priced right to help you maintain or increase your property value. When you choose PricedRight Yards & More, you're getting a partner who's invested in your property's success and your complete satisfaction.
+            We consider ourselves partners to our customers — what is important to you regarding your property is equally important to us. When you choose PricedRight Yards & More, you're getting a team that's invested in your property's success and your complete satisfaction.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 pt-4">
             <div className="flex items-center gap-3">
