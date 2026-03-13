@@ -41,10 +41,14 @@ const App = () => (
             <Route path="/quote" element={<QuotePage />} />
             <Route path="/review" element={<ReviewPage />} />
             <Route path="/services/yard-maintenance" element={<YardMaintenancePage />} />
+            <Route path="/services/lawn-landscape" element={<YardMaintenancePage />} />
             <Route path="/services/post-eviction" element={<PostEvictionPage />} />
             <Route path="/services/vacant-property" element={<VacantPropertyPage />} />
+            <Route path="/services/debris-removal" element={<VacantPropertyPage />} />
             <Route path="/services/tree-services" element={<TreeServicesPage />} />
+            <Route path="/services/home-watch" element={<TreeServicesPage />} />
             <Route path="/services/rental-cleans" element={<RentalCleansPage />} />
+            <Route path="/services/make-ready" element={<RentalCleansPage />} />
             <Route path="/areas/tampa" element={<TampaPage />} />
             <Route path="/areas/sarasota" element={<SarasotaPage />} />
             <Route path="/areas/orlando" element={<OrlandoPage />} />
