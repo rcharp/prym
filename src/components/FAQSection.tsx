@@ -9,7 +9,7 @@ import {
 const faqs = [
   {
     q: "What services does PricedRight Yards & More offer?",
-    a: "We offer comprehensive property services including yard and landscape cleanup and maintenance, post eviction services, vacant property cleanup and maintenance, shrub and tree maintenance and removal, and rental cleans and make ready services. We're your one-stop shop for all property preservation needs.",
+    a: "We offer comprehensive property services including lawn & landscape maintenance, debris & junk removal (from lawns, roofs, garages, sheds, and interiors), sales & rental make-ready cleans, post eviction services, and HomeWatch property monitoring. We're your one-stop shop for all property needs.",
   },
   {
     q: "What areas do you serve?",
