@@ -1,5 +1,5 @@
 import { Phone, MapPin, Clock, Mail } from "lucide-react";
-import logo from "@/assets/logo-new.jpg";
+import logo from "@/assets/logo-transparent.png";
 
 const Footer = () => (
   <footer className="bg-foreground text-card py-16">
@@ -7,7 +7,7 @@ const Footer = () => (
       <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
 {/* Brand */}
         <div className="space-y-4">
-          <img src={logo} alt="PricedRight Yards & More Logo" className="h-14 w-auto mix-blend-lighten" />
+          <img src={logo} alt="PricedRight Yards & More Logo" className="h-14 w-auto" />
           <p className="text-sm opacity-60">Your Property Preservation Partner.</p>
         </div>
 
