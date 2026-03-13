@@ -46,8 +46,8 @@ const AboutPage = () => {
               <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="space-y-6">
                 <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Meet the Owner</span>
                 <h2 className="font-heading text-3xl lg:text-4xl font-bold text-foreground">Hey, I'm Kay Tarver!</h2>
-                <p className="text-muted-foreground leading-relaxed">I'm the owner of PricedRight Yards & More, a family-owned and fully insured property preservation company. We are a small but mighty team committed to providing comprehensive property care for homeowners, property owners, property managers, and business owners across Central Florida.</p>
-                <p className="text-muted-foreground leading-relaxed">Our commitment is simple: provide value-focused services that help you maintain or increase your property value. When you call us, you're getting a dedicated team that treats every property like it's our own.</p>
+                <p className="text-muted-foreground leading-relaxed">I'm the owner of PricedRight Yards & More, a family-owned and fully insured property services company. With over 20 years of collective experience, we're a small but mighty team committed to being true partners to our customers across Central Florida.</p>
+                <p className="text-muted-foreground leading-relaxed">What makes us special is our transparency and the <strong>MORE Factor</strong> we bring to every job — giving our partners an almost one-stop shop for all their property needs. What's important to you regarding your property is equally important to us.</p>
               </motion.div>
             </div>
           </div>
