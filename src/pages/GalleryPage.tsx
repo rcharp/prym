@@ -3,13 +3,27 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import useSEO from "@/hooks/useSEO";
-import { Image } from "lucide-react";
 
-const placeholderImages = [
-  "Yard cleanup before & after", "Tree trimming project", "Post eviction cleanout", "Landscape maintenance",
-  "Shrub shaping", "Rental make-ready", "Mulch installation", "Debris removal",
-  "Property transformation", "Hedge trimming", "Vacant lot cleanup", "Lawn edging",
-  "Storm cleanup", "Commercial property", "Stump removal", "Garden bed cleanup",
+import stormDebris from "@/assets/gallery/storm-debris.png";
+import lawnMaintenance from "@/assets/gallery/lawn-maintenance.png";
+import landscapeGreenery from "@/assets/gallery/landscape-greenery.png";
+import palmYard from "@/assets/gallery/palm-yard.png";
+import lawnCare from "@/assets/gallery/lawn-care.png";
+import treeDebris from "@/assets/gallery/tree-debris.png";
+import gazeboLawn from "@/assets/gallery/gazebo-lawn.png";
+import rooftopTrees from "@/assets/gallery/rooftop-trees.png";
+import stumpRemoval from "@/assets/gallery/stump-removal.png";
+
+const galleryImages = [
+  { src: lawnMaintenance, alt: "Lawn Maintenance" },
+  { src: palmYard, alt: "Palm Tree Yard Care" },
+  { src: lawnCare, alt: "Lawn Care Service" },
+  { src: stormDebris, alt: "Storm Debris Cleanup" },
+  { src: treeDebris, alt: "Tree Debris Removal" },
+  { src: landscapeGreenery, alt: "Landscape Greenery" },
+  { src: gazeboLawn, alt: "Gazebo Lawn Care" },
+  { src: rooftopTrees, alt: "Rooftop Tree View" },
+  { src: stumpRemoval, alt: "Stump Removal" },
 ];
 
 const GalleryPage = () => {
@@ -31,10 +45,9 @@ const GalleryPage = () => {
               <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">Browse photos from our recent property preservation and maintenance projects.</p>
             </motion.div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {placeholderImages.map((label, i) => (
-                <motion.div key={i} initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.03 }} className="rounded-xl overflow-hidden aspect-[4/3] bg-muted flex flex-col items-center justify-center gap-3 border border-border">
-                  <Image className="w-10 h-10 text-muted-foreground/30" />
-                  <span className="text-xs text-muted-foreground/50 font-medium px-4 text-center">{label}</span>
+              {galleryImages.map((img, i) => (
+                <motion.div key={i} initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.03 }} className="rounded-xl overflow-hidden aspect-[4/3] border border-border">
+                  <img src={img.src} alt={img.alt} className="w-full h-full object-cover" loading="lazy" />
                 </motion.div>
               ))}
             </div>

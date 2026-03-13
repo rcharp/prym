@@ -1,15 +1,22 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, Image } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const placeholders = [
-  "Yard Cleanup",
-  "Tree Trimming",
-  "Property Makeover",
-  "Post Eviction Clean",
-  "Landscape Maintenance",
-  "Before & After",
+import stormDebris from "@/assets/gallery/storm-debris.png";
+import lawnMaintenance from "@/assets/gallery/lawn-maintenance.png";
+import landscapeGreenery from "@/assets/gallery/landscape-greenery.png";
+import palmYard from "@/assets/gallery/palm-yard.png";
+import lawnCare from "@/assets/gallery/lawn-care.png";
+import treeDebris from "@/assets/gallery/tree-debris.png";
+
+const galleryImages = [
+  { src: lawnMaintenance, alt: "Lawn Maintenance" },
+  { src: palmYard, alt: "Palm Tree Yard Care" },
+  { src: lawnCare, alt: "Lawn Care Service" },
+  { src: stormDebris, alt: "Storm Debris Cleanup" },
+  { src: treeDebris, alt: "Tree Debris Removal" },
+  { src: landscapeGreenery, alt: "Landscape Greenery" },
 ];
 
 const GallerySection = () => (
@@ -28,17 +35,16 @@ const GallerySection = () => (
       </motion.div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-        {placeholders.map((label, i) => (
+        {galleryImages.map((img, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.08 }}
-            className="rounded-xl overflow-hidden aspect-square bg-muted flex flex-col items-center justify-center gap-3 border border-border"
+            className="rounded-xl overflow-hidden aspect-square border border-border"
           >
-            <Image className="w-10 h-10 text-muted-foreground/40" />
-            <span className="text-sm text-muted-foreground/60 font-medium">{label}</span>
+            <img src={img.src} alt={img.alt} className="w-full h-full object-cover" loading="lazy" />
           </motion.div>
         ))}
       </div>
