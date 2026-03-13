@@ -6,23 +6,23 @@
 
 @layer base {
   :root {
-    --background: 220 20% 97%;
-    --foreground: 220 20% 15%;
+    --background: 140 20% 97%;
+    --foreground: 150 30% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 20% 15%;
+    --card-foreground: 150 30% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 15%;
+    --popover-foreground: 150 30% 10%;
 
-    --primary: 222 47% 11%;
+    --primary: 148 40% 12%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 217 91% 60%;
+    --secondary: 142 70% 45%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 14% 93%;
-    --muted-foreground: 220 10% 46%;
+    --muted: 140 14% 93%;
+    --muted-foreground: 150 10% 46%;
 
     --accent: 38 92% 55%;
     --accent-foreground: 0 0% 100%;
@@ -30,25 +30,25 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 217 91% 60%;
+    --border: 140 13% 91%;
+    --input: 140 13% 91%;
+    --ring: 142 70% 45%;
 
     --radius: 0.75rem;
 
-    --hero-gradient: linear-gradient(135deg, hsl(220 30% 96%) 0%, hsl(217 50% 94%) 50%, hsl(220 30% 96%) 100%);
-    --card-shadow: 0 4px 24px -4px hsl(220 20% 15% / 0.06);
-    --card-shadow-hover: 0 8px 32px -4px hsl(220 20% 15% / 0.12);
-    --section-gradient: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 20% 97%) 100%);
+    --hero-gradient: linear-gradient(135deg, hsl(140 30% 96%) 0%, hsl(142 50% 94%) 50%, hsl(140 30% 96%) 100%);
+    --card-shadow: 0 4px 24px -4px hsl(150 30% 10% / 0.06);
+    --card-shadow-hover: 0 8px 32px -4px hsl(150 30% 10% / 0.12);
+    --section-gradient: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(140 20% 97%) 100%);
 
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-foreground: 150 5% 26%;
+    --sidebar-primary: 148 40% 12%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217 91% 60%;
+    --sidebar-accent: 140 5% 96%;
+    --sidebar-accent-foreground: 148 40% 12%;
+    --sidebar-border: 140 13% 91%;
+    --sidebar-ring: 142 70% 45%;
 
     --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Montserrat', sans-serif;
