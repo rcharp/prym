@@ -42,7 +42,7 @@ const ContactPage = () => {
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center shrink-0"><Phone className="w-5 h-5 text-secondary" /></div>
-                    <div><h3 className="font-heading font-semibold text-foreground mb-1">Phone</h3><a href="tel:+18138602202" className="text-muted-foreground hover:text-secondary transition-colors">(813) 860-2202</a></div>
+                    <div><h3 className="font-heading font-semibold text-foreground mb-1">Phone</h3><a href="tel:+18136683219" className="text-muted-foreground hover:text-secondary transition-colors">(813) 668-3219</a></div>
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center shrink-0"><Mail className="w-5 h-5 text-secondary" /></div>

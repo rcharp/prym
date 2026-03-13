@@ -37,8 +37,8 @@ const AboutSection = () => (
               </div>
               <div>
                 <div className="text-sm text-muted-foreground">Phone</div>
-                <a href="tel:+18138602202" className="text-base font-semibold text-foreground hover:text-primary transition-colors">
-                  (813) 860-2202
+                <a href="tel:+18136683219" className="text-base font-semibold text-foreground hover:text-primary transition-colors">
+                  (813) 668-3219
                 </a>
               </div>
            </div>
