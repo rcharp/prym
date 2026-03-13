@@ -62,7 +62,7 @@ const HVACTipsPage = () => {
         <section className="py-12 lg:py-16 border-t border-border">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
             <p className="text-muted-foreground text-lg">
-              Need professional help? Explore our <a href="/services/yard-maintenance" className="text-secondary hover:underline font-semibold">yard maintenance</a>, <a href="/services/post-eviction" className="text-secondary hover:underline font-semibold">post eviction</a>, <a href="/services/tree-services" className="text-secondary hover:underline font-semibold">tree services</a>, and <a href="/services/rental-cleans" className="text-secondary hover:underline font-semibold">rental cleans</a>, or <a href="/contact" className="text-secondary hover:underline font-semibold">contact us</a> for a free quote.
+              Need professional help? Explore our <a href="/services/lawn-landscape" className="text-secondary hover:underline font-semibold">lawn & landscape</a>, <a href="/services/debris-removal" className="text-secondary hover:underline font-semibold">debris removal</a>, <a href="/services/post-eviction" className="text-secondary hover:underline font-semibold">post eviction</a>, and <a href="/services/home-watch" className="text-secondary hover:underline font-semibold">HomeWatch</a> services, or <a href="/contact" className="text-secondary hover:underline font-semibold">contact us</a> for a free quote.
             </p>
           </div>
         </section>
