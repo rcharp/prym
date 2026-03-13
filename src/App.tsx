@@ -51,13 +51,14 @@ const App = () => (
             <Route path="/services/rental-cleans" element={<RentalCleansPage />} />
             <Route path="/services/make-ready" element={<RentalCleansPage />} />
             <Route path="/areas/tampa" element={<TampaPage />} />
+            <Route path="/areas/st-petersburg" element={<StPetersburgPage />} />
+            <Route path="/areas/clearwater" element={<ClearwaterPage />} />
+            <Route path="/areas/bradenton" element={<BradentonPage />} />
+            <Route path="/areas/palmetto" element={<PalmettoPage />} />
+            <Route path="/areas/ellenton" element={<EllentonPage />} />
             <Route path="/areas/sarasota" element={<SarasotaPage />} />
             <Route path="/areas/orlando" element={<OrlandoPage />} />
-            <Route path="/areas/bradenton" element={<BradentonPage />} />
-            <Route path="/areas/clearwater" element={<ClearwaterPage />} />
             <Route path="/areas/lakeland" element={<LakelandPage />} />
-            <Route path="/areas/st-petersburg" element={<StPetersburgPage />} />
-            <Route path="/areas/ellenton" element={<EllentonPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
