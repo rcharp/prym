@@ -45,7 +45,7 @@ const HVACTipsPage = () => {
           <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-8">
               {propertyTips.map((tip, i) => (
-                <motion.a key={tip.slug} href={`/tips/${tip.slug}`} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }} className="group rounded-2xl p-8 border border-secondary/30 hover:border-secondary/60 transition-all" style={{ backgroundColor: "hsl(148 40% 12%)" }}>
+                <motion.a key={tip.slug} href={`/tips/${tip.slug}`} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }} className="group rounded-2xl p-8 border border-secondary/30 hover:border-secondary/60 transition-all bg-primary">
                   <div className="flex items-center gap-3 mb-4">
                     <span className={`px-3 py-1 text-xs font-semibold rounded-full border ${categoryColors[tip.category] || "bg-secondary/10 text-secondary border-secondary/30"}`}>{tip.category}</span>
                     <span className="flex items-center gap-1 text-xs text-primary-foreground/50"><Clock className="w-3 h-3" />{tip.readTime}</span>

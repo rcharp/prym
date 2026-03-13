@@ -46,7 +46,7 @@ const Header = () => {
   const { openQuoteModal } = useQuoteModal();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-secondary/20 max-w-[100vw]" style={{ backgroundColor: "hsl(148 40% 12%)" }}>
+    <header className="sticky top-0 z-50 border-b border-secondary/20 max-w-[100vw] bg-primary">
       <div className="container mx-auto flex items-center justify-between py-4 px-4 lg:px-8 max-w-[100vw]">
         {/* Logo */}
         <a href="/" className="flex items-center shrink-0 mr-2 lg:mr-4">
@@ -74,8 +74,7 @@ const Header = () => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 8 }}
                       transition={{ duration: 0.15 }}
-                      className="absolute top-full left-0 mt-1 z-50 rounded-xl shadow-lg border border-border py-2 min-w-[260px]"
-                      style={{ backgroundColor: "hsl(148 40% 12%)" }}
+                      className="absolute top-full left-0 mt-1 z-50 rounded-xl shadow-lg border border-border py-2 min-w-[260px] bg-primary"
                     >
                       {link.children.map((child) => (
                         <a
@@ -139,8 +138,7 @@ const Header = () => {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="lg:hidden overflow-hidden border-t border-secondary/20"
-            style={{ backgroundColor: "hsl(148 40% 12%)" }}
+            className="lg:hidden overflow-hidden border-t border-secondary/20 bg-primary"
           >
             <div className="px-4 py-6 space-y-4">
               {navLinks.map((link) =>

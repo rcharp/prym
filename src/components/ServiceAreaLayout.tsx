@@ -130,7 +130,7 @@ const ServiceAreaPage = ({ city, tagline, intro }: ServiceAreaPageProps) => {
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
                   className="rounded-2xl p-8 border border-secondary/30"
-                  style={{ backgroundColor: "hsl(148 40% 12%)" }}
+                  style={{ backgroundColor: "hsl(155 55% 18%)" }}
                 >
                   <h3 className="font-heading text-xl font-bold text-primary-foreground mb-4">{service.title}</h3>
                   <ul className="space-y-3 mb-6">
@@ -163,7 +163,7 @@ const ServiceAreaPage = ({ city, tagline, intro }: ServiceAreaPageProps) => {
         </section>
 
         {/* CTA */}
-        <section className="py-16 relative overflow-hidden" style={{ backgroundColor: "hsl(148 40% 12%)" }}>
+        <section className="py-16 relative overflow-hidden bg-primary">
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-heading text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
               Need Property Services in {city}?
