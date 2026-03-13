@@ -19,6 +19,7 @@ import ClearwaterPage from "./pages/areas/ClearwaterPage";
 import LakelandPage from "./pages/areas/LakelandPage";
 import StPetersburgPage from "./pages/areas/StPetersburgPage";
 import EllentonPage from "./pages/areas/EllentonPage";
+import PalmettoPage from "./pages/areas/PalmettoPag";
 import GalleryPage from "./pages/GalleryPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
