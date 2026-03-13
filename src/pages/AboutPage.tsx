@@ -99,12 +99,11 @@ const AboutPage = () => {
                 <ul className="space-y-3">
                   {[
                     { label: "Tampa, FL", href: "/areas/tampa" },
-                    { label: "Sarasota, FL", href: "/areas/sarasota" },
-                    { label: "Orlando, FL", href: "/areas/orlando" },
-                    { label: "Bradenton, FL", href: "/areas/bradenton" },
-                    { label: "Clearwater, FL", href: "/areas/clearwater" },
-                    { label: "Lakeland, FL", href: "/areas/lakeland" },
                     { label: "St. Petersburg, FL", href: "/areas/st-petersburg" },
+                    { label: "Clearwater, FL", href: "/areas/clearwater" },
+                    { label: "Bradenton, FL", href: "/areas/bradenton" },
+                    { label: "Palmetto, FL", href: "/areas/palmetto" },
+                    { label: "Ellenton, FL", href: "/areas/ellenton" },
                   ].map((a) => (
                     <li key={a.href}><a href={a.href} className="flex items-center gap-2 text-muted-foreground hover:text-secondary transition-colors"><MapPin className="w-4 h-4 text-secondary shrink-0" />{a.label}</a></li>
                   ))}

@@ -40,12 +40,11 @@ const Footer = () => (
           <h4 className="font-heading font-semibold text-base uppercase tracking-wider mb-4 opacity-60">Service Areas</h4>
           <nav className="space-y-3">
             <a href="/areas/tampa" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Tampa, FL</a>
-            <a href="/areas/sarasota" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Sarasota, FL</a>
-            <a href="/areas/orlando" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Orlando, FL</a>
-            <a href="/areas/bradenton" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Bradenton, FL</a>
-            <a href="/areas/clearwater" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Clearwater, FL</a>
-            <a href="/areas/lakeland" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Lakeland, FL</a>
             <a href="/areas/st-petersburg" className="block text-base opacity-80 hover:opacity-100 transition-opacity">St. Petersburg, FL</a>
+            <a href="/areas/clearwater" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Clearwater, FL</a>
+            <a href="/areas/bradenton" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Bradenton, FL</a>
+            <a href="/areas/palmetto" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Palmetto, FL</a>
+            <a href="/areas/ellenton" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Ellenton, FL</a>
           </nav>
         </div>
 
