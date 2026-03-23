@@ -31,9 +31,6 @@ const HeroSection = () => {
               <h1 className="font-heading text-[2.6rem] lg:text-6xl xl:text-7xl font-bold leading-[1.1] tracking-tight text-primary-foreground text-center lg:text-left">
                 Your One Stop Shop{" "}
                 <span className="text-secondary-color">Property Services.</span>
-                <br />
-                <span className="block mt-5 lg:mt-0">Priced Right.{" "}
-                <span className="text-secondary-color">Done Right.</span></span>
               </h1>
             </motion.div>
 
