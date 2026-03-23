@@ -36,12 +36,12 @@ const AboutPage = () => {
           <div className="container mx-auto px-4 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
               <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-                <div className="rounded-2xl shadow-xl w-full aspect-[4/3] bg-muted flex items-center justify-center">
-                  <div className="text-center text-muted-foreground">
-                    <div className="w-20 h-20 rounded-full bg-muted-foreground/10 mx-auto mb-4 flex items-center justify-center text-3xl font-bold">👤</div>
-                    <p className="font-semibold">Your Photo Here</p>
-                  </div>
-                </div>
+                <img
+                  src={ownerPhoto}
+                  alt="Kay Tarver, Owner of PricedRight Yards & More"
+                  loading="lazy"
+                  className="rounded-2xl shadow-xl w-full aspect-[4/3] object-cover object-top"
+                />
               </motion.div>
               <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="space-y-6">
                 <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Meet the Owner</span>
