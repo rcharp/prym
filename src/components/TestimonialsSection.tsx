@@ -106,9 +106,14 @@ const TestimonialsSection = () => {
                 "{testimonials[current].text}"
               </p>
               <div className="flex items-center gap-3">
-                <div className="w-11 h-11 rounded-full bg-secondary/15 flex items-center justify-center font-heading font-bold text-secondary text-base">
-                  {testimonials[current].name.charAt(0)}
-                </div>
+                <img
+                  src={testimonials[current].image}
+                  alt={testimonials[current].name}
+                  loading="lazy"
+                  width={44}
+                  height={44}
+                  className="w-11 h-11 rounded-full object-cover"
+                />
                 <div>
                   <div className="font-heading font-semibold text-foreground">{testimonials[current].name}</div>
                   <div className="text-sm text-muted-foreground">{testimonials[current].service} · {testimonials[current].date}</div>
