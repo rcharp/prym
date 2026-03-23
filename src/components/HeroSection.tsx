@@ -3,6 +3,12 @@ import { motion } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
 import QuoteForm from "./QuoteForm";
 import heroBg from "@/assets/hero-bg.png";
+import profile1 from "@/assets/profile-1.webp";
+import profile2 from "@/assets/profile-2.webp";
+import profile3 from "@/assets/profile-3.jpeg";
+import profile4 from "@/assets/profile-4.webp";
+
+const profileImages = [profile1, profile2, profile3, profile4];
 
 const HeroSection = () => {
   const { openQuoteModal } = useQuoteModal();
