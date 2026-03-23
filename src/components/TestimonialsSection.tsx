@@ -1,11 +1,6 @@
 import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState, useCallback, useEffect } from "react";
-import karenImg from "@/assets/testimonial-karen.jpg";
-import dorothyImg from "@/assets/testimonial-dorothy.jpg";
-import katrinaImg from "@/assets/testimonial-katrina.jpg";
-import scottImg from "@/assets/testimonial-scott.jpg";
-import georgeImg from "@/assets/testimonial-george.jpg";
 
 const testimonials = [
   {
