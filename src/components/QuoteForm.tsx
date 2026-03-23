@@ -63,7 +63,7 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
       await supabase.functions.invoke("send-transactional-email", {
         body: {
           templateName: "quote-notification",
-          recipientEmail: "rickycharpentier@gmail.com",
+          recipientEmail: "ktrvr@curbservs.com",
           idempotencyKey: `quote-notify-${submissionId}`,
           templateData: { name, phone, email, helpWith },
         },
