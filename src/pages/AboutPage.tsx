@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import teamOnSite from "@/assets/gallery/team-on-site.jpg";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import { motion } from "framer-motion";
