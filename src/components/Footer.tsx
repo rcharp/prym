@@ -60,7 +60,7 @@ const Footer = () => (
             <a href="mailto:ktrvr@curbservs.com" className="text-base opacity-80 hover:opacity-100 transition-opacity">ktrvr@curbservs.com</a>
           </div>
           <div className="flex items-start gap-3">
-            <MapPin className="w-4 h-4 mt-0.5 opacity-60" />
+            <MapPin className="w-4 h-4 mt-0.5 opacity-60 shrink-0" />
             <span className="text-base opacity-80">2304 4th Avenue East, Palmetto, FL 34221</span>
           </div>
           <div className="flex items-start gap-3">
