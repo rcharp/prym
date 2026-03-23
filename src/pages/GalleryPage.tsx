@@ -13,6 +13,15 @@ import treeDebris from "@/assets/gallery/tree-debris.png";
 import gazeboLawn from "@/assets/gallery/gazebo-lawn.png";
 import rooftopTrees from "@/assets/gallery/rooftop-trees.png";
 import stumpRemoval from "@/assets/gallery/stump-removal.png";
+import communityYardCuts from "@/assets/gallery/community-yard-cuts.png";
+import debrisCleanup1 from "@/assets/gallery/debris-cleanup-1.jpg";
+import junkRemoval from "@/assets/gallery/junk-removal.jpg";
+import overgrownLot from "@/assets/gallery/overgrown-lot.jpg";
+import teamOnSite from "@/assets/gallery/team-on-site.jpg";
+import propertyCleanup from "@/assets/gallery/property-cleanup.jpg";
+import roofDebris from "@/assets/gallery/roof-debris.jpg";
+import roofCleanup from "@/assets/gallery/roof-cleanup.jpg";
+import finishedLawn from "@/assets/gallery/finished-lawn.jpg";
 
 const galleryImages = [
   { src: lawnMaintenance, alt: "Lawn Maintenance" },
@@ -24,6 +33,15 @@ const galleryImages = [
   { src: gazeboLawn, alt: "Gazebo Lawn Care" },
   { src: rooftopTrees, alt: "Rooftop Tree View" },
   { src: stumpRemoval, alt: "Stump Removal" },
+  { src: communityYardCuts, alt: "Community Yard Cuts" },
+  { src: debrisCleanup1, alt: "Debris Cleanup" },
+  { src: junkRemoval, alt: "Junk Removal" },
+  { src: overgrownLot, alt: "Overgrown Lot Clearing" },
+  { src: teamOnSite, alt: "Team On Site" },
+  { src: propertyCleanup, alt: "Property Cleanup" },
+  { src: roofDebris, alt: "Roof Debris Before" },
+  { src: roofCleanup, alt: "Roof Cleanup After" },
+  { src: finishedLawn, alt: "Finished Lawn" },
 ];
 
 const GalleryPage = () => {
