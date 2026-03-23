@@ -22,6 +22,16 @@ import propertyCleanup from "@/assets/gallery/property-cleanup.jpg";
 import roofDebris from "@/assets/gallery/roof-debris.jpg";
 import roofCleanup from "@/assets/gallery/roof-cleanup.jpg";
 import finishedLawn from "@/assets/gallery/finished-lawn.jpg";
+import fallenTree from "@/assets/gallery/fallen-tree.png";
+import hedgeBefore1 from "@/assets/gallery/hedge-before-1.webp";
+import hedgeBefore2 from "@/assets/gallery/hedge-before-2.webp";
+import hedgeBefore3 from "@/assets/gallery/hedge-before-3.webp";
+import stumpTeam from "@/assets/gallery/stump-team.webp";
+import clearedLot from "@/assets/gallery/cleared-lot.webp";
+import landscapedHome1 from "@/assets/gallery/landscaped-home-1.webp";
+import landscapedHome2 from "@/assets/gallery/landscaped-home-2.webp";
+import sideYardMow from "@/assets/gallery/side-yard-mow.webp";
+import openYardMow from "@/assets/gallery/open-yard-mow.webp";
 
 const galleryImages = [
   { src: lawnMaintenance, alt: "Lawn Maintenance" },
@@ -42,6 +52,16 @@ const galleryImages = [
   { src: roofDebris, alt: "Roof Debris Before" },
   { src: roofCleanup, alt: "Roof Cleanup After" },
   { src: finishedLawn, alt: "Finished Lawn" },
+  { src: fallenTree, alt: "Fallen Tree Cleanup" },
+  { src: hedgeBefore1, alt: "Overgrown Hedge - Front View" },
+  { src: hedgeBefore2, alt: "Overgrown Hedge - Side View" },
+  { src: hedgeBefore3, alt: "Overgrown Hedge - Angle View" },
+  { src: stumpTeam, alt: "Stump Removal Team" },
+  { src: clearedLot, alt: "Cleared Wooded Lot" },
+  { src: landscapedHome1, alt: "Landscaped Home - Front" },
+  { src: landscapedHome2, alt: "Landscaped Home - Close Up" },
+  { src: sideYardMow, alt: "Side Yard Mowing" },
+  { src: openYardMow, alt: "Open Yard Mowing" },
 ];
 
 const GalleryPage = () => {
