@@ -82,14 +82,22 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="flex items-center gap-6 pt-2"
             >
-              <div className="flex items-center gap-2">
+              <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
                 <span className="text-base font-semibold text-primary-foreground">Google</span>
                 <div className="flex gap-0.5">
                   {[1, 2, 3, 4, 5].map((i) => (
                     <Star key={i} className="w-3.5 h-3.5 fill-accent text-accent" />
                   ))}
                 </div>
-              </div>
+              </a>
+              <a href="https://www.thumbtack.com/fl/palmetto/lawn-care/pricedright-yards-more/service/512059777267326978" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                <span className="text-base font-semibold text-primary-foreground">Thumbtack</span>
+                <div className="flex gap-0.5">
+                  {[1, 2, 3, 4, 5].map((i) => (
+                    <Star key={i} className="w-3.5 h-3.5 fill-accent text-accent" />
+                  ))}
+                </div>
+              </a>
             </motion.div>
           </div>
 
