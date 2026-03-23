@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import teamOnSite from "@/assets/gallery/team-on-site.jpg";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import { motion } from "framer-motion";
@@ -68,9 +69,12 @@ const AboutPage = () => {
                 </ul>
               </motion.div>
               <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="order-1 lg:order-2">
-                <div className="rounded-2xl shadow-xl w-full aspect-[4/3] bg-white/5 flex items-center justify-center border border-white/10">
-                  <div className="text-center text-primary-foreground/50"><p className="font-semibold">Your Work Photo Here</p></div>
-                </div>
+                <img
+                  src={teamOnSite}
+                  alt="PricedRight Yards & More team member on site"
+                  loading="lazy"
+                  className="rounded-2xl shadow-xl w-full aspect-[4/3] object-cover"
+                />
               </motion.div>
             </div>
           </div>
