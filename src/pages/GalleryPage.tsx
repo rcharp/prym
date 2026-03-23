@@ -32,6 +32,16 @@ import landscapedHome1 from "@/assets/gallery/landscaped-home-1.webp";
 import landscapedHome2 from "@/assets/gallery/landscaped-home-2.webp";
 import sideYardMow from "@/assets/gallery/side-yard-mow.webp";
 import openYardMow from "@/assets/gallery/open-yard-mow.webp";
+import blowerGazebo from "@/assets/gallery/blower-gazebo.webp";
+import fencedYardMow from "@/assets/gallery/fenced-yard-mow.webp";
+import trimmingBush from "@/assets/gallery/trimming-bush.webp";
+import backyardWide from "@/assets/gallery/backyard-wide.webp";
+import sideYardClean from "@/assets/gallery/side-yard-clean.webp";
+import mulchBedYard from "@/assets/gallery/mulch-bed-yard.webp";
+import hedgedFrontLawn from "@/assets/gallery/hedged-front-lawn.png";
+import largeLotMow from "@/assets/gallery/large-lot-mow.png";
+import palmYardMaintained from "@/assets/gallery/palm-yard-maintained.png";
+import gazeboWaterfront from "@/assets/gallery/gazebo-waterfront.png";
 
 const galleryImages = [
   { src: lawnMaintenance, alt: "Lawn Maintenance" },
@@ -62,6 +72,16 @@ const galleryImages = [
   { src: landscapedHome2, alt: "Landscaped Home - Close Up" },
   { src: sideYardMow, alt: "Side Yard Mowing" },
   { src: openYardMow, alt: "Open Yard Mowing" },
+  { src: blowerGazebo, alt: "Leaf Blowing at Gazebo" },
+  { src: fencedYardMow, alt: "Fenced Yard Mowing" },
+  { src: trimmingBush, alt: "Bush Trimming Service" },
+  { src: backyardWide, alt: "Backyard Maintenance" },
+  { src: sideYardClean, alt: "Side Yard Cleanup" },
+  { src: mulchBedYard, alt: "Mulch Bed and Lawn Care" },
+  { src: hedgedFrontLawn, alt: "Hedged Front Lawn" },
+  { src: largeLotMow, alt: "Large Lot Mowing" },
+  { src: palmYardMaintained, alt: "Palm Tree Yard Maintained" },
+  { src: gazeboWaterfront, alt: "Gazebo Waterfront Lawn" },
 ];
 
 const GalleryPage = () => {
