@@ -3,6 +3,12 @@ import { motion } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
 import QuoteForm from "./QuoteForm";
 import heroBg from "@/assets/hero-bg.png";
+import profile1 from "@/assets/profile-1.webp";
+import profile2 from "@/assets/profile-2.webp";
+import profile3 from "@/assets/profile-3.jpeg";
+import profile4 from "@/assets/profile-4.webp";
+
+const profileImages = [profile1, profile2, profile3, profile4];
 
 const HeroSection = () => {
   const { openQuoteModal } = useQuoteModal();
@@ -53,13 +59,13 @@ const HeroSection = () => {
               className="flex flex-wrap items-center gap-3"
             >
               <div className="flex -space-x-2">
-                {[1, 2, 3, 4].map((i) => (
-                  <div
+                {profileImages.map((img, i) => (
+                  <img
                     key={i}
-                    className="w-9 h-9 rounded-full border-2 border-primary bg-muted flex items-center justify-center text-xs font-bold text-muted-foreground"
-                  >
-                    {String.fromCharCode(64 + i)}
-                  </div>
+                    src={img}
+                    alt={`Happy customer ${i + 1}`}
+                    className="w-9 h-9 rounded-full border-2 border-primary object-cover"
+                  />
                 ))}
               </div>
               <div className="flex items-center gap-2">
