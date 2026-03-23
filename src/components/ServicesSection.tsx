@@ -1,14 +1,14 @@
 import { ArrowRight, Check } from "lucide-react";
 import { motion } from "framer-motion";
-import lawnMaintenance from "@/assets/gallery/lawn-maintenance.png";
-import stormDebris from "@/assets/gallery/storm-debris.png";
+import landscapedHome from "@/assets/services/landscaped-home.webp";
+import hedgedLawn from "@/assets/services/hedged-lawn.png";
+import palmYardStreet from "@/assets/services/palm-yard-street.png";
+import gazeboWaterfront from "@/assets/services/gazebo-waterfront.png";
 import lawnCare from "@/assets/gallery/lawn-care.png";
-import stumpRemoval from "@/assets/gallery/stump-removal.png";
-import palmYard from "@/assets/gallery/palm-yard.png";
 
 const services = [
   {
-    image: lawnMaintenance,
+    image: landscapedHome,
     title: "Lawn & Landscape Maintenance",
     href: "/services/lawn-landscape",
     features: [
@@ -19,7 +19,7 @@ const services = [
     ],
   },
   {
-    image: stormDebris,
+    image: palmYardStreet,
     title: "Debris & Junk Removal",
     href: "/services/debris-removal",
     features: [
@@ -30,7 +30,7 @@ const services = [
     ],
   },
   {
-    image: palmYard,
+    image: hedgedLawn,
     title: "Sales & Rental Make-Ready Cleans",
     href: "/services/make-ready",
     features: [
@@ -41,7 +41,7 @@ const services = [
     ],
   },
   {
-    image: stumpRemoval,
+    image: gazeboWaterfront,
     title: "Post Eviction Services",
     href: "/services/post-eviction",
     features: [
