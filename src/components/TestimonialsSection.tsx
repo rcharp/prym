@@ -9,7 +9,6 @@ const testimonials = [
     rating: 5,
     service: "Lawn Mowing and Trimming",
     date: "Feb 2025",
-    image: karenImg,
   },
   {
     text: "Hurricane Milton left our yard a mess! Twigs and leaves were everywhere! They did an excellent job of cleaning up the yard! They were responsive to my inquiry and scheduled me quickly. They worked diligently, were pleasant to deal with, and left my yard looking good. They took all of the mess away. I was so pleased that I recommended them to my daughter to clean up her debris, too. I am very happy!",
@@ -17,7 +16,6 @@ const testimonials = [
     rating: 5,
     service: "Full Service Lawn Care",
     date: "Oct 2024",
-    image: dorothyImg,
   },
   {
     text: "My lawn needed a significant cleanup after moving in a couple weeks ago. PricedRight Yards came and cleared away 20 bags of yard waste, I kid you not! That is an amount I could not have done successfully myself! My backyard looks so much tidier now and I am very grateful for the job they did!",
@@ -25,7 +23,6 @@ const testimonials = [
     rating: 5,
     service: "Full Service Lawn Care",
     date: "Apr 2024",
-    image: katrinaImg,
   },
   {
     text: "Responded to my request quickly. Stayed in contact with me and responded to my questions and communications quickly. Cost was fair and quality of work was great. Recommend this service for any yard needs you may have. Mine was raking leaves.",
@@ -33,7 +30,6 @@ const testimonials = [
     rating: 5,
     service: "Full Service Lawn Care",
     date: "Apr 2024",
-    image: scottImg,
   },
   {
     text: "A family company worked very hard on a hot day and did everything that was asked for. Very pleased with results.",
@@ -41,7 +37,6 @@ const testimonials = [
     rating: 5,
     service: "Gardening",
     date: "Sep 2025",
-    image: georgeImg,
   },
 ];
 
