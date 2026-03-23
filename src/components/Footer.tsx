@@ -7,7 +7,7 @@ const Footer = () => (
       <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
 {/* Brand */}
         <div className="space-y-4">
-          <img src={logo} alt="PricedRight Yards & More Logo" className="h-14 w-auto" />
+          <img src={logo} alt="PricedRight Yards & More Logo" style={{ height: '200px' }} className="w-auto" />
           <p className="text-sm opacity-60">Your Property Preservation Partner.</p>
         </div>
 
