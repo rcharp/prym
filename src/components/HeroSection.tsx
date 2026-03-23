@@ -59,13 +59,13 @@ const HeroSection = () => {
               className="flex flex-wrap items-center gap-3"
             >
               <div className="flex -space-x-2">
-                {[1, 2, 3, 4].map((i) => (
-                  <div
+                {profileImages.map((img, i) => (
+                  <img
                     key={i}
-                    className="w-9 h-9 rounded-full border-2 border-primary bg-muted flex items-center justify-center text-xs font-bold text-muted-foreground"
-                  >
-                    {String.fromCharCode(64 + i)}
-                  </div>
+                    src={img}
+                    alt={`Happy customer ${i + 1}`}
+                    className="w-9 h-9 rounded-full border-2 border-primary object-cover"
+                  />
                 ))}
               </div>
               <div className="flex items-center gap-2">
