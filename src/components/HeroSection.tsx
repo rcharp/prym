@@ -45,7 +45,7 @@ const HeroSection = () => {
             >
               Small family owned and operated lawn & landscape business offering MORE than just lawn and landscape services to residents, land/home owners, and businesses within the communities we serve.
               <br /><br />
-              With over <strong>20 years of collective experience</strong>, we consider ourselves partners to our customers — what's important to you regarding your property is equally important to us.
+              With over <strong>20 years of experience</strong>, we consider ourselves partners to our customers — what's important to you regarding your property is equally important to us.
             </motion.p>
 
             {/* Social Proof */}
