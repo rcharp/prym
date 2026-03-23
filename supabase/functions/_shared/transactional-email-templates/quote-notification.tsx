@@ -37,7 +37,7 @@ const QuoteNotificationEmail = ({ name, phone, email, helpWith }: QuoteNotificat
 export const template = {
   component: QuoteNotificationEmail,
   subject: (data: Record<string, any>) => `New Quote Request from ${data.name || 'Website'}`,
-  to: 'rickycharpentier@gmail.com',
+  to: 'ktrvr@curbservs.com',
   displayName: 'Quote notification to owner',
   previewData: { name: 'John Smith', phone: '9412715612', email: 'john@example.com', helpWith: 'Yard maintenance and cleanup' },
 } satisfies TemplateEntry
