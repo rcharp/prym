@@ -18,6 +18,7 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",
+    email: "",
     phone: "",
     helpWith: "",
   });
@@ -26,10 +27,11 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
     e.preventDefault();
 
     const name = formData.fullName.trim();
+    const email = formData.email.trim();
     const phone = formData.phone.trim();
     const helpWith = formData.helpWith.trim();
 
-    if (!name || !phone || !helpWith) {
+    if (!name || !email || !phone || !helpWith) {
       toast.error("Please fill in all required fields.");
       return;
     }
@@ -37,19 +39,35 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
       toast.error("Please enter a valid 10-digit phone number.");
       return;
     }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      toast.error("Please enter a valid email address.");
+      return;
+    }
 
     setIsSubmitting(true);
 
     try {
-      const { data, error } = await supabase.functions.invoke("send-quote-email", {
+      const submissionId = crypto.randomUUID();
+
+      // Send confirmation email to the person submitting
+      await supabase.functions.invoke("send-transactional-email", {
         body: {
-          full_name: name,
-          phone: phone,
-          help_with: helpWith,
+          templateName: "quote-confirmation",
+          recipientEmail: email,
+          idempotencyKey: `quote-confirm-${submissionId}`,
+          templateData: { name },
         },
       });
 
-      if (error) throw error;
+      // Send notification email to business owner
+      await supabase.functions.invoke("send-transactional-email", {
+        body: {
+          templateName: "quote-notification",
+          recipientEmail: "rickycharpentier@gmail.com",
+          idempotencyKey: `quote-notify-${submissionId}`,
+          templateData: { name, phone, email, helpWith },
+        },
+      });
 
       setIsSubmitted(true);
     } catch {
@@ -104,6 +122,22 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
           maxLength={100}
           value={formData.fullName}
           onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+          className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
+        />
+      </div>
+
+      <div className={compact ? "space-y-1" : "space-y-2"}>
+        <Label htmlFor="email" className="text-white font-semibold">
+          Email <span className="text-secondary">*</span>
+        </Label>
+        <Input
+          id="email"
+          type="email"
+          placeholder="john@example.com"
+          required
+          maxLength={200}
+          value={formData.email}
+          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
           className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
         />
       </div>
