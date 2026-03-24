@@ -28,7 +28,7 @@ const AboutSection = () => (
               </div>
               <div>
                 <div className="text-sm text-muted-foreground">Address</div>
-                <div className="text-base font-semibold text-foreground">2304 4th Ave E, Palmetto, FL 34221</div>
+                <div className="text-base font-semibold text-foreground">Palmetto, FL</div>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -37,8 +37,8 @@ const AboutSection = () => (
               </div>
               <div>
                 <div className="text-sm text-muted-foreground">Phone</div>
-                <a href="tel:+18136683219" className="text-base font-semibold text-foreground hover:text-primary transition-colors">
-                  (813) 668-3219
+                <a href="tel:+18138602202" className="text-base font-semibold text-foreground hover:text-primary transition-colors">
+                  (813) 860-2202
                 </a>
               </div>
            </div>

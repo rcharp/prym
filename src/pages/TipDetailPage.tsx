@@ -81,7 +81,7 @@ const TipDetailPage = () => {
 
         <section className="py-12 lg:py-16 border-t border-border text-center">
           <div className="container mx-auto px-4 lg:px-8 max-w-2xl">
-            <p className="text-muted-foreground text-lg">Have questions? <a href="/contact" className="text-secondary font-semibold hover:underline">Contact our team</a> or call <a href="tel:+18136683219" className="text-secondary font-semibold hover:underline">(813) 668-3219</a> for a free quote.</p>
+            <p className="text-muted-foreground text-lg">Have questions? <a href="/contact" className="text-secondary font-semibold hover:underline">Contact our team</a> or call <a href="tel:+18138602202" className="text-secondary font-semibold hover:underline">(813) 860-2202</a> for a free quote.</p>
           </div>
         </section>
       </main>

@@ -4,7 +4,7 @@ import useSEO from "@/hooks/useSEO";
 const PalmettoPag = () => {
   useSEO({
     title: "Property Services Palmetto FL | PricedRight Yards & More",
-    description: "Professional property services in Palmetto FL. Lawn maintenance, debris removal, make-ready cleans & more. Family owned, fully insured. Call (813) 668-3219.",
+    description: "Professional property services in Palmetto FL. Lawn maintenance, debris removal, make-ready cleans & more. Family owned, fully insured. Call (813) 860-2202.",
     canonical: "https://example.com/areas/palmetto",
   });
 
