@@ -80,7 +80,7 @@ const ServicesSection = () => {
           >
             Our Core Programs
           </motion.h3>
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {corePrograms.map((program, i) => (
               <motion.div
                 key={program.tier}
@@ -96,7 +96,7 @@ const ServicesSection = () => {
                 style={{ backgroundColor: "hsl(155 55% 18%)" }}
               >
                 {/* Image */}
-                <div className="h-44 overflow-hidden">
+                <div className="h-56 overflow-hidden">
                   <img
                     src={program.image}
                     alt={program.title}
@@ -109,7 +109,7 @@ const ServicesSection = () => {
                     MOST POPULAR
                   </div>
                 )}
-                <div className="p-6">
+                <div className="p-8">
                   <div className="w-10 h-10 rounded-xl bg-secondary/20 flex items-center justify-center mb-3">
                     <program.icon className="w-5 h-5 text-secondary" />
                   </div>
