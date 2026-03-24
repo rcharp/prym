@@ -4,7 +4,7 @@ import useSEO from "@/hooks/useSEO";
 const HomeWatchPage = () => {
   useSEO({
     title: "HomeWatch Services | PricedRight Yards & More",
-    description: "Professional HomeWatch property inspection and monitoring. Vacancy checks, maintenance coordination, peace of mind. Call (813) 668-3219.",
+    description: "Professional HomeWatch property inspection and monitoring. Vacancy checks, maintenance coordination, peace of mind. Call (813) 860-2202.",
     canonical: "https://example.com/services/home-watch",
   });
 

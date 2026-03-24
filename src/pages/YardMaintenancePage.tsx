@@ -4,7 +4,7 @@ import useSEO from "@/hooks/useSEO";
 const YardMaintenancePage = () => {
   useSEO({
     title: "Lawn & Landscape Maintenance | PricedRight Yards & More",
-    description: "Professional lawn care and landscape maintenance. Mowing, edging, trimming, mulching, and seasonal cleanup. Fully insured. Call (813) 668-3219.",
+    description: "Professional lawn care and landscape maintenance. Mowing, edging, trimming, mulching, and seasonal cleanup. Fully insured. Call (813) 860-2202.",
     canonical: "https://example.com/services/lawn-landscape",
   });
 

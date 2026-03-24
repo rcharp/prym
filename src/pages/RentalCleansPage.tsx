@@ -4,7 +4,7 @@ import useSEO from "@/hooks/useSEO";
 const MakeReadyPage = () => {
   useSEO({
     title: "Sales & Rental Make-Ready Cleans | PricedRight Yards & More",
-    description: "Professional make-ready cleaning for sales and rentals. Deep cleaning, painting, carpet restoration, curb appeal. Call (813) 668-3219.",
+    description: "Professional make-ready cleaning for sales and rentals. Deep cleaning, painting, carpet restoration, curb appeal. Call (813) 860-2202.",
     canonical: "https://example.com/services/make-ready",
   });
 

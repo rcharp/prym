@@ -4,7 +4,7 @@ import useSEO from "@/hooks/useSEO";
 const DebrisRemovalPage = () => {
   useSEO({
     title: "Debris & Junk Removal | PricedRight Yards & More",
-    description: "Professional junk and debris removal from lawns, roofs, garages, sheds, and interiors. Storm cleanup. Fully insured. Call (813) 668-3219.",
+    description: "Professional junk and debris removal from lawns, roofs, garages, sheds, and interiors. Storm cleanup. Fully insured. Call (813) 860-2202.",
     canonical: "https://example.com/services/debris-removal",
   });
 
