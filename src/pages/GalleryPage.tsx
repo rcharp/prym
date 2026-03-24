@@ -1,95 +1,160 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
+import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import useSEO from "@/hooks/useSEO";
 
-import stormDebris from "@/assets/gallery/storm-debris.png";
+// Lawn Care & Mowing
 import lawnMaintenance from "@/assets/gallery/lawn-maintenance.png";
-import landscapeGreenery from "@/assets/gallery/landscape-greenery.png";
 import palmYard from "@/assets/gallery/palm-yard.png";
 import lawnCare from "@/assets/gallery/lawn-care.png";
-import treeDebris from "@/assets/gallery/tree-debris.png";
-import gazeboLawn from "@/assets/gallery/gazebo-lawn.png";
-import rooftopTrees from "@/assets/gallery/rooftop-trees.png";
-import stumpRemoval from "@/assets/gallery/stump-removal.png";
 import communityYardCuts from "@/assets/gallery/community-yard-cuts.png";
-import debrisCleanup1 from "@/assets/gallery/debris-cleanup-1.jpg";
-import junkRemoval from "@/assets/gallery/junk-removal.jpg";
-import overgrownLot from "@/assets/gallery/overgrown-lot.jpg";
-import teamOnSite from "@/assets/gallery/team-on-site.jpg";
-import propertyCleanup from "@/assets/gallery/property-cleanup.jpg";
-import roofDebris from "@/assets/gallery/roof-debris.jpg";
-import roofCleanup from "@/assets/gallery/roof-cleanup.jpg";
 import finishedLawn from "@/assets/gallery/finished-lawn.jpg";
-import fallenTree from "@/assets/gallery/fallen-tree.png";
-import hedgeBefore1 from "@/assets/gallery/hedge-before-1.webp";
-import hedgeBefore2 from "@/assets/gallery/hedge-before-2.webp";
-import hedgeBefore3 from "@/assets/gallery/hedge-before-3.webp";
-import stumpTeam from "@/assets/gallery/stump-team.webp";
-import clearedLot from "@/assets/gallery/cleared-lot.webp";
-import landscapedHome1 from "@/assets/gallery/landscaped-home-1.webp";
-import landscapedHome2 from "@/assets/gallery/landscaped-home-2.webp";
 import sideYardMow from "@/assets/gallery/side-yard-mow.webp";
 import openYardMow from "@/assets/gallery/open-yard-mow.webp";
-import blowerGazebo from "@/assets/gallery/blower-gazebo.webp";
 import fencedYardMow from "@/assets/gallery/fenced-yard-mow.webp";
-import trimmingBush from "@/assets/gallery/trimming-bush.webp";
 import backyardWide from "@/assets/gallery/backyard-wide.webp";
-import sideYardClean from "@/assets/gallery/side-yard-clean.webp";
-import mulchBedYard from "@/assets/gallery/mulch-bed-yard.webp";
-import hedgedFrontLawn from "@/assets/gallery/hedged-front-lawn.png";
 import largeLotMow from "@/assets/gallery/large-lot-mow.png";
 import palmYardMaintained from "@/assets/gallery/palm-yard-maintained.png";
-import gazeboWaterfront from "@/assets/gallery/gazebo-waterfront.png";
 
-const galleryImages = [
-  { src: lawnMaintenance, alt: "Lawn Maintenance" },
-  { src: palmYard, alt: "Palm Tree Yard Care" },
-  { src: lawnCare, alt: "Lawn Care Service" },
-  { src: stormDebris, alt: "Storm Debris Cleanup" },
-  { src: treeDebris, alt: "Tree Debris Removal" },
-  { src: landscapeGreenery, alt: "Landscape Greenery" },
-  { src: gazeboLawn, alt: "Gazebo Lawn Care" },
-  { src: rooftopTrees, alt: "Rooftop Tree View" },
-  { src: stumpRemoval, alt: "Stump Removal" },
-  { src: communityYardCuts, alt: "Community Yard Cuts" },
-  { src: debrisCleanup1, alt: "Debris Cleanup" },
-  { src: junkRemoval, alt: "Junk Removal" },
-  { src: overgrownLot, alt: "Overgrown Lot Clearing" },
-  { src: teamOnSite, alt: "Team On Site" },
-  { src: propertyCleanup, alt: "Property Cleanup" },
-  { src: roofDebris, alt: "Roof Debris Before" },
-  { src: roofCleanup, alt: "Roof Cleanup After" },
-  { src: finishedLawn, alt: "Finished Lawn" },
-  { src: fallenTree, alt: "Fallen Tree Cleanup" },
-  { src: hedgeBefore1, alt: "Overgrown Hedge - Front View" },
-  { src: hedgeBefore2, alt: "Overgrown Hedge - Side View" },
-  { src: hedgeBefore3, alt: "Overgrown Hedge - Angle View" },
-  { src: stumpTeam, alt: "Stump Removal Team" },
-  { src: clearedLot, alt: "Cleared Wooded Lot" },
-  { src: landscapedHome1, alt: "Landscaped Home - Front" },
-  { src: landscapedHome2, alt: "Landscaped Home - Close Up" },
-  { src: sideYardMow, alt: "Side Yard Mowing" },
-  { src: openYardMow, alt: "Open Yard Mowing" },
-  { src: blowerGazebo, alt: "Leaf Blowing at Gazebo" },
-  { src: fencedYardMow, alt: "Fenced Yard Mowing" },
-  { src: trimmingBush, alt: "Bush Trimming Service" },
-  { src: backyardWide, alt: "Backyard Maintenance" },
-  { src: sideYardClean, alt: "Side Yard Cleanup" },
-  { src: mulchBedYard, alt: "Mulch Bed and Lawn Care" },
-  { src: hedgedFrontLawn, alt: "Hedged Front Lawn" },
-  { src: largeLotMow, alt: "Large Lot Mowing" },
-  { src: palmYardMaintained, alt: "Palm Tree Yard Maintained" },
-  { src: gazeboWaterfront, alt: "Gazebo Waterfront Lawn" },
+// Hedge & Shrub Work
+import trimmingBush from "@/assets/gallery/trimming-bush.webp";
+import hedgedFrontLawn from "@/assets/gallery/hedged-front-lawn.png";
+import hedgeBefore1 from "@/assets/gallery/hedge-before-1.webp";
+
+// Debris & Storm Cleanup
+import stormDebris from "@/assets/gallery/storm-debris.png";
+import treeDebris from "@/assets/gallery/tree-debris.png";
+import debrisCleanup1 from "@/assets/gallery/debris-cleanup-1.jpg";
+import fallenTree from "@/assets/gallery/fallen-tree.png";
+import roofDebris from "@/assets/gallery/roof-debris.jpg";
+import roofCleanup from "@/assets/gallery/roof-cleanup.jpg";
+
+// Property & Landscaping
+import landscapeGreenery from "@/assets/gallery/landscape-greenery.png";
+import gazeboLawn from "@/assets/gallery/gazebo-lawn.png";
+import landscapedHome1 from "@/assets/gallery/landscaped-home-1.webp";
+import landscapedHome2 from "@/assets/gallery/landscaped-home-2.webp";
+import mulchBedYard from "@/assets/gallery/mulch-bed-yard.webp";
+import gazeboWaterfront from "@/assets/gallery/gazebo-waterfront.png";
+import sideYardClean from "@/assets/gallery/side-yard-clean.webp";
+
+// Cleanout & Junk Removal
+import junkRemoval from "@/assets/gallery/junk-removal.jpg";
+import overgrownLot from "@/assets/gallery/overgrown-lot.jpg";
+import propertyCleanup from "@/assets/gallery/property-cleanup.jpg";
+import clearedLot from "@/assets/gallery/cleared-lot.webp";
+
+// Team
+import teamOnSite from "@/assets/gallery/team-on-site.jpg";
+import stumpTeam from "@/assets/gallery/stump-team.webp";
+import stumpRemoval from "@/assets/gallery/stump-removal.png";
+import blowerGazebo from "@/assets/gallery/blower-gazebo.webp";
+import rooftopTrees from "@/assets/gallery/rooftop-trees.png";
+
+const categories = [
+  { id: "all", label: "All" },
+  { id: "lawn", label: "Lawn Care" },
+  { id: "hedge", label: "Hedge & Shrub" },
+  { id: "debris", label: "Debris & Storm" },
+  { id: "landscape", label: "Landscaping" },
+  { id: "cleanout", label: "Cleanout & Junk" },
+  { id: "team", label: "Team at Work" },
+];
+
+interface GalleryImage {
+  src: string;
+  alt: string;
+  category: string;
+}
+
+const galleryImages: GalleryImage[] = [
+  // Lawn Care
+  { src: lawnMaintenance, alt: "Lawn Maintenance", category: "lawn" },
+  { src: palmYard, alt: "Palm Tree Yard Care", category: "lawn" },
+  { src: lawnCare, alt: "Lawn Care Service", category: "lawn" },
+  { src: communityYardCuts, alt: "Community Yard Cuts", category: "lawn" },
+  { src: finishedLawn, alt: "Finished Lawn", category: "lawn" },
+  { src: sideYardMow, alt: "Side Yard Mowing", category: "lawn" },
+  { src: openYardMow, alt: "Open Yard Mowing", category: "lawn" },
+  { src: fencedYardMow, alt: "Fenced Yard Mowing", category: "lawn" },
+  { src: backyardWide, alt: "Backyard Maintenance", category: "lawn" },
+  { src: largeLotMow, alt: "Large Lot Mowing", category: "lawn" },
+  { src: palmYardMaintained, alt: "Palm Yard Maintained", category: "lawn" },
+  // Hedge
+  { src: trimmingBush, alt: "Bush Trimming Service", category: "hedge" },
+  { src: hedgedFrontLawn, alt: "Hedged Front Lawn", category: "hedge" },
+  // Debris
+  { src: stormDebris, alt: "Storm Debris Cleanup", category: "debris" },
+  { src: treeDebris, alt: "Tree Debris Removal", category: "debris" },
+  { src: debrisCleanup1, alt: "Debris Cleanup", category: "debris" },
+  { src: fallenTree, alt: "Fallen Tree Cleanup", category: "debris" },
+  // Landscaping
+  { src: landscapeGreenery, alt: "Landscape Greenery", category: "landscape" },
+  { src: gazeboLawn, alt: "Gazebo Lawn Care", category: "landscape" },
+  { src: landscapedHome1, alt: "Landscaped Home", category: "landscape" },
+  { src: landscapedHome2, alt: "Landscaped Home Close Up", category: "landscape" },
+  { src: mulchBedYard, alt: "Mulch Bed and Lawn", category: "landscape" },
+  { src: gazeboWaterfront, alt: "Gazebo Waterfront", category: "landscape" },
+  { src: sideYardClean, alt: "Side Yard Cleanup", category: "landscape" },
+  // Cleanout
+  { src: junkRemoval, alt: "Junk Removal", category: "cleanout" },
+  { src: overgrownLot, alt: "Overgrown Lot Clearing", category: "cleanout" },
+  { src: propertyCleanup, alt: "Property Cleanup", category: "cleanout" },
+  { src: clearedLot, alt: "Cleared Wooded Lot", category: "cleanout" },
+  // Team
+  { src: teamOnSite, alt: "Team On Site", category: "team" },
+  { src: stumpTeam, alt: "Stump Removal Team", category: "team" },
+  { src: stumpRemoval, alt: "Stump Removal", category: "team" },
+  { src: blowerGazebo, alt: "Leaf Blowing at Gazebo", category: "team" },
+  { src: rooftopTrees, alt: "Rooftop Tree View", category: "team" },
+];
+
+const beforeAfterPairs = [
+  {
+    before: roofDebris,
+    after: roofCleanup,
+    beforeAlt: "Roof with debris before cleanup",
+    afterAlt: "Roof after professional cleanup",
+    label: "Roof Debris Cleanup",
+    category: "debris",
+  },
+  {
+    before: hedgeBefore1,
+    after: hedgedFrontLawn,
+    beforeAlt: "Overgrown hedge before trimming",
+    afterAlt: "Neatly trimmed hedge after service",
+    label: "Hedge Trimming",
+    category: "hedge",
+  },
+  {
+    before: overgrownLot,
+    after: clearedLot,
+    beforeAlt: "Overgrown lot before clearing",
+    afterAlt: "Lot after professional clearing",
+    label: "Lot Clearing",
+    category: "cleanout",
+  },
 ];
 
 const GalleryPage = () => {
+  const [activeCategory, setActiveCategory] = useState("all");
+
   useSEO({
     title: "Project Gallery | PricedRight Yards & More",
     description: "Browse photos of our property preservation projects. Yard cleanups, tree services, post eviction work & more.",
     canonical: "https://example.com/gallery",
   });
+
+  const filteredImages = activeCategory === "all"
+    ? galleryImages
+    : galleryImages.filter((img) => img.category === activeCategory);
+
+  const filteredPairs = activeCategory === "all"
+    ? beforeAfterPairs
+    : beforeAfterPairs.filter((p) => p.category === activeCategory);
 
   return (
     <div className="min-h-screen bg-background">
@@ -97,14 +162,66 @@ const GalleryPage = () => {
       <main>
         <section className="pt-32 pb-20 lg:pb-28 section-gradient">
           <div className="container mx-auto px-4 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-16">
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-12">
               <span className="text-sm font-semibold text-primary uppercase tracking-wider">Our Work</span>
               <h1 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3">Project Gallery</h1>
               <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">Browse photos from our recent property preservation and maintenance projects.</p>
             </motion.div>
+
+            {/* Category Filter */}
+            <div className="flex flex-wrap justify-center gap-2 mb-12">
+              {categories.map((cat) => (
+                <button
+                  key={cat.id}
+                  onClick={() => setActiveCategory(cat.id)}
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                    activeCategory === cat.id
+                      ? "bg-primary text-primary-foreground"
+                      : "bg-muted text-muted-foreground hover:bg-muted/80"
+                  }`}
+                >
+                  {cat.label}
+                </button>
+              ))}
+            </div>
+
+            {/* Before/After Sliders */}
+            {filteredPairs.length > 0 && (
+              <div className="mb-12">
+                <h2 className="font-heading text-2xl font-bold text-foreground mb-6 text-center">Before & After</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {filteredPairs.map((pair, i) => (
+                    <motion.div
+                      key={i}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: i * 0.1 }}
+                    >
+                      <BeforeAfterSlider
+                        beforeSrc={pair.before}
+                        afterSrc={pair.after}
+                        beforeAlt={pair.beforeAlt}
+                        afterAlt={pair.afterAlt}
+                      />
+                      <p className="text-sm text-muted-foreground mt-2 text-center font-medium">{pair.label}</p>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Photo Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {galleryImages.map((img, i) => (
-                <motion.div key={i} initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.03 }} className="rounded-xl overflow-hidden aspect-[4/3] border border-border">
+              {filteredImages.map((img, i) => (
+                <motion.div
+                  key={`${img.alt}-${i}`}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.02 }}
+                  className="rounded-xl overflow-hidden aspect-[4/3] border border-border"
+                >
                   <img src={img.src} alt={img.alt} className="w-full h-full object-cover" loading="lazy" />
                 </motion.div>
               ))}
