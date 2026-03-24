@@ -75,77 +75,117 @@ const TestimonialsSection = () => {
           </div>
         </motion.div>
 
-        {/* Carousel */}
-        <div className="max-w-3xl mx-auto relative">
-          <div className="overflow-hidden">
-            <motion.div
-              key={current}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.4 }}
-              className="bg-card rounded-2xl p-10 card-elevated border border-border relative"
-            >
-              <Quote className="w-10 h-10 text-secondary/15 absolute top-8 right-8" />
-              <div className="flex gap-0.5 mb-5">
-                {Array.from({ length: testimonials[current].rating }).map((_, s) => (
-                  <Star key={s} className="w-5 h-5 fill-accent text-accent" />
+        <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+          {/* Carousel */}
+          <div className="flex-1 relative w-full">
+            <div className="overflow-hidden">
+              <motion.div
+                key={current}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.4 }}
+                className="bg-card rounded-2xl p-10 card-elevated border border-border relative"
+              >
+                <Quote className="w-10 h-10 text-secondary/15 absolute top-8 right-8" />
+                <div className="flex gap-0.5 mb-5">
+                  {Array.from({ length: testimonials[current].rating }).map((_, s) => (
+                    <Star key={s} className="w-5 h-5 fill-accent text-accent" />
+                  ))}
+                </div>
+                <p className="text-foreground text-lg leading-relaxed mb-8">
+                  "{testimonials[current].text}"
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-11 h-11 rounded-full bg-secondary/15 flex items-center justify-center font-heading font-bold text-secondary text-base">
+                    {testimonials[current].name.charAt(0)}
+                  </div>
+                  <div>
+                    <div className="font-heading font-semibold text-foreground">{testimonials[current].name}</div>
+                    <div className="text-sm text-muted-foreground">{testimonials[current].service} · {testimonials[current].date}</div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* Navigation */}
+            <div className="flex items-center justify-between mt-8">
+              <div className="flex gap-2">
+                <button
+                  onClick={prev}
+                  className="w-10 h-10 rounded-full border border-border bg-card flex items-center justify-center hover:bg-muted transition-colors"
+                >
+                  <ChevronLeft className="w-5 h-5 text-foreground" />
+                </button>
+                <button
+                  onClick={next}
+                  className="w-10 h-10 rounded-full border border-border bg-card flex items-center justify-center hover:bg-muted transition-colors"
+                >
+                  <ChevronRight className="w-5 h-5 text-foreground" />
+                </button>
+              </div>
+
+              {/* Dots */}
+              <div className="flex gap-2">
+                {testimonials.map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setCurrent(i)}
+                    className={`w-2.5 h-2.5 rounded-full transition-colors ${
+                      i === current ? "bg-secondary" : "bg-border"
+                    }`}
+                  />
                 ))}
               </div>
-              <p className="text-foreground text-lg leading-relaxed mb-8">
-                "{testimonials[current].text}"
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="w-11 h-11 rounded-full bg-secondary/15 flex items-center justify-center font-heading font-bold text-secondary text-base">
-                  {testimonials[current].name.charAt(0)}
-                </div>
-                <div>
-                  <div className="font-heading font-semibold text-foreground">{testimonials[current].name}</div>
-                  <div className="text-sm text-muted-foreground">{testimonials[current].service} · {testimonials[current].date}</div>
+
+              <a
+                href="https://www.thumbtack.com/fl/palmetto/lawn-care/pricedright-yards-more/service/512059777267326978"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-base font-semibold text-secondary hover:underline"
+              >
+                See All Reviews →
+              </a>
+            </div>
+          </div>
+
+          {/* Neighborhood Fave Badge */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="shrink-0"
+          >
+            <div className="relative w-[180px] h-[180px] lg:w-[200px] lg:h-[200px]">
+              {/* Outer ring */}
+              <div
+                className="absolute inset-0 rounded-full"
+                style={{
+                  background: "linear-gradient(135deg, hsl(155 55% 28%), hsl(155 55% 18%), hsl(155 55% 12%))",
+                  boxShadow: "0 0 0 3px hsl(142 70% 45% / 0.4), 0 8px 32px hsl(155 55% 10% / 0.5)",
+                }}
+              />
+              {/* Inner circle */}
+              <div
+                className="absolute inset-[6px] rounded-full flex flex-col items-center justify-center text-center"
+                style={{
+                  background: "linear-gradient(180deg, hsl(155 55% 22%), hsl(155 55% 14%))",
+                  border: "2px solid hsl(142 70% 45% / 0.3)",
+                }}
+              >
+                <Trophy className="w-6 h-6 text-secondary mb-1" />
+                <span className="text-primary-foreground/70 text-xs font-semibold tracking-wide">2025</span>
+                <span className="text-primary-foreground text-[11px] leading-tight mt-0.5">Neighborhood</span>
+                <span className="text-primary-foreground font-heading font-bold text-2xl lg:text-3xl leading-none tracking-tight">FAVE</span>
+                <div className="flex items-center gap-1 mt-1.5">
+                  <svg viewBox="0 0 16 16" className="w-3 h-3 fill-secondary" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 0L10 5H16L11 8L13 14L8 10L3 14L5 8L0 5H6L8 0Z" />
+                  </svg>
+                  <span className="text-secondary text-[10px] font-bold tracking-wider uppercase">Nextdoor</span>
                 </div>
               </div>
-            </motion.div>
-          </div>
-
-          {/* Navigation */}
-          <div className="flex items-center justify-between mt-8">
-            <div className="flex gap-2">
-              <button
-                onClick={prev}
-                className="w-10 h-10 rounded-full border border-border bg-card flex items-center justify-center hover:bg-muted transition-colors"
-              >
-                <ChevronLeft className="w-5 h-5 text-foreground" />
-              </button>
-              <button
-                onClick={next}
-                className="w-10 h-10 rounded-full border border-border bg-card flex items-center justify-center hover:bg-muted transition-colors"
-              >
-                <ChevronRight className="w-5 h-5 text-foreground" />
-              </button>
             </div>
-
-            {/* Dots */}
-            <div className="flex gap-2">
-              {testimonials.map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => setCurrent(i)}
-                  className={`w-2.5 h-2.5 rounded-full transition-colors ${
-                    i === current ? "bg-secondary" : "bg-border"
-                  }`}
-                />
-              ))}
-            </div>
-
-            <a
-              href="https://www.thumbtack.com/fl/palmetto/lawn-care/pricedright-yards-more/service/512059777267326978"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-base font-semibold text-secondary hover:underline"
-            >
-              See All Reviews →
-            </a>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
