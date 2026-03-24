@@ -37,7 +37,7 @@ import landscapeGreenery from "@/assets/gallery/landscape-greenery.png";
 import gazeboLawn from "@/assets/gallery/gazebo-lawn.png";
 import landscapedHome1 from "@/assets/gallery/landscaped-home-1.webp";
 import landscapedHome2 from "@/assets/gallery/landscaped-home-2.webp";
-import mulchBedYard from "@/assets/gallery/mulch-bed-yard.webp";
+
 import gazeboWaterfront from "@/assets/gallery/gazebo-waterfront.png";
 import sideYardClean from "@/assets/gallery/side-yard-clean.webp";
 
