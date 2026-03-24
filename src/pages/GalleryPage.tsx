@@ -37,7 +37,7 @@ import landscapeGreenery from "@/assets/gallery/landscape-greenery.png";
 import gazeboLawn from "@/assets/gallery/gazebo-lawn.png";
 import landscapedHome1 from "@/assets/gallery/landscaped-home-1.webp";
 import landscapedHome2 from "@/assets/gallery/landscaped-home-2.webp";
-import mulchBedYard from "@/assets/gallery/mulch-bed-yard.webp";
+
 import gazeboWaterfront from "@/assets/gallery/gazebo-waterfront.png";
 import sideYardClean from "@/assets/gallery/side-yard-clean.webp";
 
@@ -96,7 +96,7 @@ const galleryImages: GalleryImage[] = [
   { src: gazeboLawn, alt: "Gazebo Lawn Care", category: "landscape" },
   { src: landscapedHome1, alt: "Landscaped Home", category: "landscape" },
   { src: landscapedHome2, alt: "Landscaped Home Close Up", category: "landscape" },
-  { src: mulchBedYard, alt: "Mulch Bed and Lawn", category: "landscape" },
+  
   { src: gazeboWaterfront, alt: "Gazebo Waterfront", category: "landscape" },
   { src: sideYardClean, alt: "Side Yard Cleanup", category: "landscape" },
   // Cleanout
