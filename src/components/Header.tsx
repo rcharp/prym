@@ -9,9 +9,12 @@ const navLinks = [
   {
     label: "Services",
     children: [
+      { label: "Core Programs", isHeader: true },
       { label: "Lawn & Landscape Maintenance", href: "/services/lawn-landscape" },
+      { label: "A La Carte", isHeader: true },
       { label: "Debris & Junk Removal", href: "/services/debris-removal" },
       { label: "Sales & Rental Make-Ready Cleans", href: "/services/make-ready" },
+      { label: "The MORE Factor", isHeader: true },
       { label: "Post Eviction Services", href: "/services/post-eviction" },
       { label: "HomeWatch Services", href: "/services/home-watch" },
     ],
@@ -75,15 +78,21 @@ const Header = () => {
                       transition={{ duration: 0.15 }}
                       className="absolute top-full left-0 mt-1 z-50 rounded-xl shadow-lg border border-border py-2 min-w-[260px] bg-primary"
                     >
-                      {link.children.map((child) => (
-                        <a
-                          key={child.label}
-                          href={child.href}
-                          className="block px-4 py-2.5 text-base text-primary-foreground/70 hover:text-primary-foreground hover:bg-secondary/10 transition-colors"
-                        >
-                          {child.label}
-                        </a>
-                      ))}
+                      {link.children.map((child) =>
+                        'isHeader' in child && child.isHeader ? (
+                          <div key={child.label} className="px-4 pt-3 pb-1 text-xs font-bold uppercase tracking-wider text-secondary/80 first:pt-1">
+                            {child.label}
+                          </div>
+                        ) : (
+                          <a
+                            key={child.label}
+                            href={child.href}
+                            className="block px-4 py-2.5 text-base text-primary-foreground/70 hover:text-primary-foreground hover:bg-secondary/10 transition-colors"
+                          >
+                            {child.label}
+                          </a>
+                        )
+                      )}
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -163,16 +172,22 @@ const Header = () => {
                           transition={{ duration: 0.2 }}
                           className="overflow-hidden"
                         >
-                          {link.children.map((child) => (
-                            <a
-                              key={child.label}
-                              href={child.href}
-                              onClick={() => { setMobileOpen(false); setMobileDropdown(null); }}
-                              className="block pl-4 py-2 text-base text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-                            >
-                              {child.label}
-                            </a>
-                          ))}
+                          {link.children.map((child) =>
+                            'isHeader' in child && child.isHeader ? (
+                              <div key={child.label} className="pl-4 pt-3 pb-1 text-xs font-bold uppercase tracking-wider text-secondary/80 first:pt-1">
+                                {child.label}
+                              </div>
+                            ) : (
+                              <a
+                                key={child.label}
+                                href={child.href}
+                                onClick={() => { setMobileOpen(false); setMobileDropdown(null); }}
+                                className="block pl-6 py-2 text-base text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+                              >
+                                {child.label}
+                              </a>
+                            )
+                          )}
                         </motion.div>
                       )}
                     </AnimatePresence>
