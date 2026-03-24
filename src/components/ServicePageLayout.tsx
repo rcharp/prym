@@ -14,11 +14,19 @@ interface ServicePageProps {
 }
 
 const allServices = [
-  { label: "Lawn & Landscape Maintenance", href: "/services/lawn-landscape" },
-  { label: "Debris & Junk Removal", href: "/services/debris-removal" },
-  { label: "Sales & Rental Make-Ready Cleans", href: "/services/make-ready" },
-  { label: "Post Eviction Services", href: "/services/post-eviction" },
-  { label: "HomeWatch Services", href: "/services/home-watch" },
+  { label: "Classic Lawn", href: "/services/classic-lawn" },
+  { label: "Premium Lawn", href: "/services/premium-lawn" },
+  { label: "Ultimate Maintenance", href: "/services/ultimate-maintenance" },
+  { label: "Mulch & Sod", href: "/services/mulch-sod" },
+  { label: "Planting", href: "/services/planting" },
+  { label: "Tree & Shrub", href: "/services/tree-shrub" },
+  { label: "Pressure Washing", href: "/services/pressure-washing" },
+  { label: "Gutter Cleaning", href: "/services/gutter-cleaning" },
+  { label: "Roof & Yard Debris", href: "/services/roof-debris" },
+  { label: "Trash Out", href: "/services/trash-out" },
+  { label: "Sales & Rental Cleans", href: "/services/make-ready" },
+  { label: "Post Eviction", href: "/services/post-eviction" },
+  { label: "HomeWatch", href: "/services/home-watch" },
 ];
 
 const allAreas = [
