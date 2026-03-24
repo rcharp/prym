@@ -11,6 +11,16 @@ import PostEvictionPage from "./pages/PostEvictionPage";
 import VacantPropertyPage from "./pages/VacantPropertyPage";
 import TreeServicesPage from "./pages/TreeServicesPage";
 import RentalCleansPage from "./pages/RentalCleansPage";
+import ClassicLawnPage from "./pages/services/ClassicLawnPage";
+import PremiumLawnPage from "./pages/services/PremiumLawnPage";
+import UltimateMaintenancePage from "./pages/services/UltimateMaintenancePage";
+import MulchSodPage from "./pages/services/MulchSodPage";
+import PlantingPage from "./pages/services/PlantingPage";
+import TreeShrubPage from "./pages/services/TreeShrubPage";
+import PressureWashingPage from "./pages/services/PressureWashingPage";
+import GutterCleaningPage from "./pages/services/GutterCleaningPage";
+import RoofDebrisPage from "./pages/services/RoofDebrisPage";
+import TrashOutPage from "./pages/services/TrashOutPage";
 import TampaPage from "./pages/areas/TampaPage";
 import SarasotaPage from "./pages/areas/SarasotaPage";
 import OrlandoPage from "./pages/areas/OrlandoPage";
@@ -42,15 +52,30 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/quote" element={<QuotePage />} />
             <Route path="/review" element={<ReviewPage />} />
+            {/* Core Programs */}
+            <Route path="/services/classic-lawn" element={<ClassicLawnPage />} />
+            <Route path="/services/premium-lawn" element={<PremiumLawnPage />} />
+            <Route path="/services/ultimate-maintenance" element={<UltimateMaintenancePage />} />
+            {/* A La Carte */}
+            <Route path="/services/mulch-sod" element={<MulchSodPage />} />
+            <Route path="/services/planting" element={<PlantingPage />} />
+            <Route path="/services/tree-shrub" element={<TreeShrubPage />} />
+            {/* MORE Factor */}
+            <Route path="/services/pressure-washing" element={<PressureWashingPage />} />
+            <Route path="/services/gutter-cleaning" element={<GutterCleaningPage />} />
+            <Route path="/services/roof-debris" element={<RoofDebrisPage />} />
+            <Route path="/services/trash-out" element={<TrashOutPage />} />
+            <Route path="/services/make-ready" element={<RentalCleansPage />} />
+            <Route path="/services/post-eviction" element={<PostEvictionPage />} />
+            <Route path="/services/home-watch" element={<TreeServicesPage />} />
+            {/* Legacy routes */}
             <Route path="/services/yard-maintenance" element={<YardMaintenancePage />} />
             <Route path="/services/lawn-landscape" element={<YardMaintenancePage />} />
-            <Route path="/services/post-eviction" element={<PostEvictionPage />} />
             <Route path="/services/vacant-property" element={<VacantPropertyPage />} />
             <Route path="/services/debris-removal" element={<VacantPropertyPage />} />
             <Route path="/services/tree-services" element={<TreeServicesPage />} />
-            <Route path="/services/home-watch" element={<TreeServicesPage />} />
             <Route path="/services/rental-cleans" element={<RentalCleansPage />} />
-            <Route path="/services/make-ready" element={<RentalCleansPage />} />
+            {/* Areas */}
             <Route path="/areas/tampa" element={<TampaPage />} />
             <Route path="/areas/st-petersburg" element={<StPetersburgPage />} />
             <Route path="/areas/clearwater" element={<ClearwaterPage />} />
