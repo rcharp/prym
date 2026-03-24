@@ -80,7 +80,7 @@ const ServicesSection = () => {
           >
             Our Core Programs
           </motion.h3>
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {corePrograms.map((program, i) => (
               <motion.div
                 key={program.tier}
