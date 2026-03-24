@@ -1,23 +1,23 @@
-import { Percent, CreditCard, Search } from "lucide-react";
+import { DollarSign, ClipboardCheck, ShieldOff } from "lucide-react";
 import { motion } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
 import offersBg from "@/assets/offers-bg-new.jpg";
 
 const offers = [
   {
-    icon: Percent,
-    title: "Competitive Pricing Guaranteed",
-    description: "Our services are priced right — fair, transparent pricing with no hidden fees or surprises.",
+    icon: DollarSign,
+    title: "Competitive Rates",
+    description: "Fair, transparent pricing with no hidden fees or surprises. Our services are priced right — every time.",
   },
   {
-    icon: CreditCard,
-    title: "Free Estimates on All Services",
-    description: "Get a free, no-obligation estimate for any property service. We'll come to you!",
+    icon: ClipboardCheck,
+    title: "Free Estimates",
+    description: "Get a free, no-obligation estimate for any property service. We'll come to you and assess your needs.",
   },
   {
-    icon: Search,
-    title: "Free Property Assessment",
-    description: "We'll assess your property's needs and provide a detailed plan. Schedule yours today!",
+    icon: ShieldOff,
+    title: "No Contracts",
+    description: "No long-term commitments required. Stay because you love our work, not because you're locked in.",
   },
 ];
 
@@ -26,7 +26,6 @@ const SpecialOffers = () => {
 
   return (
     <section className="py-20 lg:py-28 relative overflow-hidden">
-      {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${offersBg})` }}

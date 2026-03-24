@@ -1,73 +1,48 @@
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight, Check, Star, Crown, Sparkles, Wrench } from "lucide-react";
 import { motion } from "framer-motion";
-import landscapedHome from "@/assets/services/landscaped-home.webp";
-import hedgedLawn from "@/assets/services/hedged-lawn.png";
-import palmYardStreet from "@/assets/services/palm-yard-street.png";
-import gazeboWaterfront from "@/assets/services/gazebo-waterfront.png";
-import lawnCare from "@/assets/gallery/lawn-care.png";
 
-const services = [
+const corePrograms = [
   {
-    image: landscapedHome,
-    title: "Lawn & Landscape Maintenance",
-    href: "/services/lawn-landscape",
-    features: [
-      "Mowing, edging & lawn care",
-      "Hedge & shrub trimming",
-      "Mulch installation & flower bed care",
-      "Seasonal cleanup & maintenance plans",
-    ],
+    icon: Check,
+    tier: "Classic",
+    title: "Classic Lawn Maintenance",
+    features: ["Mowing", "Blowing", "Weeding", "Edging"],
+    popular: false,
   },
   {
-    image: palmYardStreet,
-    title: "Debris & Junk Removal",
-    href: "/services/debris-removal",
-    features: [
-      "Yard & lawn debris hauling",
-      "Roof, garage & shed cleanouts",
-      "Interior junk removal & disposal",
-      "Storm damage cleanup",
-    ],
+    icon: Star,
+    tier: "Premium",
+    title: "Premium Lawn Maintenance",
+    features: ["Everything in Classic", "Weed control", "Leaf control"],
+    popular: true,
   },
   {
-    image: hedgedLawn,
-    title: "Sales & Rental Make-Ready Cleans",
-    href: "/services/make-ready",
-    features: [
-      "Deep cleaning for sale or lease",
-      "Carpet & floor restoration",
-      "Painting & cosmetic touch-ups",
-      "Curb appeal preparation",
-    ],
-  },
-  {
-    image: gazeboWaterfront,
-    title: "Post Eviction Services",
-    href: "/services/post-eviction",
-    features: [
-      "Full property cleanout & junk removal",
-      "Deep cleaning & sanitation",
-      "Damage assessment & documentation",
-      "Quick turnaround for re-listing",
-    ],
-  },
-  {
-    image: lawnCare,
-    title: "HomeWatch Services",
-    href: "/services/home-watch",
-    features: [
-      "Regular property inspections",
-      "Vacancy monitoring & reporting",
-      "Maintenance coordination",
-      "Peace of mind for absentee owners",
-    ],
+    icon: Crown,
+    tier: "Ultimate",
+    title: "Ultimate Maintenance",
+    features: ["Everything in Classic", "Everything in Premium", "Landscape maintenance"],
+    popular: false,
   },
 ];
 
-const ServicesSection = () => {
-  const isOdd = services.length % 2 !== 0;
-  const lastIndex = services.length - 1;
+const aLaCarteServices = [
+  "Mulch installs",
+  "Sod installs",
+  "Planting",
+  "Tree/shrub cut, removal, or trim",
+];
 
+const moreFactorServices = [
+  { name: "Pressure Washing", href: "/services/debris-removal" },
+  { name: "Gutter Cleaning", href: "/services/debris-removal" },
+  { name: "Roof & Yard Leaf/Debris", href: "/services/debris-removal" },
+  { name: "Trash Out / Clean-Outs", href: "/services/debris-removal" },
+  { name: "Sales & Rental Cleans", href: "/services/make-ready" },
+  { name: "Post Eviction Services", href: "/services/post-eviction" },
+  { name: "HomeWatch Services", href: "/services/home-watch" },
+];
+
+const ServicesSection = () => {
   return (
     <section id="services" className="py-20 lg:py-28">
       <div className="container mx-auto px-4 lg:px-8">
@@ -82,48 +57,120 @@ const ServicesSection = () => {
             Homeowners Across Southwest Florida Trust PricedRight Yards & More
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Complete property preservation and maintenance solutions for homeowners, property managers, and business owners.
+            Complete property preservation and maintenance solutions for homeowners, property managers, and business owners. Insured and bonded.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {services.map((service, i) => (
-            <motion.div
-              key={service.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className={`rounded-2xl overflow-hidden card-elevated border border-secondary/30 group${isOdd && i === lastIndex ? " md:col-span-2 md:max-w-[calc(50%-1rem)] md:mx-auto" : ""}`}
-              style={{ backgroundColor: "hsl(155 55% 18%)" }}
-            >
-              <a href={service.href} className="block aspect-[16/9] overflow-hidden cursor-pointer">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </a>
-              <div className="p-8">
-                <h3 className="font-heading text-2xl font-bold text-primary-foreground mb-4">{service.title}</h3>
-                <ul className="space-y-3 mb-6">
-                  {service.features.map((feature) => (
-                    <li key={feature} className="flex items-start gap-3 text-base text-primary-foreground/80">
-                      <Check className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+        {/* Core Programs */}
+        <div className="mb-16">
+          <motion.h3
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="font-heading text-2xl lg:text-3xl font-bold text-foreground text-center mb-8"
+          >
+            Our Core Programs
+          </motion.h3>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {corePrograms.map((program, i) => (
+              <motion.div
+                key={program.tier}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className={`rounded-2xl p-8 border relative overflow-hidden ${
+                  program.popular
+                    ? "border-secondary shadow-lg shadow-secondary/20 scale-[1.02]"
+                    : "border-secondary/30"
+                }`}
+                style={{ backgroundColor: "hsl(155 55% 18%)" }}
+              >
+                {program.popular && (
+                  <div className="absolute top-0 right-0 bg-secondary text-primary-foreground text-xs font-bold px-3 py-1 rounded-bl-lg">
+                    MOST POPULAR
+                  </div>
+                )}
+                <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center mb-4">
+                  <program.icon className="w-6 h-6 text-secondary" />
+                </div>
+                <h4 className="font-heading text-xl font-bold text-primary-foreground mb-1">{program.title}</h4>
+                <p className="text-sm text-primary-foreground/50 mb-4">{program.tier} Tier</p>
+                <ul className="space-y-2">
+                  {program.features.map((feature) => (
+                    <li key={feature} className="flex items-center gap-2 text-sm text-primary-foreground/80">
+                      <Check className="w-4 h-4 text-secondary shrink-0" />
                       {feature}
                     </li>
                   ))}
                 </ul>
-                <a
-                  href={service.href}
-                  className="inline-flex items-center gap-2 text-base font-semibold text-secondary hover:gap-3 transition-all"
-                >
-                  Learn More <ArrowRight className="w-4 h-4" />
-                </a>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            ))}
+          </div>
         </div>
+
+        {/* A La Carte */}
+        <div className="mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-3xl mx-auto rounded-2xl p-8 border border-secondary/30"
+            style={{ backgroundColor: "hsl(155 55% 18%)" }}
+          >
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 rounded-xl bg-secondary/20 flex items-center justify-center">
+                <Wrench className="w-5 h-5 text-secondary" />
+              </div>
+              <h3 className="font-heading text-2xl font-bold text-primary-foreground">A La Carte Services</h3>
+            </div>
+            <div className="grid sm:grid-cols-2 gap-3">
+              {aLaCarteServices.map((service) => (
+                <div key={service} className="flex items-center gap-2 text-primary-foreground/80">
+                  <Check className="w-4 h-4 text-secondary shrink-0" />
+                  {service}
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+
+        {/* MORE Factor - Highlighted */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="max-w-4xl mx-auto rounded-2xl p-10 border-2 border-secondary relative overflow-hidden"
+          style={{ backgroundColor: "hsl(155 55% 14%)" }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 to-transparent pointer-events-none" />
+          <div className="relative z-10">
+            <div className="flex items-center gap-3 mb-2">
+              <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center">
+                <Sparkles className="w-6 h-6 text-secondary" />
+              </div>
+              <div>
+                <h3 className="font-heading text-3xl font-bold text-primary-foreground">
+                  The <span className="text-secondary">"MORE"</span> Factor
+                </h3>
+                <p className="text-sm text-primary-foreground/60">What sets us apart from the rest</p>
+              </div>
+            </div>
+            <div className="grid sm:grid-cols-2 gap-4 mt-8">
+              {moreFactorServices.map((service) => (
+                <a
+                  key={service.name}
+                  href={service.href}
+                  className="flex items-center gap-3 text-primary-foreground/80 hover:text-secondary transition-colors group"
+                >
+                  <Check className="w-4 h-4 text-secondary shrink-0" />
+                  <span className="text-base">{service.name}</span>
+                  <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                </a>
+              ))}
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
