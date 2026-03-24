@@ -9,9 +9,12 @@ const navLinks = [
   {
     label: "Services",
     children: [
+      { label: "Core Programs", isHeader: true },
       { label: "Lawn & Landscape Maintenance", href: "/services/lawn-landscape" },
+      { label: "A La Carte", isHeader: true },
       { label: "Debris & Junk Removal", href: "/services/debris-removal" },
       { label: "Sales & Rental Make-Ready Cleans", href: "/services/make-ready" },
+      { label: "The MORE Factor", isHeader: true },
       { label: "Post Eviction Services", href: "/services/post-eviction" },
       { label: "HomeWatch Services", href: "/services/home-watch" },
     ],
