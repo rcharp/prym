@@ -96,7 +96,7 @@ const ServicesSection = () => {
                 style={{ backgroundColor: "hsl(155 55% 18%)" }}
               >
                 {/* Image */}
-                <div className="h-44 overflow-hidden">
+                <div className="h-56 overflow-hidden">
                   <img
                     src={program.image}
                     alt={program.title}
