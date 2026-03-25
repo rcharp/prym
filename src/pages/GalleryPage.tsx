@@ -10,7 +10,7 @@ import useSEO from "@/hooks/useSEO";
 import lawnMaintenance from "@/assets/gallery/lawn-maintenance.png";
 import palmYard from "@/assets/gallery/palm-yard.png";
 import lawnCare from "@/assets/gallery/lawn-care.png";
-import communityYardCuts from "@/assets/gallery/community-yard-cuts.png";
+
 import finishedLawn from "@/assets/gallery/finished-lawn.jpg";
 import sideYardMow from "@/assets/gallery/side-yard-mow.webp";
 import openYardMow from "@/assets/gallery/open-yard-mow.webp";
@@ -77,7 +77,7 @@ const galleryImages: GalleryImage[] = [
   { src: lawnMaintenance, alt: "Lawn Maintenance", category: "lawn" },
   { src: palmYard, alt: "Palm Tree Yard Care", category: "lawn" },
   { src: lawnCare, alt: "Lawn Care Service", category: "lawn" },
-  { src: communityYardCuts, alt: "Community Yard Cuts", category: "lawn" },
+  
   { src: finishedLawn, alt: "Finished Lawn", category: "lawn" },
   { src: sideYardMow, alt: "Side Yard Mowing", category: "lawn" },
   { src: openYardMow, alt: "Open Yard Mowing", category: "lawn" },
