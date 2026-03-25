@@ -5,7 +5,7 @@ import classicImg from "@/assets/services/hedged-lawn.png";
 import premiumImg from "@/assets/services/landscaped-home.webp";
 import ultimateImg from "@/assets/services/gazebo-waterfront.png";
 import aLaCarteImg from "@/assets/services/palm-yard-street.png";
-import moreImg from "@/assets/gallery/service-truck.jpg";
+import moreImg from "@/assets/services/pristine-home-landscape.jpg";
 
 const corePrograms = [
   {
