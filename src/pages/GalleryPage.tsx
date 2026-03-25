@@ -77,7 +77,7 @@ const galleryImages: GalleryImage[] = [
   { src: lawnMaintenance, alt: "Lawn Maintenance", category: "lawn" },
   { src: palmYard, alt: "Palm Tree Yard Care", category: "lawn" },
   { src: lawnCare, alt: "Lawn Care Service", category: "lawn" },
-  { src: communityYardCuts, alt: "Community Yard Cuts", category: "lawn" },
+  
   { src: finishedLawn, alt: "Finished Lawn", category: "lawn" },
   { src: sideYardMow, alt: "Side Yard Mowing", category: "lawn" },
   { src: openYardMow, alt: "Open Yard Mowing", category: "lawn" },
