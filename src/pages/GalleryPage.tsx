@@ -107,9 +107,7 @@ const galleryImages: GalleryImage[] = [
   // Cleanout
   { src: junkRemoval, alt: "Junk Removal", category: "cleanout" },
   { src: debrisCleanup1, alt: "Debris Cleanup", category: "cleanout" },
-  { src: overgrownLot, alt: "Overgrown Lot Clearing", category: "cleanout" },
   { src: propertyCleanup, alt: "Property Cleanup", category: "cleanout" },
-  { src: clearedLot, alt: "Cleared Wooded Lot", category: "cleanout" },
   { src: woodedLotBefore, alt: "Wooded Lot Before Clearing", category: "cleanout" },
   { src: woodedLotAfter, alt: "Wooded Lot After Clearing", category: "cleanout" },
   // Team
