@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PricedRight Yards &amp; More | Property Preservation Services</title>
+    <!-- GitHub Pages SPA redirect handler -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
     <meta name="description" content="PricedRight Yards &amp; More provides expert yard maintenance, property preservation, post eviction services, and more. Family owned &amp; insured. Call (813) 860-2202.">
     <meta name="author" content="PricedRight Yards & More" />
     <link rel="canonical" href="https://example.com/" />
