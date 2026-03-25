@@ -1,4 +1,4 @@
-# PricedRight Yards & More
+# PricedRight Yards & More — Property Preservation Services
 
 ## Project info
 
