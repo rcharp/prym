@@ -29,7 +29,7 @@ import hedgeOvergrown from "@/assets/gallery/hedge-overgrown.webp";
 import stormDebris from "@/assets/gallery/storm-debris.png";
 
 import debrisCleanup1 from "@/assets/gallery/debris-cleanup-1.jpg";
-import fallenTree from "@/assets/gallery/fallen-tree.png";
+
 import roofDebris from "@/assets/gallery/roof-debris.jpg";
 import roofCleanup from "@/assets/gallery/roof-cleanup.jpg";
 import roofTreeBefore from "@/assets/gallery/roof-tree-before.png";
