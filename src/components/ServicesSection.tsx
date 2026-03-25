@@ -135,10 +135,10 @@ const ServicesSection = () => {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="max-w-4xl mx-auto rounded-2xl border border-secondary/30 overflow-hidden md:flex"
+            className="max-w-md mx-auto rounded-2xl border border-secondary/30 overflow-hidden"
             style={{ backgroundColor: "hsl(155 55% 18%)" }}
           >
-            <div className="md:w-2/5 h-48 md:h-auto overflow-hidden">
+            <div className="h-56 overflow-hidden">
               <img
                 src={aLaCarteImg}
                 alt="A La Carte landscaping services"
@@ -146,21 +146,21 @@ const ServicesSection = () => {
                 loading="lazy"
               />
             </div>
-            <div className="p-8 md:w-3/5">
+            <div className="p-8">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 rounded-xl bg-secondary/20 flex items-center justify-center">
                   <Wrench className="w-5 h-5 text-secondary" />
                 </div>
                 <h3 className="font-heading text-2xl font-bold text-primary-foreground">A La Carte Services</h3>
               </div>
-              <div className="grid sm:grid-cols-2 gap-3">
+              <ul className="space-y-3">
                 {aLaCarteServices.map((service) => (
-                  <div key={service} className="flex items-center gap-2 text-primary-foreground/80">
+                  <li key={service} className="flex items-center gap-2 text-primary-foreground/80">
                     <Check className="w-4 h-4 text-secondary shrink-0" />
                     {service}
-                  </div>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           </motion.div>
         </div>
