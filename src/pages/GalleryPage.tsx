@@ -99,7 +99,6 @@ const galleryImages: GalleryImage[] = [
   { src: landscapedHome1, alt: "Landscaped Home", category: "landscape" },
   { src: landscapedHome2, alt: "Landscaped Home Close Up", category: "landscape" },
   { src: sideYardClean, alt: "Side Yard Cleanup", category: "landscape" },
-  { src: stumpTeam, alt: "Stump Removal", category: "landscape" },
   { src: stumpRemoval, alt: "Stump Grinding", category: "landscape" },
   // Cleanout
   { src: junkRemoval, alt: "Junk Removal", category: "cleanout" },
@@ -108,6 +107,7 @@ const galleryImages: GalleryImage[] = [
   { src: clearedLot, alt: "Cleared Wooded Lot", category: "cleanout" },
   // Team
   { src: teamOnSite, alt: "Team On Site", category: "team" },
+  { src: stumpTeam, alt: "Stump Removal Team", category: "team" },
   { src: blowerGazebo, alt: "Leaf Blowing at Gazebo", category: "team" },
 ];
 
