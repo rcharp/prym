@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 
 import stormDebris from "@/assets/gallery/storm-debris.png";
 import lawnMaintenance from "@/assets/gallery/lawn-maintenance.png";
@@ -9,6 +10,10 @@ import landscapeGreenery from "@/assets/gallery/landscape-greenery.png";
 import palmYard from "@/assets/gallery/palm-yard.png";
 import lawnCare from "@/assets/gallery/lawn-care.png";
 import treeDebris from "@/assets/gallery/tree-debris.png";
+import roofDebris from "@/assets/gallery/roof-debris.jpg";
+import roofCleanup from "@/assets/gallery/roof-cleanup.jpg";
+import overgrownLot from "@/assets/gallery/overgrown-lot.jpg";
+import clearedLot from "@/assets/gallery/cleared-lot.webp";
 
 const galleryImages = [
   { src: lawnMaintenance, alt: "Lawn Maintenance" },
@@ -17,6 +22,23 @@ const galleryImages = [
   { src: stormDebris, alt: "Storm Debris Cleanup" },
   { src: treeDebris, alt: "Tree Debris Removal" },
   { src: landscapeGreenery, alt: "Landscape Greenery" },
+];
+
+const beforeAfterPairs = [
+  {
+    before: roofDebris,
+    after: roofCleanup,
+    beforeAlt: "Roof covered in debris before cleanup",
+    afterAlt: "Clean roof after professional debris removal",
+    label: "Roof Debris Cleanup",
+  },
+  {
+    before: overgrownLot,
+    after: clearedLot,
+    beforeAlt: "Overgrown lot before clearing",
+    afterAlt: "Lot after professional clearing",
+    label: "Lot Clearing",
+  },
 ];
 
 const GallerySection = () => (
@@ -48,6 +70,37 @@ const GallerySection = () => (
           </motion.div>
         ))}
       </div>
+
+      {/* Before & After Sliders */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mt-16"
+      >
+        <h3 className="font-heading text-2xl lg:text-3xl font-bold text-foreground text-center mb-8">
+          Before & After
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {beforeAfterPairs.map((pair, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.15 }}
+            >
+              <BeforeAfterSlider
+                beforeSrc={pair.before}
+                afterSrc={pair.after}
+                beforeAlt={pair.beforeAlt}
+                afterAlt={pair.afterAlt}
+              />
+              <p className="text-sm text-muted-foreground mt-3 text-center font-medium">{pair.label}</p>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
