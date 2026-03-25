@@ -26,7 +26,7 @@ import hedgedFrontLawn from "@/assets/gallery/hedged-front-lawn.png";
 
 // Debris & Storm Cleanup
 import stormDebris from "@/assets/gallery/storm-debris.png";
-import treeDebris from "@/assets/gallery/tree-debris.png";
+
 import debrisCleanup1 from "@/assets/gallery/debris-cleanup-1.jpg";
 import fallenTree from "@/assets/gallery/fallen-tree.png";
 import roofDebris from "@/assets/gallery/roof-debris.jpg";
@@ -40,7 +40,7 @@ import gazeboLawn from "@/assets/gallery/gazebo-lawn.png";
 import landscapedHome1 from "@/assets/gallery/landscaped-home-1.webp";
 import landscapedHome2 from "@/assets/gallery/landscaped-home-2.webp";
 
-import gazeboWaterfront from "@/assets/gallery/gazebo-waterfront.png";
+
 import sideYardClean from "@/assets/gallery/side-yard-clean.webp";
 
 // Cleanout & Junk Removal
@@ -90,17 +90,17 @@ const galleryImages: GalleryImage[] = [
   { src: hedgedFrontLawn, alt: "Hedged Front Lawn", category: "hedge" },
   // Debris
   { src: stormDebris, alt: "Storm Debris Cleanup", category: "debris" },
-  { src: treeDebris, alt: "Tree Debris Removal", category: "debris" },
   { src: debrisCleanup1, alt: "Debris Cleanup", category: "debris" },
   { src: fallenTree, alt: "Fallen Tree Cleanup", category: "debris" },
+  { src: rooftopTrees, alt: "Rooftop Tree View", category: "debris" },
   // Landscaping
   { src: landscapeGreenery, alt: "Landscape Greenery", category: "landscape" },
   { src: gazeboLawn, alt: "Gazebo Lawn Care", category: "landscape" },
   { src: landscapedHome1, alt: "Landscaped Home", category: "landscape" },
   { src: landscapedHome2, alt: "Landscaped Home Close Up", category: "landscape" },
-  
-  { src: gazeboWaterfront, alt: "Gazebo Waterfront", category: "landscape" },
   { src: sideYardClean, alt: "Side Yard Cleanup", category: "landscape" },
+  { src: stumpTeam, alt: "Stump Removal", category: "landscape" },
+  { src: stumpRemoval, alt: "Stump Grinding", category: "landscape" },
   // Cleanout
   { src: junkRemoval, alt: "Junk Removal", category: "cleanout" },
   { src: overgrownLot, alt: "Overgrown Lot Clearing", category: "cleanout" },
@@ -108,10 +108,7 @@ const galleryImages: GalleryImage[] = [
   { src: clearedLot, alt: "Cleared Wooded Lot", category: "cleanout" },
   // Team
   { src: teamOnSite, alt: "Team On Site", category: "team" },
-  { src: stumpTeam, alt: "Stump Removal Team", category: "team" },
-  { src: stumpRemoval, alt: "Stump Removal", category: "team" },
   { src: blowerGazebo, alt: "Leaf Blowing at Gazebo", category: "team" },
-  { src: rooftopTrees, alt: "Rooftop Tree View", category: "team" },
 ];
 
 const beforeAfterPairs = [
