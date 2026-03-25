@@ -124,6 +124,14 @@ const beforeAfterPairs = [
     category: "debris",
   },
   {
+    before: roofTreeBefore,
+    after: roofTreeAfter,
+    beforeAlt: "Fallen tree on roof before removal",
+    afterAlt: "Clear roof after tree removal",
+    label: "Roof Tree Removal",
+    category: "debris",
+  },
+  {
     before: hedgeBefore1,
     after: hedgedFrontLawn,
     beforeAlt: "Overgrown hedge before trimming",
