@@ -48,6 +48,8 @@ import junkRemoval from "@/assets/gallery/junk-removal.jpg";
 import overgrownLot from "@/assets/gallery/overgrown-lot.jpg";
 import propertyCleanup from "@/assets/gallery/property-cleanup.jpg";
 import clearedLot from "@/assets/gallery/cleared-lot.webp";
+import woodedLotBefore from "@/assets/gallery/wooded-lot-before.png";
+import woodedLotAfter from "@/assets/gallery/wooded-lot-after.png";
 
 // Team
 import teamOnSite from "@/assets/gallery/team-on-site.jpg";
@@ -105,6 +107,8 @@ const galleryImages: GalleryImage[] = [
   { src: overgrownLot, alt: "Overgrown Lot Clearing", category: "cleanout" },
   { src: propertyCleanup, alt: "Property Cleanup", category: "cleanout" },
   { src: clearedLot, alt: "Cleared Wooded Lot", category: "cleanout" },
+  { src: woodedLotBefore, alt: "Wooded Lot Before Clearing", category: "cleanout" },
+  { src: woodedLotAfter, alt: "Wooded Lot After Clearing", category: "cleanout" },
   // Team
   { src: teamOnSite, alt: "Team On Site", category: "team" },
   { src: stumpTeam, alt: "Stump Removal Team", category: "team" },
