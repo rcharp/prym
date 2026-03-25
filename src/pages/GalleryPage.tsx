@@ -95,7 +95,7 @@ const galleryImages: GalleryImage[] = [
   // Debris
   { src: stormDebris, alt: "Storm Debris Cleanup", category: "debris" },
   
-  { src: fallenTree, alt: "Fallen Tree Cleanup", category: "debris" },
+  
   { src: rooftopTrees, alt: "Rooftop Tree View", category: "debris" },
   // Landscaping
   { src: landscapeGreenery, alt: "Landscape Greenery", category: "landscape" },
