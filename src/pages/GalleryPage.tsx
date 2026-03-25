@@ -91,6 +91,7 @@ const galleryImages: GalleryImage[] = [
   // Hedge
   { src: trimmingBush, alt: "Bush Trimming Service", category: "hedge" },
   { src: hedgedFrontLawn, alt: "Hedged Front Lawn", category: "hedge" },
+  { src: hedgeOvergrown, alt: "Overgrown Hedge", category: "hedge" },
   // Debris
   { src: stormDebris, alt: "Storm Debris Cleanup", category: "debris" },
   { src: debrisCleanup1, alt: "Debris Cleanup", category: "debris" },
