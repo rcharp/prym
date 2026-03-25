@@ -43,6 +43,7 @@ const BeforeAfterSlider = ({ beforeSrc, afterSrc, beforeAlt, afterAlt }: BeforeA
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseUp}
+      onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
     >
       {/* After (background) */}
