@@ -80,10 +80,10 @@ const TestimonialsSection = () => {
           <div className="shrink-0">
             <div className="relative w-[200px] h-[200px] lg:w-[220px] lg:h-[220px] flex items-center justify-center">
               {/* Gold star behind badge */}
-              <svg viewBox="0 0 200 200" className="absolute w-[240px] h-[240px] lg:w-[260px] lg:h-[260px]" xmlns="http://www.w3.org/2000/svg">
+              <svg viewBox="0 0 200 200" className="absolute w-[240px] h-[240px] lg:w-[260px] lg:h-[260px]" style={{ transform: "rotate(-45deg)" }} xmlns="http://www.w3.org/2000/svg">
                 <polygon
                   points="100,8 120,72 188,72 132,108 152,172 100,136 48,172 68,108 12,72 80,72"
-                  style={{ fill: "#D4A017", opacity: 0.18 }}
+                  style={{ fill: "#D4A017" }}
                 />
               </svg>
               {/* Outer ring */}
