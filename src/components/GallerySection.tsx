@@ -14,6 +14,8 @@ import roofDebris from "@/assets/gallery/roof-debris.jpg";
 import roofCleanup from "@/assets/gallery/roof-cleanup.jpg";
 import overgrownLot from "@/assets/gallery/overgrown-lot.jpg";
 import clearedLot from "@/assets/gallery/cleared-lot.webp";
+import roofTreeBefore from "@/assets/gallery/roof-tree-before.png";
+import roofTreeAfter from "@/assets/gallery/roof-tree-after.png";
 
 const galleryImages = [
   { src: lawnMaintenance, alt: "Lawn Maintenance" },
@@ -31,6 +33,13 @@ const beforeAfterPairs = [
     beforeAlt: "Roof covered in debris before cleanup",
     afterAlt: "Clean roof after professional debris removal",
     label: "Roof Debris Cleanup",
+  },
+  {
+    before: roofTreeBefore,
+    after: roofTreeAfter,
+    beforeAlt: "Fallen tree on roof before removal",
+    afterAlt: "Clear roof after tree removal",
+    label: "Roof Tree Removal",
   },
   {
     before: overgrownLot,
