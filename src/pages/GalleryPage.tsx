@@ -94,7 +94,7 @@ const galleryImages: GalleryImage[] = [
   { src: hedgeOvergrown, alt: "Overgrown Hedge", category: "hedge" },
   // Debris
   { src: stormDebris, alt: "Storm Debris Cleanup", category: "debris" },
-  { src: debrisCleanup1, alt: "Debris Cleanup", category: "debris" },
+  
   { src: fallenTree, alt: "Fallen Tree Cleanup", category: "debris" },
   { src: rooftopTrees, alt: "Rooftop Tree View", category: "debris" },
   // Landscaping
@@ -106,6 +106,7 @@ const galleryImages: GalleryImage[] = [
   { src: stumpRemoval, alt: "Stump Grinding", category: "landscape" },
   // Cleanout
   { src: junkRemoval, alt: "Junk Removal", category: "cleanout" },
+  { src: debrisCleanup1, alt: "Debris Cleanup", category: "cleanout" },
   { src: overgrownLot, alt: "Overgrown Lot Clearing", category: "cleanout" },
   { src: propertyCleanup, alt: "Property Cleanup", category: "cleanout" },
   { src: clearedLot, alt: "Cleared Wooded Lot", category: "cleanout" },
