@@ -16,7 +16,7 @@ import sideYardMow from "@/assets/gallery/side-yard-mow.webp";
 import openYardMow from "@/assets/gallery/open-yard-mow.webp";
 import fencedYardMow from "@/assets/gallery/fenced-yard-mow.webp";
 import backyardWide from "@/assets/gallery/backyard-wide.webp";
-import largeLotMow from "@/assets/gallery/large-lot-mow.png";
+
 import palmYardMaintained from "@/assets/gallery/palm-yard-maintained.png";
 
 // Hedge & Shrub Work
@@ -83,7 +83,7 @@ const galleryImages: GalleryImage[] = [
   { src: openYardMow, alt: "Open Yard Mowing", category: "lawn" },
   { src: fencedYardMow, alt: "Fenced Yard Mowing", category: "lawn" },
   { src: backyardWide, alt: "Backyard Maintenance", category: "lawn" },
-  { src: largeLotMow, alt: "Large Lot Mowing", category: "lawn" },
+  
   { src: palmYardMaintained, alt: "Palm Yard Maintained", category: "lawn" },
   // Hedge
   { src: trimmingBush, alt: "Bush Trimming Service", category: "hedge" },
