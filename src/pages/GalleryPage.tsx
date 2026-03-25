@@ -11,7 +11,7 @@ import lawnMaintenance from "@/assets/gallery/lawn-maintenance.png";
 import palmYard from "@/assets/gallery/palm-yard.png";
 import lawnCare from "@/assets/gallery/lawn-care.png";
 
-import finishedLawn from "@/assets/gallery/finished-lawn.jpg";
+
 import sideYardMow from "@/assets/gallery/side-yard-mow.webp";
 import openYardMow from "@/assets/gallery/open-yard-mow.webp";
 import fencedYardMow from "@/assets/gallery/fenced-yard-mow.webp";
