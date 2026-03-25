@@ -31,6 +31,8 @@ import debrisCleanup1 from "@/assets/gallery/debris-cleanup-1.jpg";
 import fallenTree from "@/assets/gallery/fallen-tree.png";
 import roofDebris from "@/assets/gallery/roof-debris.jpg";
 import roofCleanup from "@/assets/gallery/roof-cleanup.jpg";
+import roofTreeBefore from "@/assets/gallery/roof-tree-before.png";
+import roofTreeAfter from "@/assets/gallery/roof-tree-after.png";
 
 // Property & Landscaping
 import landscapeGreenery from "@/assets/gallery/landscape-greenery.png";
@@ -119,6 +121,14 @@ const beforeAfterPairs = [
     beforeAlt: "Roof with debris before cleanup",
     afterAlt: "Roof after professional cleanup",
     label: "Roof Debris Cleanup",
+    category: "debris",
+  },
+  {
+    before: roofTreeBefore,
+    after: roofTreeAfter,
+    beforeAlt: "Fallen tree on roof before removal",
+    afterAlt: "Clear roof after tree removal",
+    label: "Roof Tree Removal",
     category: "debris",
   },
   {
