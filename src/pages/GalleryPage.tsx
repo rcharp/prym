@@ -26,7 +26,7 @@ import hedgedFrontLawn from "@/assets/gallery/hedged-front-lawn.png";
 
 // Debris & Storm Cleanup
 import stormDebris from "@/assets/gallery/storm-debris.png";
-import treeDebris from "@/assets/gallery/tree-debris.png";
+
 import debrisCleanup1 from "@/assets/gallery/debris-cleanup-1.jpg";
 import fallenTree from "@/assets/gallery/fallen-tree.png";
 import roofDebris from "@/assets/gallery/roof-debris.jpg";
@@ -40,7 +40,7 @@ import gazeboLawn from "@/assets/gallery/gazebo-lawn.png";
 import landscapedHome1 from "@/assets/gallery/landscaped-home-1.webp";
 import landscapedHome2 from "@/assets/gallery/landscaped-home-2.webp";
 
-import gazeboWaterfront from "@/assets/gallery/gazebo-waterfront.png";
+
 import sideYardClean from "@/assets/gallery/side-yard-clean.webp";
 
 // Cleanout & Junk Removal
