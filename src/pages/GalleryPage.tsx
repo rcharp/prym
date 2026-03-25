@@ -211,21 +211,47 @@ const GalleryPage = () => {
               </div>
             )}
 
-            {/* Photo Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {filteredImages.map((img, i) => (
-                <motion.div
-                  key={`${img.alt}-${i}`}
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.02 }}
-                  className="rounded-xl overflow-hidden aspect-[4/3] border border-border"
-                >
-                  <img src={img.src} alt={img.alt} className="w-full h-full object-cover" loading="lazy" />
-                </motion.div>
-              ))}
-            </div>
+            {/* Photo Grid — grouped by category */}
+            {activeCategory === "all" ? (
+              categories.filter(c => c.id !== "all").map((cat) => {
+                const catImages = galleryImages.filter(img => img.category === cat.id);
+                if (catImages.length === 0) return null;
+                return (
+                  <div key={cat.id} className="mb-14">
+                    <h3 className="font-heading text-xl font-bold text-foreground mb-4 border-b border-border pb-2">{cat.label}</h3>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                      {catImages.map((img, i) => (
+                        <motion.div
+                          key={`${img.alt}-${i}`}
+                          initial={{ opacity: 0, scale: 0.95 }}
+                          whileInView={{ opacity: 1, scale: 1 }}
+                          viewport={{ once: true }}
+                          transition={{ delay: i * 0.02 }}
+                          className="rounded-xl overflow-hidden aspect-[4/3] border border-border"
+                        >
+                          <img src={img.src} alt={img.alt} className="w-full h-full object-cover" loading="lazy" />
+                        </motion.div>
+                      ))}
+                    </div>
+                  </div>
+                );
+              })
+            ) : (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {filteredImages.map((img, i) => (
+                  <motion.div
+                    key={`${img.alt}-${i}`}
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.02 }}
+                    className="rounded-xl overflow-hidden aspect-[4/3] border border-border"
+                  >
+                    <img src={img.src} alt={img.alt} className="w-full h-full object-cover" loading="lazy" />
+                  </motion.div>
+                ))}
+              </div>
+            )}
           </div>
         </section>
         <CTASection />
