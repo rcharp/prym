@@ -10,7 +10,7 @@ import useSEO from "@/hooks/useSEO";
 import lawnMaintenance from "@/assets/gallery/lawn-maintenance.png";
 import palmYard from "@/assets/gallery/palm-yard.png";
 import lawnCare from "@/assets/gallery/lawn-care.png";
-import communityYardCuts from "@/assets/gallery/community-yard-cuts.png";
+
 import finishedLawn from "@/assets/gallery/finished-lawn.jpg";
 import sideYardMow from "@/assets/gallery/side-yard-mow.webp";
 import openYardMow from "@/assets/gallery/open-yard-mow.webp";
