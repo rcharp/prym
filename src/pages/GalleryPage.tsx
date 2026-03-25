@@ -22,6 +22,7 @@ import palmYardMaintained from "@/assets/gallery/palm-yard-maintained.png";
 // Hedge & Shrub Work
 import trimmingBush from "@/assets/gallery/trimming-bush.webp";
 import hedgedFrontLawn from "@/assets/gallery/hedged-front-lawn.png";
+import hedgeOvergrown from "@/assets/gallery/hedge-overgrown.webp";
 
 
 // Debris & Storm Cleanup
