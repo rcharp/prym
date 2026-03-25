@@ -16,13 +16,20 @@ const BeforeAfterSlider = ({ beforeSrc, afterSrc, beforeAlt, afterAlt }: BeforeA
     if (!containerRef.current) return;
     const rect = containerRef.current.getBoundingClientRect();
     const x = Math.max(0, Math.min(clientX - rect.left, rect.width));
-    setPosition((x / rect.width) * 100);
+    const pct = Math.max(2, Math.min(98, (x / rect.width) * 100));
+    setPosition(pct);
   }, []);
 
-  const handleMouseDown = () => { isDragging.current = true; };
+  const handleMouseDown = (e: React.MouseEvent) => {
+    isDragging.current = true;
+    updatePosition(e.clientX);
+  };
   const handleMouseUp = () => { isDragging.current = false; };
   const handleMouseMove = (e: React.MouseEvent) => {
     if (isDragging.current) updatePosition(e.clientX);
+  };
+  const handleTouchStart = (e: React.TouchEvent) => {
+    updatePosition(e.touches[0].clientX);
   };
   const handleTouchMove = (e: React.TouchEvent) => {
     updatePosition(e.touches[0].clientX);
@@ -36,6 +43,7 @@ const BeforeAfterSlider = ({ beforeSrc, afterSrc, beforeAlt, afterAlt }: BeforeA
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseUp}
+      onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
     >
       {/* After (background) */}
