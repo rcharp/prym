@@ -132,14 +132,6 @@ const beforeAfterPairs = [
     category: "debris",
   },
   {
-    before: hedgeBefore1,
-    after: hedgedFrontLawn,
-    beforeAlt: "Overgrown hedge before trimming",
-    afterAlt: "Neatly trimmed hedge after service",
-    label: "Hedge Trimming",
-    category: "hedge",
-  },
-  {
     before: overgrownLot,
     after: clearedLot,
     beforeAlt: "Overgrown lot before clearing",
