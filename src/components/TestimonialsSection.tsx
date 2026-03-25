@@ -76,6 +76,42 @@ const TestimonialsSection = () => {
         </motion.div>
 
         <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+          {/* Neighborhood Fave Badge */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="shrink-0"
+          >
+            <div className="relative w-[180px] h-[180px] lg:w-[200px] lg:h-[200px]">
+              <div
+                className="absolute inset-0 rounded-full"
+                style={{
+                  background: "linear-gradient(135deg, hsl(155 55% 28%), hsl(155 55% 18%), hsl(155 55% 12%))",
+                  boxShadow: "0 0 0 3px hsl(142 70% 45% / 0.4), 0 8px 32px hsl(155 55% 10% / 0.5)",
+                }}
+              />
+              <div
+                className="absolute inset-[6px] rounded-full flex flex-col items-center justify-center text-center"
+                style={{
+                  background: "linear-gradient(180deg, hsl(155 55% 22%), hsl(155 55% 14%))",
+                  border: "2px solid hsl(142 70% 45% / 0.3)",
+                }}
+              >
+                <Trophy className="w-6 h-6 mb-1" style={{ color: "#D4A017" }} />
+                <span className="text-primary-foreground/70 text-xs font-semibold tracking-wide">2025</span>
+                <span className="text-primary-foreground text-[10px] leading-tight mt-0.5 tracking-widest uppercase font-semibold">Neighborhood</span>
+                <span className="text-primary-foreground font-heading font-extrabold text-3xl lg:text-4xl leading-none tracking-tight uppercase" style={{ textShadow: "0 2px 8px rgba(212,160,23,0.3)" }}>FAVE</span>
+                <div className="flex items-center gap-1 mt-1.5">
+                  <svg viewBox="0 0 16 16" className="w-3 h-3" style={{ fill: "#D4A017" }} xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 0L10 5H16L11 8L13 14L8 10L3 14L5 8L0 5H6L8 0Z" />
+                  </svg>
+                  <span className="text-[10px] font-bold tracking-wider uppercase" style={{ color: "#D4A017" }}>Nextdoor</span>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
           {/* Carousel */}
           <div className="flex-1 relative w-full">
             <div className="overflow-hidden">
@@ -149,43 +185,6 @@ const TestimonialsSection = () => {
             </div>
           </div>
 
-          {/* Neighborhood Fave Badge */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="shrink-0"
-          >
-            <div className="relative w-[180px] h-[180px] lg:w-[200px] lg:h-[200px]">
-              {/* Outer ring */}
-              <div
-                className="absolute inset-0 rounded-full"
-                style={{
-                  background: "linear-gradient(135deg, hsl(155 55% 28%), hsl(155 55% 18%), hsl(155 55% 12%))",
-                  boxShadow: "0 0 0 3px hsl(142 70% 45% / 0.4), 0 8px 32px hsl(155 55% 10% / 0.5)",
-                }}
-              />
-              {/* Inner circle */}
-              <div
-                className="absolute inset-[6px] rounded-full flex flex-col items-center justify-center text-center"
-                style={{
-                  background: "linear-gradient(180deg, hsl(155 55% 22%), hsl(155 55% 14%))",
-                  border: "2px solid hsl(142 70% 45% / 0.3)",
-                }}
-              >
-                <Trophy className="w-6 h-6 text-secondary mb-1" />
-                <span className="text-primary-foreground/70 text-xs font-semibold tracking-wide">2025</span>
-                <span className="text-primary-foreground text-[11px] leading-tight mt-0.5">Neighborhood</span>
-                <span className="text-primary-foreground font-heading font-bold text-2xl lg:text-3xl leading-none tracking-tight">FAVE</span>
-                <div className="flex items-center gap-1 mt-1.5">
-                  <svg viewBox="0 0 16 16" className="w-3 h-3 fill-secondary" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 0L10 5H16L11 8L13 14L8 10L3 14L5 8L0 5H6L8 0Z" />
-                  </svg>
-                  <span className="text-secondary text-[10px] font-bold tracking-wider uppercase">Nextdoor</span>
-                </div>
-              </div>
-            </div>
-          </motion.div>
         </div>
       </div>
     </section>
