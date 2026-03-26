@@ -12,8 +12,8 @@ import lawnCare from "@/assets/gallery/lawn-care.png";
 import treeDebris from "@/assets/gallery/tree-debris.png";
 import roofDebris from "@/assets/gallery/roof-debris.jpg";
 import roofCleanup from "@/assets/gallery/roof-cleanup.jpg";
-import overgrownLot from "@/assets/gallery/overgrown-lot.jpg";
-import clearedLot from "@/assets/gallery/cleared-lot.webp";
+import debrisCleanup1 from "@/assets/gallery/debris-cleanup-1.jpg";
+import woodedLotBefore from "@/assets/gallery/wooded-lot-before.png";
 import roofTreeBefore from "@/assets/gallery/roof-tree-before.png";
 import roofTreeAfter from "@/assets/gallery/roof-tree-after.png";
 
@@ -42,10 +42,10 @@ const beforeAfterPairs = [
     label: "Roof Tree Removal",
   },
   {
-    before: overgrownLot,
-    after: clearedLot,
-    beforeAlt: "Overgrown lot before clearing",
-    afterAlt: "Lot after professional clearing",
+    before: debrisCleanup1,
+    after: woodedLotBefore,
+    beforeAlt: "Property before cleanup",
+    afterAlt: "Property after professional cleanup",
     label: "Lot Clearing",
   },
 ];
