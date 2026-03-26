@@ -90,7 +90,7 @@ const GallerySection = () => (
         <h3 className="font-heading text-2xl lg:text-3xl font-bold text-foreground text-center mb-8">
           Before & After
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto [&>*:last-child:nth-child(odd)]:md:col-span-2 [&>*:last-child:nth-child(odd)]:md:max-w-[calc(50%-1rem)] [&>*:last-child:nth-child(odd)]:md:mx-auto">
           {beforeAfterPairs.map((pair, i) => (
             <motion.div
               key={i}
