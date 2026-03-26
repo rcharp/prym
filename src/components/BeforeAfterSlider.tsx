@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback, useEffect } from "react";
 
 interface BeforeAfterSliderProps {
   beforeSrc: string;
@@ -20,29 +20,42 @@ const BeforeAfterSlider = ({ beforeSrc, afterSrc, beforeAlt, afterAlt }: BeforeA
     setPosition(pct);
   }, []);
 
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (isDragging.current) {
+        e.preventDefault();
+        updatePosition(e.clientX);
+      }
+    };
+    const handleMouseUp = () => {
+      isDragging.current = false;
+    };
+    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mouseup", handleMouseUp);
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mouseup", handleMouseUp);
+    };
+  }, [updatePosition]);
+
   const handleMouseDown = (e: React.MouseEvent) => {
+    e.preventDefault();
     isDragging.current = true;
     updatePosition(e.clientX);
-  };
-  const handleMouseUp = () => { isDragging.current = false; };
-  const handleMouseMove = (e: React.MouseEvent) => {
-    if (isDragging.current) updatePosition(e.clientX);
   };
   const handleTouchStart = (e: React.TouchEvent) => {
     updatePosition(e.touches[0].clientX);
   };
   const handleTouchMove = (e: React.TouchEvent) => {
+    e.preventDefault();
     updatePosition(e.touches[0].clientX);
   };
 
   return (
     <div
       ref={containerRef}
-      className="relative w-full aspect-[4/3] rounded-xl overflow-hidden cursor-col-resize select-none border border-border"
-      onMouseMove={handleMouseMove}
+      className="relative w-full aspect-[4/3] rounded-xl overflow-hidden cursor-col-resize select-none border border-border touch-none"
       onMouseDown={handleMouseDown}
-      onMouseUp={handleMouseUp}
-      onMouseLeave={handleMouseUp}
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
     >
