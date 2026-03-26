@@ -65,7 +65,7 @@ const categories = [
   { id: "hedge", label: "Hedge & Shrub" },
   { id: "debris", label: "Debris & Storm" },
   { id: "landscape", label: "Landscaping" },
-  { id: "cleanout", label: "Cleanout & Junk" },
+  { id: "cleanout", label: "Junk Removal/Cleanout" },
   { id: "team", label: "Team at Work" },
 ];
 
