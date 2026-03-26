@@ -27,11 +27,15 @@ const Footer = () => (
         <div>
           <h4 className="font-heading font-semibold text-base uppercase tracking-wider mb-4 opacity-60">Services</h4>
           <nav className="space-y-3">
-            <a href="/services/lawn-landscape" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Lawn & Landscape</a>
-            <a href="/services/debris-removal" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Debris & Junk Removal</a>
+            <a href="/services/classic-lawn" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Classic Lawn Care</a>
+            <a href="/services/premium-lawn" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Premium Lawn Care</a>
+            <a href="/services/ultimate-maintenance" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Ultimate Maintenance</a>
+            <a href="/services/tree-shrub" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Tree & Shrub Care</a>
+            <a href="/services/pressure-washing" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Pressure Washing</a>
+            <a href="/services/roof-debris" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Roof Debris Removal</a>
+            <a href="/services/trash-out" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Trash Out</a>
             <a href="/services/make-ready" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Make-Ready Cleans</a>
             <a href="/services/post-eviction" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Post Eviction</a>
-            <a href="/services/home-watch" className="block text-base opacity-80 hover:opacity-100 transition-opacity">HomeWatch Services</a>
           </nav>
         </div>
 
