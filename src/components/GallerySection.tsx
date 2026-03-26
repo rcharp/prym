@@ -118,7 +118,7 @@ const GallerySection = () => (
         transition={{ delay: 0.3 }}
         className="text-center mt-12"
       >
-        <Link to="/gallery">
+        <Link to="/gallery" onClick={() => window.scrollTo(0, 0)}>
           <Button variant="secondary" size="lg" className="group text-lg px-10 py-6 h-auto">
             View Full Gallery
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
