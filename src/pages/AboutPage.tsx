@@ -42,7 +42,7 @@ const AboutPage = () => {
                   src={ownerPhoto}
                   alt="Kay Tarver, Owner of PricedRight Yards & More"
                   loading="lazy"
-                  className="rounded-2xl shadow-xl w-full aspect-[4/3] object-cover object-top"
+                  className="rounded-2xl shadow-xl w-full max-w-md mx-auto aspect-[4/3] object-cover object-top"
                 />
               </motion.div>
               <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="space-y-6">
