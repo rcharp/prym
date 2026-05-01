@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://prym.lovable.app/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://prym.lovable.app/quote</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://prym.lovable.app/gallery</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://prym.lovable.app/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://prym.lovable.app/contact</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://prym.lovable.app/review</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://prym.lovable.app/tips</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pricedrightyards.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://pricedrightyards.com/quote</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://pricedrightyards.com/gallery</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pricedrightyards.com/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pricedrightyards.com/contact</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pricedrightyards.com/review</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pricedrightyards.com/tips</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <!-- Core Programs -->
-  <url><loc>https://prym.lovable.app/services/classic-lawn</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://prym.lovable.app/services/premium-lawn</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://prym.lovable.app/services/ultimate-maintenance</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pricedrightyards.com/services/classic-lawn</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pricedrightyards.com/services/premium-lawn</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pricedrightyards.com/services/ultimate-maintenance</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <!-- A La Carte -->
-  <url><loc>https://prym.lovable.app/services/mulch-sod</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://prym.lovable.app/services/planting</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://prym.lovable.app/services/tree-shrub</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pricedrightyards.com/services/mulch-sod</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pricedrightyards.com/services/planting</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pricedrightyards.com/services/tree-shrub</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <!-- MORE Factor -->
-  <url><loc>https://prym.lovable.app/services/pressure-washing</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://prym.lovable.app/services/gutter-cleaning</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://prym.lovable.app/services/roof-debris</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://prym.lovable.app/services/trash-out</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://prym.lovable.app/services/make-ready</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://prym.lovable.app/services/post-eviction</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://prym.lovable.app/services/home-watch</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pricedrightyards.com/services/pressure-washing</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pricedrightyards.com/services/gutter-cleaning</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pricedrightyards.com/services/roof-debris</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pricedrightyards.com/services/trash-out</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pricedrightyards.com/services/make-ready</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pricedrightyards.com/services/post-eviction</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pricedrightyards.com/services/home-watch</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <!-- Service Areas -->
-  <url><loc>https://prym.lovable.app/areas/tampa</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://prym.lovable.app/areas/st-petersburg</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://prym.lovable.app/areas/clearwater</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://prym.lovable.app/areas/bradenton</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://prym.lovable.app/areas/palmetto</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://prym.lovable.app/areas/ellenton</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://prym.lovable.app/areas/sarasota</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://prym.lovable.app/areas/orlando</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://prym.lovable.app/areas/lakeland</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pricedrightyards.com/areas/tampa</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pricedrightyards.com/areas/st-petersburg</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pricedrightyards.com/areas/clearwater</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pricedrightyards.com/areas/bradenton</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pricedrightyards.com/areas/palmetto</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pricedrightyards.com/areas/ellenton</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pricedrightyards.com/areas/sarasota</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pricedrightyards.com/areas/orlando</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pricedrightyards.com/areas/lakeland</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

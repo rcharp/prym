@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://prym.lovable.app/sitemap.xml
+Sitemap: https://pricedrightyards.com/sitemap.xml
